@@ -8,8 +8,11 @@ using UnityEngine;
 [Serializable]
 public class Rooms
 {
+    ///<summary>This is the structure for the room on the left</summary>
     public Room leftRoom;
+    ///<summary>This is the structure for the room on the back</summary>
     public Room backRoom;
+    ///<summary>This is the structure for the room on the right</summary>
     public Room rightRoom;
 }
 
@@ -33,5 +36,6 @@ public class Floor : ScriptableObject
     ///<summary>This is an array holding the indexes of objects pointing at which locations to spawn at</summary>
     public int[] assetSpawnPoints;
 
+    ///<summary>Class containing left, back and right rooms</summary>
     public Rooms rooms;
 }

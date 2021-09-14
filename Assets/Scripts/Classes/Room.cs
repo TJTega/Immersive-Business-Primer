@@ -15,10 +15,8 @@ public class Room : ScriptableObject
     ///<summary>This is a categorisation tag</summary>
     public string tag;
 
-    //public Cubemap roomPreview;
+    //public Cubemap roomPreview; [TBD]
+
     ///<summary>This is ambient sound for each room</summary>
     public AudioClip ambience;
-
-    ///<summary>This is the placement of the room on each floor</summary>
-    //public Direction doorPlacement;
 }

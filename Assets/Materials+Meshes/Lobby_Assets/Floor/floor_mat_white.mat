@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: floor_mat
+  m_Name: floor_mat_white
   m_Shader: {fileID: -6465566751694194690, guid: db721b75da0f47f4283e8c34127dc3cb, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3c6eec32fe534b05aad449b5e18b340c:
-        m_Texture: {fileID: 2800000, guid: a83fc7704209df3468a30bc5fa4ef348, type: 3}
+        m_Texture: {fileID: 2800000, guid: 73507b43b601c614ab86d0ab913937c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69367b49b0ba468f9353ece2edb65f56:

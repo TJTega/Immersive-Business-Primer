@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [Serializable]
 public class Rooms
@@ -30,6 +31,8 @@ public class Floor : ScriptableObject
     public Material wallMat;
     ///<summary>General material for the floor of each floor</summary>
     public Material floorMat;
+    ///<summary>This holds the volume settings for each floor</summary>
+    public VolumeProfile volumeProfile;
 
     ///<summary>This is a scriptable object holding general assets for floors</summary>
     public SubsceneAssets assets;

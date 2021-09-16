@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  buttonPrefab: {fileID: 1706354848521494269, guid: 949768b376ca915428d7246b73acd145, type: 3}
+  buttonPrefab: {fileID: 4804425197553831955, guid: e4514938b45127d458185804e5778960, type: 3}
   root: {fileID: 335752303}
   buttonSpacing: 0.15
 --- !u!4 &335752303

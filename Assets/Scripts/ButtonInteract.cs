@@ -8,7 +8,7 @@ public class ButtonInteract : MonoBehaviour, IInteractable
     private void Update()
     {
         //Hopefully a short term cheat to make the buttons visible and stop them from scaling down to (0,0,0)
-        this.transform.localScale = fix;
+        //this.transform.localScale = fix;
     }
 
     //This id represents the position in the 'ElevatorButtons._instance.buttons' list

@@ -155,7 +155,8 @@ MonoBehaviour:
   buttons: []
   buttonPrefab: {fileID: 2058848508957389788, guid: bcf7200cf1e3108428ae6c5b0b171346, type: 3}
   root: {fileID: 335752303}
-  buttonSpacing: 0.15
+  buttonSpacing: {x: 0.05, y: 0.05}
+  columnCount: 2
 --- !u!4 &335752303
 Transform:
   m_ObjectHideFlags: 0

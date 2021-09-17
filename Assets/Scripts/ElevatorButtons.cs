@@ -9,7 +9,8 @@ public class ElevatorButtons : MonoBehaviour
     public List<EButton> buttons = new List<EButton>();
     public GameObject buttonPrefab;
     public Transform root;
-    public float buttonSpacing = .15f;
+    public Vector2 buttonSpacing = new Vector2(.15f, .15f);
+    public int columnCount = 2;
 
     private List<GameObject> spawnedButtons = new List<GameObject>();
     private void Awake()
@@ -28,7 +29,7 @@ public class ElevatorButtons : MonoBehaviour
     public void CreateButtons()
     {
         int buttonCount = 0;
-
+        int row = 0;
         for (int i = 0; i < buttons.Count; i++)
         {
             //If the button is not set to active then do not create it.
@@ -55,7 +56,18 @@ public class ElevatorButtons : MonoBehaviour
 
             //Move the button down from the root position in order to space them apart
             //TODO change this to a grid pattern rather than sraight down
-            clone.transform.position += (Vector3.down * buttonCount) * buttonSpacing;
+            if (buttonCount % columnCount == 0)
+            {
+                clone.transform.position += (Vector3.down * (buttonCount / columnCount)) * buttonSpacing.y;
+                row = buttonCount / columnCount;
+            }
+            else
+            {
+                clone.transform.position += (Vector3.down * row) * buttonSpacing.y;
+            }
+
+            clone.transform.position += (Vector3.right * (buttonCount % columnCount)) * buttonSpacing.x;
+
             spawnedButtons.Add(clone);
 
             //We use button count instead of 'i' so that we can set a button to not active and have the spacing consistant 

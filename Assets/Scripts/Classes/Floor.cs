@@ -37,7 +37,7 @@ public class Floor : ScriptableObject
     ///<summary>This is a scriptable object holding general assets for floors</summary>
     public SubsceneAssets assets;
     ///<summary>This is an array holding the indexes of objects pointing at which locations to spawn at</summary>
-    public int[] assetSpawnPoints;
+    public int[] assetSpawns;
 
     ///<summary>Class containing left, back and right rooms</summary>
     public Rooms rooms;

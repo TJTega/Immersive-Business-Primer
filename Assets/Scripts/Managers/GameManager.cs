@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,35 +44,38 @@ public class GameManager : MonoBehaviour
     {
         //doors.Close();
         //doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
+        StartCoroutine(LoadFloor(floor));
     }
 
-    /*private IEnumerator LoadFloor(Floor floor)
+    private IEnumerator LoadFloor(Floor floor)
     {
         yield return null;
-        if (!SceneManager.GetSceneByName("Corridor").isLoaded)
-        {
-            AsyncOperation async = SceneManager.LoadSceneAsync("Corridor");
-            while (!async.isDone)
-            {
-                yield return null;
-            }
-        }
+        //if (!SceneManager.GetSceneByName("Floor").isLoaded)
+        //{
+        //    AsyncOperation async = SceneManager.LoadSceneAsync("Floor");
+        //    while (!async.isDone)
+        //    {
+        //        yield return null;
+        //    }
+        //}
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
         FloorManager floorManager = floorManagerObject.GetComponent<FloorManager>();
-        floorManager.floorName = floor.floor.name;
-        floorManager.wallColor = floor.floor.color;
-        for (int i = 0; i < floor.floor.elementsToSpawn.Length; i++)
-        {
-            if (floor.floor.elementsToSpawn[i] == -1)
-            {
-                floor.floor.elementsToSpawn[i] = Random.Range(0, floor.floor.subsceneElements.Length);
-            }
-        }
-        floorManager.elementsToSpawn = floor.floor.elementsToSpawn;
-        floorManager.subsceneElements = floor.floor.subsceneElements;
-        floorManager.worlds = floor.floor.worlds;
+        floorManager.floorName = floor.floorName;
+        floorManager.ceilingMat = floor.ceilingMat;
+        floorManager.wallMat = floor.wallMat;
+        floorManager.floorMat = floor.floorMat;
+        //for (int i = 0; i < floor.assetSpawns.Length; i++)
+        //{
+        //    if (floor.assetSpawns[i] == -1)
+        //    {
+        //        floor.assetSpawns[i] = Random.Range(0, floor.assetSpawns.Length);
+        //    }
+        //}
+        floorManager.assetSpawns = floor.assetSpawns;
+        floorManager.assets = floor.assets;
+        floorManager.rooms = floor.rooms;
         floorManager.Setup();
-        doors.Open();
-    }*/
+        //doors.Open();
+    }
 
 }

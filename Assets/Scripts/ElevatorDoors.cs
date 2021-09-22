@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ElevatorDoors : MonoBehaviour
 {
-    [SerializeField]
-    private Animator anim;
+    public Animator anim;
 
     private void OnTriggerEnter(Collider other)
     {

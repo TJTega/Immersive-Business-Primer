@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
 
     public ElevatorButtons elevator;
+    public ElevatorDoors doors;
 
     public List<Floor> floors;
 
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     private void StartLoadFloor(Floor floor)
     {
-        //doors.Close();
+        //doors.anim.SetBool("IsDoorOpen", false);
         //doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
         StartCoroutine(LoadFloor(floor));
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1656318262122873224
+--- !u!114 &-8805005697629008231
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Industrial_Ceiling_mat
+  m_Name: plant_pot_mat
   m_Shader: {fileID: -6465566751694194690, guid: db721b75da0f47f4283e8c34127dc3cb, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
@@ -39,15 +39,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_339e183d96694100b09a980891278096:
-        m_Texture: {fileID: 2800000, guid: f5884c22b3a76b649961964944742b1e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3c6eec32fe534b05aad449b5e18b340c:
-        m_Texture: {fileID: 2800000, guid: 075cf4a6a0b98fd4bac04a4950fc226f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8aea931aab3d1e24f8f321552678abc6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69367b49b0ba468f9353ece2edb65f56:
-        m_Texture: {fileID: 2800000, guid: 9645d7b6eb68f7144b47ee32187a569c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4a8dc3bfcd888574aa47e62c4ee66e9f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6dfcd983caec48219723c3bf3a20a0a1:
@@ -55,11 +55,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_f551fd31300a4fcbb53725d14719939f:
-        m_Texture: {fileID: 2800000, guid: bffabc357abbe6c4bbf325b5a6440055, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ff18b768031a44dbbbde4cb703504e74:
-        m_Texture: {fileID: 2800000, guid: b88bef8fff5406f459cf64e77a0539ae, type: 3}
+        m_Texture: {fileID: 2800000, guid: cb788f9201385fc45ba04d80baca5b21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:

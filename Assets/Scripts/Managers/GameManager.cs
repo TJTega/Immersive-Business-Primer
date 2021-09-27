@@ -53,11 +53,17 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadFloor(Floor floor)
     {
         yield return null;
+
+        if (SceneManager.GetSceneByName("Lobby").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("Lobby");
+        }
+
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
         {
             //Load the scene
-            AsyncOperation async = SceneManager.LoadSceneAsync("Floor");
+            AsyncOperation async = SceneManager.LoadSceneAsync("Floor", LoadSceneMode.Additive);
             //Don't continue until scene is loaded
             while (!async.isDone)
             {

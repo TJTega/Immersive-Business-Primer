@@ -48,6 +48,7 @@ public class FloorManager : MonoBehaviour
             Destroy(root);
         }
 
+        //Sets wall, floor and ceiling materials
         renderers.ceilingRenderer.material = ceilingMat;
         foreach (var renderer in renderers.wallRenderers)
         {

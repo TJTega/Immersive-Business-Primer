@@ -6,6 +6,7 @@ public class Persistence : MonoBehaviour
 {
     public static Persistence _instance;
 
+    //This is a script to make the parent a singleton
     private void Awake()
     {
         if (_instance == null)

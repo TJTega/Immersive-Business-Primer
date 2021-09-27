@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevator: {fileID: 1894980704}
-  doors: {fileID: 0}
+  doors: {fileID: 1707970755}
   floors:
   - {fileID: 11400000, guid: 2fed7d1833dd7ac4797a8ec11b2e0dd3, type: 2}
   - {fileID: 11400000, guid: 2cb5ff6b70e4e2a449f3c9884a137d96, type: 2}
@@ -1750,7 +1750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76f903307d678b40bde81b535615905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 6844658935502170010}
+  animL: {fileID: 6844658935502170010}
+  animR: {fileID: 3054041716161288717}
+  doorOpen: 0
 --- !u!65 &1707970756
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void LoadButtons()
     {
-
+        //Grabs the data from each element in the floors list
         foreach (var floor in floors)
         {
             EButton button = new EButton();
@@ -38,29 +38,44 @@ public class GameManager : MonoBehaviour
             button.OnButtonPress += (() => StartLoadFloor(temp));
             elevator.buttons.Add(button);
         }
+        //initializes the buttons
         elevator.CreateButtons();
     }
 
     private void StartLoadFloor(Floor floor)
     {
-        //doors.anim.SetBool("IsDoorOpen", false);
-        //doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
-        StartCoroutine(LoadFloor(floor));
+        //Closes door and starts to load the floor
+        doors.CloseDoor();
+        doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
+        //StartCoroutine(LoadFloor(floor));
     }
 
     private IEnumerator LoadFloor(Floor floor)
     {
         yield return null;
-        //if (!SceneManager.GetSceneByName("Floor").isLoaded)
-        //{
-        //    AsyncOperation async = SceneManager.LoadSceneAsync("Floor");
-        //    while (!async.isDone)
-        //    {
-        //        yield return null;
-        //    }
-        //}
+        //If the scene isn't loaded
+        if (!SceneManager.GetSceneByName("Floor").isLoaded)
+        {
+            //Load the scene
+            AsyncOperation async = SceneManager.LoadSceneAsync("Floor");
+            //Don't continue until scene is loaded
+            while (!async.isDone)
+            {
+                yield return null;
+            }
+            //Load general lighting scene on top of floor
+            async = SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+            //Don't continue until scene is loaded
+            while (!async.isDone)
+            {
+                yield return null;
+            }
+        }
+        //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
         FloorManager floorManager = floorManagerObject.GetComponent<FloorManager>();
+
+        //Pass data into floor manager script
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;
@@ -75,8 +90,12 @@ public class GameManager : MonoBehaviour
         floorManager.assetSpawns = floor.assetSpawns;
         floorManager.assets = floor.assets;
         floorManager.rooms = floor.rooms;
+
+        //Initialise floor
         floorManager.Setup();
-        //doors.Open();
+
+        //Open doors
+        doors.OpenDoor();
     }
 
 }

@@ -54,8 +54,8 @@ public class ElevatorButtons : MonoBehaviour
             }
 
 
-            //Move the button down from the root position in order to space them apart
-            //TODO change this to a grid pattern rather than sraight down
+            //Arranges the buttons in a configurable grid pattern
+            //Controls y-axis
             if (buttonCount % columnCount == 0)
             {
                 clone.transform.position += (-transform.up * (buttonCount / columnCount)) * buttonSpacing.y;
@@ -66,6 +66,7 @@ public class ElevatorButtons : MonoBehaviour
                 clone.transform.position += (-transform.up * row) * buttonSpacing.y;
             }
 
+            //Controls X axis
             clone.transform.position += (transform.right * (buttonCount % columnCount)) * buttonSpacing.x;
 
             spawnedButtons.Add(clone);

@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevator: {fileID: 1894980704}
+  doors: {fileID: 0}
   floors:
   - {fileID: 11400000, guid: 2fed7d1833dd7ac4797a8ec11b2e0dd3, type: 2}
   - {fileID: 11400000, guid: 2cb5ff6b70e4e2a449f3c9884a137d96, type: 2}
@@ -2355,6 +2356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653307021231}
+  - component: {fileID: 919132149588819222}
   m_Layer: 0
   m_Name: elevator_for_unity
   m_TagString: Untagged
@@ -2362,6 +2364,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149588819222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149588819221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7b37f768de1c147926b65f2ae7c6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &998908119108316911
 MeshFilter:
   m_ObjectHideFlags: 0

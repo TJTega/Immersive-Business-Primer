@@ -94,6 +94,7 @@ public class GameManager : MonoBehaviour
         //    }
         //}
         floorManager.skirtingObject = floor.skirting;
+        floorManager.overheadsObject = floor.overheads;
         floorManager.assetSpawns = floor.assetSpawns;
         floorManager.assets = floor.assets;
         floorManager.rooms = floor.rooms;

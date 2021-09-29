@@ -33,7 +33,9 @@ public class Floor : ScriptableObject
     public Material floorMat;
     ///<summary>This holds an asset for that would be displayed as skirting</summary>
     public GameObject skirting;
-    ///<summary>This holds the volume settings for each floor</summary>
+    ///<summary>This holds an asset for that would be displayed as overheads</summary>
+    public GameObject overheads;
+    ///<summary>This holds the volume settings for each floor</sumskimary>
     public VolumeProfile volumeProfile;
 
     ///<summary>This is a scriptable object holding general assets for floors</summary>

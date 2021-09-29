@@ -29,6 +29,8 @@ public class FloorManager : MonoBehaviour
     [HideInInspector]
     public Material floorMat;
     [HideInInspector]
+    public GameObject skirtingObject;
+    [HideInInspector]
     public SubsceneAssets assets;
     [HideInInspector]
     public Rooms rooms;
@@ -36,6 +38,7 @@ public class FloorManager : MonoBehaviour
     public int[] assetSpawns;
 
     public FloorMeshRenderers renderers;
+    public Transform skirtingAnchor;
     public GameObject[] spawnPoints = new GameObject[4];
 
     private GameObject root;
@@ -55,6 +58,8 @@ public class FloorManager : MonoBehaviour
             renderer.material = wallMat;
         }
         renderers.floorRenderer.material = floorMat;
+
+        GameObject skirting = Instantiate(skirtingObject, skirtingAnchor, false);
 
         //foreach (var sceneLoader in sceneLoaders)
         //{

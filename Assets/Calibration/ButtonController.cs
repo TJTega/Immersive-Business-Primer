@@ -83,11 +83,10 @@ public class ButtonController : MonoBehaviour
     void Update()
     {
         InputDevices.GetDevicesWithCharacteristics(deviceCharacteristic, inputDevices);
-        
+
         for (int i = 0; i < inputDevices.Count; i++)
         {
-            if (inputDevices[i].TryGetFeatureValue(inputFeature,
-                out inputValue) && inputValue)
+            if (inputDevices[i].TryGetFeatureValue(inputFeature, out inputValue) && inputValue)
             {
                 // if start pressing, trigger event
                 if (!IsPressed)
@@ -96,15 +95,15 @@ public class ButtonController : MonoBehaviour
                     OnPress.Invoke();
                     Debug.Log($"Pressed {deviceCharacteristic} Controller {button}");
                 }
+                // check for button release
+                else if (IsPressed)
+                {
+                    IsPressed = false;
+                    OnRelease.Invoke();
+                    Debug.Log($"Released {deviceCharacteristic} Controller {button}");
+                }
             }
 
-            // check for button release
-            else if (IsPressed)
-            {
-                IsPressed = false;
-                OnRelease.Invoke();
-                Debug.Log($"Released {deviceCharacteristic} Controller {button}");
-            }
             //was logging this to see exactly what was called -- want to try to allow for one instance of the script to allow for both controllers
             //DilmerGamesLogger.Instance.LogInfo($"Device Characteristic is {deviceCharacteristic} and Input Devices are {inputDevices}");
         }

@@ -30,35 +30,46 @@ public class PointAdjustment : MonoBehaviour
             {
                 case 0:
                     Debug.Log("Point Adjustment Activated");
-                    pointCounter += 1;
+                    //increment();
                     break;
                 //Sets point 1
                 case 1:
                     physicalTop.gameObject.transform.position = handPosition;
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Point A Set" + pointCounter);
                     debugText.text= "Point A Set";
                     break;
                     //Sets point 2
                 case 2:
                     physicalBottom.gameObject.transform.position = handPosition;
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Point B Set" + pointCounter);
                     debugText.text = "Point B Set";
                     break;
                     //Calibrates based on points
                 case 3:
                     StartCoroutine(floorAlignment.Calibrate(physicalTop, physicalBottom));
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Calibrating" + pointCounter);
                     debugText.text = "Calibrating...";
                     break;
                     //reset
                 default:
-                    pointCounter = 0;
+                    //resestpoints();
                     break;
             }
         }
+    }
+
+    public void increment()
+    {
+        pointCounter++;
+        if(pointCounter == 4) { pointCounter = 0; }
+    }
+
+    public void resestpoints()
+    {
+        pointCounter = 0;
     }
 
 }

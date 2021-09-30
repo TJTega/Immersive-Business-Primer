@@ -8,6 +8,7 @@ public class PointAdjustment : MonoBehaviour
     public Collider physicalBottom;
     public Virtual_Floor_Alignment floorAlignment;
     public Text debugText;
+    private bool pointsAdjusted= false;
     bool TryGetControllerPosition(out Vector3 position)
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
@@ -24,7 +25,7 @@ public class PointAdjustment : MonoBehaviour
     public void SetPoint()
     {
         TryGetControllerPosition(out Vector3 handPosition);
-        if (floorAlignment.forwardSet)
+        if (floorAlignment.forwardSet && !pointsAdjusted)
         {
             switch (pointCounter)
             {
@@ -52,10 +53,12 @@ public class PointAdjustment : MonoBehaviour
                     //increment();
                     Debug.Log("Calibrating" + pointCounter);
                     debugText.text = "Calibrating...";
+                    pointsAdjusted = true;
                     break;
                     //reset
                 default:
-                    //resestpoints();
+                    debugText.text = null;
+                    
                     break;
             }
         }
@@ -67,9 +70,13 @@ public class PointAdjustment : MonoBehaviour
         if(pointCounter == 4) { pointCounter = 0; }
     }
 
-    public void resestpoints()
+    public void resestCalibration()
     {
+        pointsAdjusted = false;
         pointCounter = 0;
+        floorAlignment.forwardSet = false;
+        debugText.text = "Calibration Reset...";
+      
     }
 
 }

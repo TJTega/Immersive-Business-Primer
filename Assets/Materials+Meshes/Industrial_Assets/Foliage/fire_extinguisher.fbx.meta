@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9540793d0bfaa441ba3ef1fc007dfb8
+guid: d6e076a6658d50845b1a98d1a20a9e3a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: blinn11
-    second: {fileID: 2100000, guid: 336b5728a59745f47b57121e32ddb795, type: 2}
+      name: fire_extinguisher
+    second: {fileID: 2100000, guid: 7bb9b98ad6382f2489ff98f855fa4040, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

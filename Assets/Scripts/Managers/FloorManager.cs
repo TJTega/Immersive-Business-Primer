@@ -31,6 +31,8 @@ public class FloorManager : MonoBehaviour
     [HideInInspector]
     public GameObject skirtingObject;
     [HideInInspector]
+    public GameObject overheadsObject;
+    [HideInInspector]
     public SubsceneAssets assets;
     [HideInInspector]
     public Rooms rooms;
@@ -38,10 +40,12 @@ public class FloorManager : MonoBehaviour
     public int[] assetSpawns;
 
     public FloorMeshRenderers renderers;
-    public Transform skirtingAnchor;
+    public Transform centerAnchor;
     public GameObject[] spawnPoints = new GameObject[4];
 
     private GameObject root;
+    private GameObject skirting;
+    private GameObject overhead;
 
     // Start is called before the first frame update
     public void Setup()
@@ -58,8 +62,22 @@ public class FloorManager : MonoBehaviour
             renderer.material = wallMat;
         }
         renderers.floorRenderer.material = floorMat;
-
-        GameObject skirting = Instantiate(skirtingObject, skirtingAnchor, false);
+        if (skirtingObject != null)
+        {
+            skirting = Instantiate(skirtingObject, centerAnchor, false);
+        }
+        else
+        {
+            DestroyImmediate(skirting);
+        }
+        if (overheadsObject != null)
+        {
+            overhead = Instantiate(overheadsObject, centerAnchor, false);
+        }
+        else
+        {
+            DestroyImmediate(overhead);
+        }
 
         //foreach (var sceneLoader in sceneLoaders)
         //{

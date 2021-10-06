@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5339015852362763301
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 11
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: floor_mat
+  m_Name: desk+hanging_light_mat
   m_Shader: {fileID: -6465566751694194690, guid: db721b75da0f47f4283e8c34127dc3cb, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
@@ -39,15 +26,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_339e183d96694100b09a980891278096:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 008f6f8214db30c4dbf21996451b07bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3c6eec32fe534b05aad449b5e18b340c:
-        m_Texture: {fileID: 2800000, guid: a83fc7704209df3468a30bc5fa4ef348, type: 3}
+        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69367b49b0ba468f9353ece2edb65f56:
-        m_Texture: {fileID: 2800000, guid: 5e230452fbb82c743b924a72762099a0, type: 3}
+        m_Texture: {fileID: 2800000, guid: e676dce0f6224bc4dae9ee5fe876c732, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6dfcd983caec48219723c3bf3a20a0a1:
@@ -59,11 +46,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_f551fd31300a4fcbb53725d14719939f:
-        m_Texture: {fileID: 2800000, guid: fcfb06d6986084f4c88fd7b9f9b3ca18, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8ee5e763d3365a442a0e2afa70b6fd48, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ff18b768031a44dbbbde4cb703504e74:
-        m_Texture: {fileID: 2800000, guid: f4f0d0249dba1304aa4443eed01091a8, type: 3}
+        m_Texture: {fileID: 2800000, guid: bffb77468dfd02049bc706172330505b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -71,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -107,11 +94,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e676dce0f6224bc4dae9ee5fe876c732, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -293,3 +280,16 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &8473410351425575793
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 11

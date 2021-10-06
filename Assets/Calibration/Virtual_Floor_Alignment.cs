@@ -96,8 +96,11 @@ public class Virtual_Floor_Alignment : MonoBehaviour
     }
     public void SetForward()
     {
-        forwardSet = true;
-        Debug.Log("Forward set" + forwardSet);
-        debugText.text = "Forward Set";
+        if (!forwardSet)
+        {
+            forwardSet = true;
+            Debug.Log("Forward set" + forwardSet);
+            debugText.text = "Forward Set";
+        }
     }
 }

@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 1971003528}
   - component: {fileID: 1971003526}
   m_Layer: 0
-  m_Name: PersistentFloor
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1971003525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5121c7f5acc0c25479d1f95235dc354f, type: 3}
+  m_Script: {fileID: 11500000, guid: c71c6363c0ae90d45a789d8af4480220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1971003528

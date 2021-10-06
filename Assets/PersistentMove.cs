@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PersistentMove : MonoBehaviour
 {
-    public GameObject moveContainer;
+    private GameObject moveContainer;
     // Start is called before the first frame update
     void Start()
     {

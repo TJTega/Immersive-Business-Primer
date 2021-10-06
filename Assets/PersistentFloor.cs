@@ -6,7 +6,7 @@ public class PersistentFloor : MonoBehaviour
 {
     private GameObject moveContainer;
     // Start is called before the first frame update
-   [ContextMenu("Snap")]
+    [ContextMenu("Snap")]
     void Start()
     {
         moveContainer = GameObject.FindGameObjectWithTag("PersistentFloorLocation");
@@ -17,7 +17,10 @@ public class PersistentFloor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = moveContainer.transform.position;
-        transform.rotation = moveContainer.transform.rotation;
+        if (moveContainer != null)
+        {
+            transform.position = moveContainer.transform.position;
+            transform.rotation = moveContainer.transform.rotation;
+        }
     }
 }

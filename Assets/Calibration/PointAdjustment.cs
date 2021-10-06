@@ -8,6 +8,7 @@ public class PointAdjustment : MonoBehaviour
     public Collider physicalBottom;
     public Virtual_Floor_Alignment floorAlignment;
     public Text debugText;
+    private bool pointsAdjusted= false;
     bool TryGetControllerPosition(out Vector3 position)
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
@@ -24,41 +25,58 @@ public class PointAdjustment : MonoBehaviour
     public void SetPoint()
     {
         TryGetControllerPosition(out Vector3 handPosition);
-        if (floorAlignment.forwardSet)
+        if (floorAlignment.forwardSet && !pointsAdjusted)
         {
             switch (pointCounter)
             {
                 case 0:
                     Debug.Log("Point Adjustment Activated");
-                    pointCounter += 1;
+                    //increment();
                     break;
                 //Sets point 1
                 case 1:
                     physicalTop.gameObject.transform.position = handPosition;
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Point A Set" + pointCounter);
                     debugText.text= "Point A Set";
                     break;
                     //Sets point 2
                 case 2:
                     physicalBottom.gameObject.transform.position = handPosition;
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Point B Set" + pointCounter);
                     debugText.text = "Point B Set";
                     break;
                     //Calibrates based on points
                 case 3:
                     StartCoroutine(floorAlignment.Calibrate(physicalTop, physicalBottom));
-                    pointCounter += 1;
+                    //increment();
                     Debug.Log("Calibrating" + pointCounter);
                     debugText.text = "Calibrating...";
+                    pointsAdjusted = true;
                     break;
                     //reset
                 default:
-                    pointCounter = 0;
+                    debugText.text = null;
+                    
                     break;
             }
         }
+    }
+
+    public void increment()
+    {
+        pointCounter++;
+        if(pointCounter == 4) { pointCounter = 0; }
+    }
+
+    public void resestCalibration()
+    {
+        pointsAdjusted = false;
+        pointCounter = 0;
+        floorAlignment.forwardSet = false;
+        debugText.text = "Calibration Reset...";
+      
     }
 
 }

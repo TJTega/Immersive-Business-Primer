@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
             EButton button = new EButton();
             button.active = true;
             Floor temp = floor;
-            button.OnButtonPress += (() => StartLoadFloor(temp));
+            button.OnButtonPress = (() => StartLoadFloor(temp));
             elevator.buttons.Add(button);
         }
         //initializes the buttons
@@ -46,18 +46,15 @@ public class GameManager : MonoBehaviour
     {
         //Closes door and starts to load the floor
         doors.CloseDoor();
-        doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
-        //StartCoroutine(LoadFloor(floor));
+        //doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
+        StartCoroutine(LoadFloor(floor));
     }
 
     private IEnumerator LoadFloor(Floor floor)
     {
         yield return null;
 
-        if (SceneManager.GetSceneByName("Lobby").isLoaded)
-        {
-            SceneManager.UnloadSceneAsync("Lobby");
-        }
+        
 
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
@@ -69,13 +66,24 @@ public class GameManager : MonoBehaviour
             {
                 yield return null;
             }
+        }
+        if (!SceneManager.GetSceneByName("Lighting").isLoaded)
+        {
             //Load general lighting scene on top of floor
-            async = SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+            AsyncOperation async = SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
             //Don't continue until scene is loaded
             while (!async.isDone)
             {
                 yield return null;
             }
+        }
+        if (SceneManager.GetSceneByName("Lobby").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("Lobby");
+        }
+        if (SceneManager.GetSceneByName("Calibration").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("Calibration");
         }
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");

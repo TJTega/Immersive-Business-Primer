@@ -667,27 +667,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 422117035}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.005
   m_Height: 0.01
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &422117038
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422117035}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &434761312
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +803,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1368322047}
+    - target: {fileID: 8220382582513428222, guid: 50b0ad0913843dc4f820aae6010fc65f, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8220382583221551337, guid: 50b0ad0913843dc4f820aae6010fc65f, type: 3}
       propertyPath: m_Name
       value: Hand_Left
@@ -1270,7 +1258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772223832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.96, y: 0, z: -3.65}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 366321767}
@@ -1644,6 +1632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 772223834}
     m_Modifications:
+    - target: {fileID: 573763192060454923, guid: 142de5c27643e9a4fa3f29573aedd1f9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 573763192728940800, guid: 142de5c27643e9a4fa3f29573aedd1f9, type: 3}
       propertyPath: controller
       value: 
@@ -4855,17 +4847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf98dd1206224111a38765365e98e207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockCursorWhenFocusLocked: 1
-  setCursorInvisibleWhenFocusLocked: 0
-  maxGazeCollisionDistance: 10
-  raycastLayerMasks:
-  - serializedVersion: 2
-    m_Bits: 4294967291
-  stabilizer:
-    storedStabilitySamples: 60
-  gazeTransform: {fileID: 0}
-  minHeadVelocityThreshold: 0.5
-  maxHeadVelocityThreshold: 2
 --- !u!114 &1874027919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5107,7 +5088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  buttonPrefab: {fileID: 2058848508957389788, guid: 4aea7fe40bc8bbc41891255724aab193, type: 3}
+  buttonPrefab: {fileID: 7963754624024071536, guid: 3f72740ea4b5a984d869006eeaaf3b88, type: 3}
   root: {fileID: 1894980703}
   buttonSpacing: {x: 0.15, y: 0.15}
   columnCount: 1
@@ -6038,7 +6019,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5254255415061380140, guid: 44d5c716e5bd5ec408ae51ac328aebeb, type: 3}
+  - {fileID: 2100000, guid: 7986b2ac0cc305d49bf7091f259fd601, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6997,7 +6978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5254255415061380140, guid: 44d5c716e5bd5ec408ae51ac328aebeb, type: 3}
+  - {fileID: 2100000, guid: 7986b2ac0cc305d49bf7091f259fd601, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

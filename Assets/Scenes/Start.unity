@@ -1270,7 +1270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772223832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.96, y: 0, z: -3.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 366321767}
@@ -1288,7 +1288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 496ccadb5f89ff34da9d88328ecdf83e, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 496ccadb5f89ff34da9d88328ecdf83e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3234,7 +3234,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540691226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 164.7528, y: -79.81274, z: -52.49494}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3242,8 +3242,8 @@ Transform:
   - {fileID: 1194492998}
   - {fileID: 1760990925}
   - {fileID: 1913692561}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1604698538}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1553253811
 GameObject:
@@ -3469,6 +3469,7 @@ Transform:
   - {fileID: 1336038135}
   - {fileID: 1760793263}
   - {fileID: 957347488}
+  - {fileID: 1540691227}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3484,7 +3485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71c6363c0ae90d45a789d8af4480220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveContainer: {fileID: 0}
 --- !u!1 &1609814242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  buttonPrefab: {fileID: 2058848508957389788, guid: bcf7200cf1e3108428ae6c5b0b171346, type: 3}
+  buttonPrefab: {fileID: 2058848508957389788, guid: 4aea7fe40bc8bbc41891255724aab193, type: 3}
   root: {fileID: 1894980703}
   buttonSpacing: {x: 0.15, y: 0.15}
   columnCount: 1

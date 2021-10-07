@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 44e8a73378173c548ab2cad54857b564
+guid: 0c4fa1f11bc933d49aaa9299398b21c9
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blinn14
-    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blinn20
-    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pipes
-    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: screws
-    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -12,8 +12,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: blinn20
+    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: pipes
-    second: {fileID: 2100000, guid: 42fd8882f57c2c04991a70ffabbc8097, type: 2}
+    second: {fileID: 2100000, guid: 90d04dae4d91ad347a6ae624dcc05343, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

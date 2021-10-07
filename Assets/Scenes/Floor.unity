@@ -207,11 +207,11 @@ PrefabInstance:
     - target: {fileID: -8033160947161065712, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 480625938cf26f640a9f563185431dbe, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: -7322256783843178234, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 480625938cf26f640a9f563185431dbe, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: -6545933259922438945, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -219,11 +219,11 @@ PrefabInstance:
     - target: {fileID: -6445513375088127902, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e8bacd261ade7ec40b80a8c89a1e8757, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: -5399495153953809220, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 480625938cf26f640a9f563185431dbe, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: -5076112961793999331, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2281
@@ -255,11 +255,11 @@ PrefabInstance:
     - target: {fileID: -3806400189434468056, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6824ea06e6cbb2e47892c0b555e318ab, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: -2042993821648219213, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 480625938cf26f640a9f563185431dbe, type: 2}
+      objectReference: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
     - target: {fileID: 919132149155446097, guid: cff17d0c1780fce4387063f0ee1ebc21, type: 3}
       propertyPath: m_Name
       value: floor_plan
@@ -394,6 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044902787}
   - component: {fileID: 2044902786}
+  - component: {fileID: 2044902788}
   m_Layer: 0
   m_Name: Floor Manager
   m_TagString: FloorManager
@@ -413,11 +414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3147378904e39094bb6c5f2251a5abb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorName: 
-  ceilingMat: {fileID: 0}
-  wallMat: {fileID: 0}
-  floorMat: {fileID: 0}
-  skirtingObject: {fileID: 0}
+  floorName: health_wellbeing_centre
+  ceilingMat: {fileID: 2100000, guid: e8bacd261ade7ec40b80a8c89a1e8757, type: 2}
+  wallMat: {fileID: 2100000, guid: 480625938cf26f640a9f563185431dbe, type: 2}
+  floorMat: {fileID: 2100000, guid: d409a4d3213f39c42957eae95abbd3f0, type: 2}
+  skirtingObject: {fileID: 919132149155446097, guid: 57157ed292ae7b340853e2f67d0e7e4d, type: 3}
   overheadsObject: {fileID: 0}
   assets: {fileID: 0}
   rooms:
@@ -453,3 +454,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2044902788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044902785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd5bf41b7daad543a8fac3f69a7b6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floor: {fileID: 11400000, guid: 4ad61455b0db4e546bb0d883c620b6fd, type: 2}
+  floorManager: {fileID: 2044902786}

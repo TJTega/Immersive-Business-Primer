@@ -64,6 +64,7 @@ public class FloorManager : MonoBehaviour
         renderers.floorRenderer.material = floorMat;
         if (skirtingObject != null)
         {
+            DestroyImmediate(skirting);
             skirting = Instantiate(skirtingObject, centerAnchor, false);
         }
         else
@@ -72,6 +73,7 @@ public class FloorManager : MonoBehaviour
         }
         if (overheadsObject != null)
         {
+            DestroyImmediate(overhead);
             overhead = Instantiate(overheadsObject, centerAnchor, false);
         }
         else

@@ -15,4 +15,9 @@ public class TutorialTeleport : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter(collider other)
+    { 
+        if ()
+    }
+    private void ontr
 }

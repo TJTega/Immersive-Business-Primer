@@ -7,6 +7,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class TutorialTeleport : MonoBehaviour
 {
+    public GameObject lobby;
+    public GameObject floor;
+    public int lobbyFloorSwitch;
     public Transform teleportLocation;
     // Start is called before the first frame update
     void Start()
@@ -21,13 +24,27 @@ public class TutorialTeleport : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "RightPointerCollider")
-        {
-            Invoke("TeleportPlayer",0);
-            
+        switch(lobbyFloorSwitch)
+        { case 1:
+                if (other.tag == "RightPointerCollider")
+                {
+                    Invoke("TeleportPlayer", 0);
+                    lobby.active = true;
+                    floor.active = false;
+                }
+                break;
+            case 2:
+                if (other.tag == "RightPointerCollider")
+                {
+                    Invoke("TeleportPlayer", 0);
+                    lobby.active = false;
+                    floor.active = true;
+                }
+                break;
         }
+       
     }
-    [ContextMenu("Boop")]
+    
     public void TeleportPlayer()
     {
         XRRig xrRig = GameObject.FindGameObjectWithTag("XRRig").GetComponent(typeof(XRRig)) as XRRig;

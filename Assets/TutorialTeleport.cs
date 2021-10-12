@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TutorialTeleport : MonoBehaviour
 {
@@ -19,7 +22,27 @@ public class TutorialTeleport : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "RightPointerCollider")
-            GameObject.FindGameObjectWithTag("XRRig").transform.position = teleportLocation.position;
+        {
+            Invoke("TeleportPlayer",0);
+            
+        }
+    }
+    [ContextMenu("Boop")]
+    public void TeleportPlayer()
+    {
+        XRRig xrRig = GameObject.FindGameObjectWithTag("XRRig").GetComponent(typeof(XRRig)) as XRRig;
+        if (xrRig != null)
+        {
+
+            xrRig.MatchRigUpCameraForward(teleportLocation.rotation * Vector3.up, teleportLocation.rotation * Vector3.forward);
+
+
+            var heightAdjustment = xrRig.rig.transform.up * xrRig.cameraInRigSpaceHeight;
+
+            var cameraDestination = teleportLocation.transform.position + heightAdjustment;
+
+            xrRig.MoveCameraToWorldLocation(cameraDestination);
+        }
     }
 
 }

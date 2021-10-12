@@ -23,26 +23,28 @@ public class Tutorial : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && playAvailable == false)
+        if (other.tag == "Player" )
         {
-            Invoke("topAllAudio", 0);
-            playAvailable = true;
-        }
-        if (other.tag == "Player" && playAvailable == true)
-        {
-            subtitleText.text = subtitleLine;
-            tutorialAudio.Play();
+            Invoke("StopAllAudio", 0);
+          
+            StartCoroutine("StartAudio");
         }
     }
-    
-   
-  
- void Awake()
+    IEnumerator StartAudio()
+    {
+        yield return new WaitForSeconds(.2f);
+        subtitleText.text = subtitleLine;
+        tutorialAudio.Play();
+    }
+
+
+
+    void Awake()
     {
         allAudioSources = Object.FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
     }
 
-    void topAllAudio()
+    void StopAllAudio()
     {
         foreach (AudioSource audioS in allAudioSources)
         {

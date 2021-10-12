@@ -17,6 +17,7 @@ public class FloorMeshRenderers
 
 public class FloorManager : MonoBehaviour
 {
+    //Data for loading room signs and scenes in floor
     //public AutoSceneLoader[] sceneLoaders = new AutoSceneLoader[3];
     //public AutoSignLoader[] signs = new AutoSignLoader[3];
 
@@ -33,35 +34,34 @@ public class FloorManager : MonoBehaviour
     [HideInInspector]
     public GameObject overheadsObject;
     [HideInInspector]
-    public SubsceneAssets assets;
+    public GameObject subsceneAssets;
     [HideInInspector]
     public Rooms rooms;
-    [HideInInspector]
-    public int[] assetSpawns;
 
+    ///<summary>This struct holds the data for all relevant floor mesh renderers</summary>
     public FloorMeshRenderers renderers;
+    /// <summary>This holds the transform for the center of the room</summary>
     public Transform centerAnchor;
-    public GameObject[] spawnPoints = new GameObject[4];
 
-    private GameObject root;
+    //These hold information for currently spawned assets in the scene
     private GameObject skirting;
     private GameObject overhead;
+    private GameObject subscene;
 
     // Start is called before the first frame update
     public void Setup()
     {
-        if (root != null)
-        {
-            Destroy(root);
-        }
-
-        //Sets wall, floor and ceiling materials
+        //Sets ceiling material
         renderers.ceilingRenderer.material = ceilingMat;
+        //Sets material for each wall
         foreach (var renderer in renderers.wallRenderers)
         {
             renderer.material = wallMat;
         }
+        //Sets floor material
         renderers.floorRenderer.material = floorMat;
+
+        //Overwrites skirting object, deletes if not set
         if (skirtingObject != null)
         {
             DestroyImmediate(skirting);
@@ -71,6 +71,8 @@ public class FloorManager : MonoBehaviour
         {
             DestroyImmediate(skirting);
         }
+
+        //Overwrites overhead object, deletes if not set
         if (overheadsObject != null)
         {
             DestroyImmediate(overhead);
@@ -81,6 +83,18 @@ public class FloorManager : MonoBehaviour
             DestroyImmediate(overhead);
         }
 
+        //Overwrites subscene object, deletes if not set
+        if (subsceneAssets != null)
+        {
+            DestroyImmediate(subscene);
+            subscene = Instantiate(subsceneAssets, centerAnchor, false);
+        }
+        else
+        {
+            DestroyImmediate(subscene);
+        }
+
+        //Holds unimplemented code for loading room scenes and signs on floor
         //foreach (var sceneLoader in sceneLoaders)
         //{
         //    sceneLoader.worlds = worlds;
@@ -90,12 +104,6 @@ public class FloorManager : MonoBehaviour
         //{
         //    signLoader.worlds = worlds;
         //    signLoader.LoadSign();
-        //}
-        //root = new GameObject("Element Root");
-        //for (int i = 0; i < spawnPoints.Length; i++)
-        //{
-        //    GameObject clone = Instantiate(assets.elements[assetSpawns[i]], spawnPoints[i].transform, false);
-        //    clone.transform.parent = root.transform;
         //}
     }
 }

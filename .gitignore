@@ -59,4 +59,6 @@ sysinfo.txt
 crashlytics-build.properties
 
 ProjectSettings/HDRPProjectSettings.asset
+ProjectSettings/ProjectVersion.txt
 UserSettings/EditorUserSettings.asset
+

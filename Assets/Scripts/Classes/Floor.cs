@@ -39,9 +39,7 @@ public class Floor : ScriptableObject
     public VolumeProfile volumeProfile;
 
     ///<summary>This is a scriptable object holding general assets for floors</summary>
-    public SubsceneAssets assets;
-    ///<summary>This is an array holding the indexes of objects pointing at which locations to spawn at</summary>
-    public int[] assetSpawns;
+    public GameObject subsceneAssets;
 
     ///<summary>Class containing left, back and right rooms</summary>
     public Rooms rooms;

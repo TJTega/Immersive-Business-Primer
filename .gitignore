@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 ProjectSettings/HDRPProjectSettings.asset
 UserSettings/EditorUserSettings.asset
+Assets/Oculus/Spatializer/Plugins/x86_64/AudioPluginOculusSpatializer.dll

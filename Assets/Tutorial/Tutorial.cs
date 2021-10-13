@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class FadeParameters
 {
     private bool fade;
@@ -26,7 +26,7 @@ public class FadeParameters
 public class Tutorial : MonoBehaviour
 {
     public AudioSource tutorialAudio;
-    public Text subtitleText;
+    public TMP_Text subtitleText;
     public string subtitleLine;
     private AudioSource[] allAudioSources;
     private bool playAvailable= false;

@@ -7,8 +7,8 @@ public class FloorInitializeTest : MonoBehaviour
     public Floor floor;
     public FloorManager floorManager;
 
-    [ContextMenu("Test")]
-    public void test()
+    [ContextMenu("Initialise Floor")]
+    public void InitialiseFloor()
     {
         //Find the floorManager Script
 

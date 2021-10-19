@@ -81,9 +81,9 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Lobby");
         }
-        if (SceneManager.GetSceneByName("Start").isLoaded)
+        if (SceneManager.GetSceneByName("Tutorial").isLoaded)
         {
-            SceneManager.UnloadSceneAsync("Start");
+            SceneManager.UnloadSceneAsync("Tutorial");
         }
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");

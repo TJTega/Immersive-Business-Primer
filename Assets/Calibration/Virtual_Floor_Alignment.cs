@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.UI;
+using TMPro;
 public class Virtual_Floor_Alignment : MonoBehaviour
 {
     public float height;
@@ -11,7 +12,7 @@ public class Virtual_Floor_Alignment : MonoBehaviour
     public GameObject cube;
     public PointAdjustment pointAdjustment;
     Quaternion handRotation;
-    public Text debugText;
+    public TextMeshProUGUI debugText;
 
     bool TryGetRightHandFeature(out Quaternion rotation)
     {

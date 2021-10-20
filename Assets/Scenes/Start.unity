@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32240635}
   - component: {fileID: 32240636}
+  - component: {fileID: 32240637}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -173,6 +174,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2fed7d1833dd7ac4797a8ec11b2e0dd3, type: 2}
   - {fileID: 11400000, guid: 2cb5ff6b70e4e2a449f3c9884a137d96, type: 2}
   - {fileID: 11400000, guid: f7e12c7f6635255488b5ffc8b0304070, type: 2}
+--- !u!114 &32240637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32240634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6fed09bebb903469620ec786cb526d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &101719913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 573763192728940862, guid: 142de5c27643e9a4fa3f29573aedd1f9, type: 3}
@@ -2589,7 +2602,7 @@ MonoBehaviour:
   virtualBottom: {fileID: 1446600548}
   cube: {fileID: 1309913464}
   pointAdjustment: {fileID: 1884632580}
-  debugText: {fileID: 1609814244}
+  debugText: {fileID: 0}
 --- !u!1 &1397807610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,7 +3805,7 @@ MonoBehaviour:
   physicalTop: {fileID: 338697144}
   physicalBottom: {fileID: 1740054220}
   floorAlignment: {fileID: 1377368206}
-  debugText: {fileID: 1609814244}
+  debugText: {fileID: 0}
 --- !u!1 &1894980702
 GameObject:
   m_ObjectHideFlags: 0

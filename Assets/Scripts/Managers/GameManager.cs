@@ -81,10 +81,11 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Lobby");
         }
-        if (SceneManager.GetSceneByName("Tutorial").isLoaded)
+        if (SceneManager.GetSceneByName("Start").isLoaded)
         {
-            SceneManager.UnloadSceneAsync("Tutorial");
+            SceneManager.UnloadSceneAsync("Start");
         }
+
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
         FloorManager floorManager = floorManagerObject.GetComponent<FloorManager>();
@@ -94,13 +95,6 @@ public class GameManager : MonoBehaviour
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;
         floorManager.floorMat = floor.floorMat;
-        //for (int i = 0; i < floor.assetSpawns.Length; i++)
-        //{
-        //    if (floor.assetSpawns[i] == -1)
-        //    {
-        //        floor.assetSpawns[i] = Random.Range(0, floor.assetSpawns.Length);
-        //    }
-        //}
         floorManager.skirtingObject = floor.skirting;
         floorManager.overheadsObject = floor.overheads;
         floorManager.subsceneAssets = floor.subsceneAssets;

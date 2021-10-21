@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7790621642873811274
+--- !u!114 &-4935802911259305676
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: industrial_doors_porthole_mat
+  m_Name: health_well_fair_doors_glass
   m_Shader: {fileID: -6465566751694194690, guid: a185929cc23d1e14290c660e427dfbfc, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -40,15 +40,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_339e183d96694100b09a980891278096:
-        m_Texture: {fileID: 2800000, guid: 9c9a88f044eaebf41be9908b006a36cb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7a4dbebed01c8714b9ec170e8fd5c5d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3c6eec32fe534b05aad449b5e18b340c:
-        m_Texture: {fileID: 2800000, guid: e96ef3f37af1fa045a99ed8e6f32e877, type: 3}
+        m_Texture: {fileID: 2800000, guid: e51f8469158a5e14b97338b8a446e88e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69367b49b0ba468f9353ece2edb65f56:
-        m_Texture: {fileID: 2800000, guid: d1be2379513dbb84e91dc9c45e56d7ae, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2a7bb4d11a5a520428549dfb6cc8cc7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6dfcd983caec48219723c3bf3a20a0a1:
@@ -56,15 +56,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ce70d53c45964c67b56a546a5176b42a:
-        m_Texture: {fileID: 2800000, guid: 47ba5759214181140b1484005abd759d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 26b70044605f7e143bbb5056764efbbf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_f551fd31300a4fcbb53725d14719939f:
-        m_Texture: {fileID: 2800000, guid: b9ec92eb752254c48a677026148424d7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8fbaf90714ac4f14ba60517e199dbe1c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ff18b768031a44dbbbde4cb703504e74:
-        m_Texture: {fileID: 2800000, guid: f19fdf4d304cbd142a7a7c89cc8bbabe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6beea91a22457ee4eb0079a48d81905c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -160,7 +160,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_05d49b43228143fcab5d4d81171a9565: 0.2
+    - Vector1_05d49b43228143fcab5d4d81171a9565: 0.22
     - Vector1_4183bab0ee454532a120ad199188fa4b: 0
     - Vector1_41a6a4d0fc714f1a8e3e1b62a5dc9869: 1
     - Vector1_6bd0308cb9c943a4b99bad45205a69fc: 1

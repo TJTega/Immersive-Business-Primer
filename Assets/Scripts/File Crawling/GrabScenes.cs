@@ -1,12 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GrabScenes : MonoBehaviour
 {
-    //ROOM
+    //Reference to room scriptable object
     Room current;
+    Room roomSO;
 
     //This gets the folder structure to /Assets/
     private string m_Path;
@@ -21,16 +24,16 @@ public class GrabScenes : MonoBehaviour
     //Dictionary key = room name, value back = settings
     public Dictionary<string, string> roomSettings = new Dictionary<string, string>();
 
+    public string Something;
+
     void Start()
     {
         current = ScriptableObject.CreateInstance("Room") as Room;
-
+        //Testing = ScriptableObject.CreateInstance("Room") as Room;
         m_Path = Application.dataPath;
 
         DirSearch(m_Path + defaultPath);
-
         LinkRoomsToSettings();
-
     }
 
     //This method will return all files in sub-folders relative to the given path.
@@ -43,21 +46,24 @@ public class GrabScenes : MonoBehaviour
                 foreach (string filePath in Directory.GetFiles(directory))
                 {
                     string fileName = new DirectoryInfo(filePath).Name;
+                    string fileExtension = new DirectoryInfo(filePath).Extension;
 
-                    //Making sure we only grab scene files or their serttings
-                    if (fileName.Contains(".unity") || fileName.Contains(".json"))
+                    //Making sure we aren't grabbing unity generated files
+                    if (fileExtension != ".meta")
                     {
-                        //Making sure we aren't grabbing unity generated files
-                        if (!fileName.Contains(".meta"))
+                        //Actions based on file extension
+                        switch (fileExtension)
                         {
-                            if (fileName.Contains(".unity"))
-                            {
+                            case ".unity":
                                 PopulateRoomList(fileName);
-                            }
-                            if (fileName.Contains(".json"))
-                            {
+                                break;
+                            case ".asset":
                                 GrabRoomSettings(filePath);
-                            }
+                                break;
+                            //case ".json":
+                            //    GrabRoomSettings(filePath);
+                            //    break;
+                            default: break;
                         }
                     }
                 }
@@ -78,12 +84,16 @@ public class GrabScenes : MonoBehaviour
     }
 
     //This populates the list of scriptable objects attached to rooms.
-    public void GrabRoomSettings(string path)
+    public void GenerateRoomSettingsJson(string path)
     {
         //Grabbing settings from path
         using (StreamReader stream = new StreamReader(path))
         {
             string jsonFile = stream.ReadToEnd();
+
+            //From JsonUtility Documentation:
+            //When writing to a Scriptabe Object or Class use FromJsonOverwrite()
+            //Works same as FromJson()
             JsonUtility.FromJsonOverwrite(jsonFile, current);
         }
 
@@ -104,5 +114,17 @@ public class GrabScenes : MonoBehaviour
                 roomSettings.Add(room, jsonData);
             }
         }
+    }
+
+    //Grab settings from scriptable object file
+    public void GrabRoomSettings(string path)
+    {
+        path = Path.GetFullPath(path);
+        path = path.Replace(@"\", "/");
+        string toBeSearched = "/Assets/";
+        string pathFix = "Assets/" + path.Substring(path.LastIndexOf(toBeSearched) + toBeSearched.Length);
+
+        Room roomSettings = (Room)AssetDatabase.LoadAssetAtPath(pathFix, typeof(Room));
+        roomSO = roomSettings;
     }
 }

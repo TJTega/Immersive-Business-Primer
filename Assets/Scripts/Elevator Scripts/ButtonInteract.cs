@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class ButtonInteract : MonoBehaviour, IInteractable
 {
     //This id represents the position in the 'ElevatorButtons._instance.buttons' list
@@ -19,5 +19,6 @@ public class ButtonInteract : MonoBehaviour, IInteractable
         if (ElevatorButtons._instance.buttons[id].OnButtonPress != null)
             ElevatorButtons._instance.buttons[id].OnButtonPress.Invoke();
         Debug.Log(ElevatorButtons._instance.buttons[id].OnButtonPress);
+        DOTween.Play("Elevator");
     } 
 }

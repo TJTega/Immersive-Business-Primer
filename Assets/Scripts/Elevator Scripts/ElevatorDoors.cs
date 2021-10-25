@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using DG.Tweening;
 public class ElevatorDoors : MonoBehaviour
 {
-    public Animator animL;
-    public Animator animR;
-    public bool doorOpen = false;
+    public DOTweenAnimation animL;
+    public DOTweenAnimation animR;
+   private bool doorOpen = false;
 
-    public UnityAction OnDoorClose;
+    public UnityEvent onDoorClose;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("inininiinin");
+        Debug.Log(other.name);
         OpenDoor();
     }
 
@@ -25,19 +25,22 @@ public class ElevatorDoors : MonoBehaviour
     [ContextMenu("Open")]
     public void OpenDoor()
     {
-        animL.SetBool("IsDoorOpen", true);
-        animR.SetBool("IsDoorOpen", true);
+       
+        animL.DOPlayForward();
+        animR.DOPlayForward();
         doorOpen = true;
+     
     }
 
     [ContextMenu("Close")]
     public void CloseDoor()
     {
-        animL.SetBool("IsDoorOpen", false);
-        animR.SetBool("IsDoorOpen", false);
+        animL.DOPlayBackwards();
+        animR.DOPlayBackwards();
         doorOpen = false;
+      
 
-        if (doorOpen == false && OnDoorClose != null)
-            OnDoorClose.Invoke();
+        if (doorOpen == false && onDoorClose != null)
+            onDoorClose.Invoke();
     }
 }

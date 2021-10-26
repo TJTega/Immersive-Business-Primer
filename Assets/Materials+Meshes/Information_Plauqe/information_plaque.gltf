@@ -1,0 +1,201 @@
+{
+    "asset": {
+        "copyright": "(C)2021 EL230718",
+        "generator": "maya2glTF v1.4.0 3d7ba8eaf03e",
+        "version": "2.0"
+    },
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0,
+    "nodes": [
+        {
+            "name": "information_plaque",
+            "children": [
+                1
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                4.0
+            ]
+        },
+        {
+            "name": "information_plaque:PIV",
+            "mesh": 0,
+            "translation": [
+                0.0,
+                0.0,
+                -4.0
+            ]
+        }
+    ],
+    "meshes": [
+        {
+            "name": "information_plaqueShape",
+            "extras": {
+                "targetNames": []
+            },
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 2,
+                        "TANGENT": 3,
+                        "TEXCOORD_0": 4
+                    },
+                    "indices": 0,
+                    "mode": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "blinn13",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "accessors": [
+        {
+            "name": "information_plaqueShape#0/indices",
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 558,
+            "max": [
+                119
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "information_plaqueShape#0/vertices/NORMAL",
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                1.0,
+                1.0,
+                0.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "information_plaqueShape#0/vertices/POSITION",
+            "bufferView": 1,
+            "byteOffset": 1440,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                43.32990264892578,
+                26.95144653320313,
+                4.0
+            ],
+            "min": [
+                -43.32989501953125,
+                -26.95144653320313,
+                0.968658447265625
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "information_plaqueShape#0/vertices/TANGENT",
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                0.5410390496253967,
+                1.0,
+                0.999872386455536,
+                1.0
+            ],
+            "min": [
+                -0.514015257358551,
+                0.0,
+                -0.9998738765716552,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "information_plaqueShape#0/vertices/TEXCOORD_0",
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                0.6439564228057861,
+                1.0003154277801514
+            ],
+            "min": [
+                -1.499999946474873e-8,
+                0.0005354289896786213
+            ],
+            "type": "VEC2"
+        }
+    ],
+    "bufferViews": [
+        {
+            "name": "information_plaque/data/indices-2",
+            "buffer": 0,
+            "byteOffset": 5760,
+            "byteLength": 1116,
+            "target": 34963
+        },
+        {
+            "name": "information_plaque/data/vertices-12",
+            "buffer": 0,
+            "byteOffset": 1920,
+            "byteLength": 2880,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "name": "information_plaque/data/vertices-16",
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 1920,
+            "byteStride": 16,
+            "target": 34962
+        },
+        {
+            "name": "information_plaque/data/vertices-8",
+            "buffer": 0,
+            "byteOffset": 4800,
+            "byteLength": 960,
+            "byteStride": 8,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "name": "information_plaque/data",
+            "byteLength": 6876,
+            "uri": "information_plaque0.bin"
+        }
+    ]
+}

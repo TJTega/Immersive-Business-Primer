@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class GrabScenes : MonoBehaviour
 {
     //Reference to room scriptable object
-    Room current;
     Room roomSO;
 
     //This gets the folder structure to /Assets/
@@ -19,7 +18,7 @@ public class GrabScenes : MonoBehaviour
 
     //List of discovered rooms and list of discovered settings
     public List<string> roomList;
-    public List<string> settingsList;
+    public List<Room> settingsList;
 
     //Dictionary key = room name, value back = settings
     public Dictionary<string, string> roomSettings = new Dictionary<string, string>();
@@ -28,8 +27,7 @@ public class GrabScenes : MonoBehaviour
 
     void Start()
     {
-        current = ScriptableObject.CreateInstance("Room") as Room;
-        //Testing = ScriptableObject.CreateInstance("Room") as Room;
+        //current = ScriptableObject.CreateInstance("Room") as Room;
         m_Path = Application.dataPath;
 
         DirSearch(m_Path + defaultPath);
@@ -60,9 +58,6 @@ public class GrabScenes : MonoBehaviour
                             case ".asset":
                                 GrabRoomSettings(filePath);
                                 break;
-                            //case ".json":
-                            //    GrabRoomSettings(filePath);
-                            //    break;
                             default: break;
                         }
                     }
@@ -83,35 +78,18 @@ public class GrabScenes : MonoBehaviour
         roomList.Add(roomName);
     }
 
-    //This populates the list of scriptable objects attached to rooms.
-    public void GenerateRoomSettingsJson(string path)
-    {
-        //Grabbing settings from path
-        using (StreamReader stream = new StreamReader(path))
-        {
-            string jsonFile = stream.ReadToEnd();
-
-            //From JsonUtility Documentation:
-            //When writing to a Scriptabe Object or Class use FromJsonOverwrite()
-            //Works same as FromJson()
-            JsonUtility.FromJsonOverwrite(jsonFile, current);
-        }
-
-        string json = JsonUtility.ToJson(current, true);
-        settingsList.Add(json);
-    }
-
     //This links each room to their Room_Settings.json
     public void LinkRoomsToSettings()
     {
+        //EditorBuildSettings.scenes.
         for (int i = 0; i < settingsList.Count; i++)
         {
-            string jsonData = settingsList[i];
+            //string jsonData = settingsList[i];
             string room = roomList[i];
 
             if (!roomSettings.ContainsKey(room))
             {
-                roomSettings.Add(room, jsonData);
+                //roomSettings.Add(room, jsonData);
             }
         }
     }
@@ -119,12 +97,24 @@ public class GrabScenes : MonoBehaviour
     //Grab settings from scriptable object file
     public void GrabRoomSettings(string path)
     {
-        path = Path.GetFullPath(path);
-        path = path.Replace(@"\", "/");
+        string tempPath = path;
+        //Fixing up the string as LoadAssetPath will only accept "/" (forward slashes) as valid paths
+        tempPath = Path.GetFullPath(path);
+        tempPath = tempPath.Replace(@"\", "/");
         string toBeSearched = "/Assets/";
-        string pathFix = "Assets/" + path.Substring(path.LastIndexOf(toBeSearched) + toBeSearched.Length);
+        string pathFix = "Assets/" + tempPath.Substring(tempPath.LastIndexOf(toBeSearched) + toBeSearched.Length);
 
         Room roomSettings = (Room)AssetDatabase.LoadAssetAtPath(pathFix, typeof(Room));
         roomSO = roomSettings;
+        settingsList.Add(roomSO);
+
+        string json = JsonUtility.ToJson(roomSO, true);
+        GenerateRoomSettingsJson(path, json);
+    }
+
+    //This generates room settings in Json format.
+    public void GenerateRoomSettingsJson(string path, string roomSettings)
+    {
+        File.WriteAllText(path.Replace(".asset", ".json"), roomSettings);
     }
 }

@@ -1,9 +1,9 @@
 {
-  "sceneName": "TestRoom",
-  "displayName": "T",
-  "roomDescription": "Room used for testing file crawler",
-  "tag": "test",
-  "ambience": {
-    "instanceID": 0
-  }
+    "sceneName": "cuck",
+    "displayName": "cuck",
+    "roomDescription": "cuck",
+    "tag": "cuck",
+    "ambience": {
+        "instanceID": 31046
+    }
 }

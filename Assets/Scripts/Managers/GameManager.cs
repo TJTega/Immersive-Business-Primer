@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         floorManager.overheadsObject = floor.overheads;
         floorManager.subsceneAssets = floor.subsceneAssets;
         floorManager.rooms = floor.rooms;
-
+        floorManager.doorsObject = floor.doors;
         //Initialise floor
         floorManager.Setup();
     }

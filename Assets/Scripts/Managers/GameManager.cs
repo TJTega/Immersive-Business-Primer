@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
 
     public ElevatorButtons elevator;
-    public ElevatorDoors doors;
 
     public List<Floor> floors;
 
@@ -44,17 +43,12 @@ public class GameManager : MonoBehaviour
 
     private void StartLoadFloor(Floor floor)
     {
-        //Closes door and starts to load the floor
-        doors.CloseDoor();
-        //doors.OnDoorClose += (() => StartCoroutine(LoadFloor(floor)));
         StartCoroutine(LoadFloor(floor));
     }
 
     private IEnumerator LoadFloor(Floor floor)
     {
         yield return null;
-
-        
 
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
@@ -81,9 +75,9 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Lobby");
         }
-        if (SceneManager.GetSceneByName("Tutorial").isLoaded)
+        if (SceneManager.GetSceneByName("MakingItPretty").isLoaded)
         {
-            SceneManager.UnloadSceneAsync("Tutorial");
+            SceneManager.UnloadSceneAsync("MakingItPretty");
         }
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
@@ -108,9 +102,5 @@ public class GameManager : MonoBehaviour
 
         //Initialise floor
         floorManager.Setup();
-
-        //Open doors
-        doors.OpenDoor();
     }
-
 }

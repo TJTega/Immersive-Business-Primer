@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.UI;
+using TMPro;
 public class PointAdjustment : MonoBehaviour
 {
     private int pointCounter = 0;
     public Collider physicalTop;
     public Collider physicalBottom;
     public Virtual_Floor_Alignment floorAlignment;
-    public Text debugText;
+    public TextMeshProUGUI debugText;
     private bool pointsAdjusted= false;
     bool TryGetControllerPosition(out Vector3 position)
     {

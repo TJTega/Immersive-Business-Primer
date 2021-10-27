@@ -342,10 +342,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3147378904e39094bb6c5f2251a5abb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorName: First Floor
-  ceilingMat: {fileID: 2100000, guid: 3f7ed2324757b254eb1a52b0c5752919, type: 2}
-  wallMat: {fileID: 2100000, guid: 6393d284ccd219b4cb1606c14ae095d9, type: 2}
-  floorMat: {fileID: 2100000, guid: fcf815a2f724ab042b199bbd6b60622f, type: 2}
+  floorName: 
+  ceilingMat: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
+  wallMat: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
+  floorMat: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
   skirtingObject: {fileID: 0}
   overheadsObject: {fileID: 0}
   subsceneAssets: {fileID: 0}
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd5bf41b7daad543a8fac3f69a7b6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 11400000, guid: 2cb5ff6b70e4e2a449f3c9884a137d96, type: 2}
+  floor: {fileID: 11400000, guid: 4418a402dd5413d4ba1c45edf7912247, type: 2}
   floorManager: {fileID: 540940006}
 --- !u!1 &1116701631
 GameObject:

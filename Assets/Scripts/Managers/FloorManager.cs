@@ -37,6 +37,9 @@ public class FloorManager : MonoBehaviour
     public GameObject subsceneAssets;
     [HideInInspector]
     public Rooms rooms;
+    [HideInInspector]
+    public GameObject doorsObject;
+    
 
     ///<summary>This struct holds the data for all relevant floor mesh renderers</summary>
     public FloorMeshRenderers renderers;
@@ -47,6 +50,7 @@ public class FloorManager : MonoBehaviour
     private GameObject skirting;
     private GameObject overhead;
     private GameObject subscene;
+    private GameObject doors;
 
     // Start is called before the first frame update
     public void Setup()
@@ -92,6 +96,15 @@ public class FloorManager : MonoBehaviour
         else
         {
             DestroyImmediate(subscene);
+        }
+        if (doorsObject != null)
+        {
+            DestroyImmediate(doors);
+            doors = Instantiate(doorsObject, centerAnchor, false);
+        }
+        else
+        {
+            DestroyImmediate(doors);
         }
 
         //Holds unimplemented code for loading room scenes and signs on floor

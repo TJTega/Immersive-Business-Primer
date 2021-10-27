@@ -40,7 +40,7 @@ public class Floor : ScriptableObject
 
     ///<summary>This is a scriptable object holding general assets for floors</summary>
     public GameObject subsceneAssets;
-
+    public GameObject doors;
     ///<summary>Class containing left, back and right rooms</summary>
     public Rooms rooms;
 }

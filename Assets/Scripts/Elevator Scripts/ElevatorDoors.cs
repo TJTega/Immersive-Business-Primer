@@ -11,6 +11,8 @@ public class ElevatorDoors : MonoBehaviour
 
     public UnityEvent onDoorClose;
 
+    public AudioSource doorsOpen;
+    public AudioSource doorsClosed;
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
@@ -29,7 +31,7 @@ public class ElevatorDoors : MonoBehaviour
         animL.DOPlayForward();
         animR.DOPlayForward();
         doorOpen = true;
-     
+        doorsOpen.Play();
     }
 
     [ContextMenu("Close")]
@@ -38,7 +40,7 @@ public class ElevatorDoors : MonoBehaviour
         animL.DOPlayBackwards();
         animR.DOPlayBackwards();
         doorOpen = false;
-      
+        doorsClosed.Play();
 
         if (doorOpen == false && onDoorClose != null)
             onDoorClose.Invoke();

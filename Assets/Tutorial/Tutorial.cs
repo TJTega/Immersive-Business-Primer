@@ -60,17 +60,24 @@ public class Tutorial : MonoBehaviour
     {
         if (other.tag == "Player" )
         {
-            Invoke("StopAllAudio", 0);
-            fade.SetParameters(true, -1);
-            StartCoroutine("StartAudio");
+            if (playAvailable == false)
+            {
+                Invoke("StopAllAudio", 0);
+                fade.SetParameters(true, -1);
+                StartCoroutine("StartAudio");
+            }
         }
     }
     IEnumerator StartAudio()
     {
-        yield return new WaitForSeconds(.2f);
-        subtitleText.text = subtitleLine;
-        fade.SetParameters(true, 1);
-        tutorialAudio.Play();
+        
+        
+            yield return new WaitForSeconds(.2f);
+            subtitleText.text = subtitleLine;
+            fade.SetParameters(true, 1);
+            tutorialAudio.Play();
+            playAvailable = true;
+        
     }
 
     void Awake()

@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevator: {fileID: 1894980704}
-  doors: {fileID: 1707970755}
   floors:
   - {fileID: 11400000, guid: 614509fa4695d1d47962a392bebdf0f9, type: 2}
   - {fileID: 11400000, guid: 2fed7d1833dd7ac4797a8ec11b2e0dd3, type: 2}
@@ -2589,7 +2588,7 @@ MonoBehaviour:
   virtualBottom: {fileID: 1446600548}
   cube: {fileID: 1309913464}
   pointAdjustment: {fileID: 1884632580}
-  debugText: {fileID: 1609814244}
+  debugText: {fileID: 0}
 --- !u!1 &1397807610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,9 +3273,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76f903307d678b40bde81b535615905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animL: {fileID: 6844658935502170010}
-  animR: {fileID: 3054041716161288717}
-  doorOpen: 0
+  animL: {fileID: 0}
+  animR: {fileID: 0}
+  onDoorClose:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1707970756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3792,7 +3793,7 @@ MonoBehaviour:
   physicalTop: {fileID: 338697144}
   physicalBottom: {fileID: 1740054220}
   floorAlignment: {fileID: 1377368206}
-  debugText: {fileID: 1609814244}
+  debugText: {fileID: 0}
 --- !u!1 &1894980702
 GameObject:
   m_ObjectHideFlags: 0

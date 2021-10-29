@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this);
         }
+        SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
         LoadButtons();
     }
 

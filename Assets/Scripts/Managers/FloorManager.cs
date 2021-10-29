@@ -18,7 +18,7 @@ public class FloorMeshRenderers
 public class FloorManager : MonoBehaviour
 {
     //Data for loading room signs and scenes in floor
-    //public AutoSceneLoader[] sceneLoaders = new AutoSceneLoader[3];
+    public ScenePartLoader[] portals = new ScenePartLoader[3];
     //public AutoSignLoader[] signs = new AutoSignLoader[3];
 
     [HideInInspector]
@@ -108,15 +108,27 @@ public class FloorManager : MonoBehaviour
         }
 
         //Holds unimplemented code for loading room scenes and signs on floor
-        //foreach (var sceneLoader in sceneLoaders)
-        //{
-        //    sceneLoader.worlds = worlds;
-        //    sceneLoader.Setup();
-        //}
+        SceneSetup();
+
         //foreach (var signLoader in signs)
         //{
         //    signLoader.worlds = worlds;
         //    signLoader.LoadSign();
         //}
+    }
+
+    public void SceneSetup()
+    {
+        foreach (var portal in portals)
+        {
+            portal.forwardManager.ScenesToLoad.Clear();
+            portal.backwardManager.ScenesToUnload.Clear();
+        }
+        portals[0].forwardManager.ScenesToLoad.Add(rooms.leftRoom.sceneName);
+        portals[1].forwardManager.ScenesToLoad.Add(rooms.backRoom.sceneName);
+        portals[2].forwardManager.ScenesToLoad.Add(rooms.rightRoom.sceneName);
+        portals[0].backwardManager.ScenesToUnload.Add(rooms.leftRoom.sceneName);
+        portals[1].backwardManager.ScenesToUnload.Add(rooms.backRoom.sceneName);
+        portals[2].backwardManager.ScenesToUnload.Add(rooms.rightRoom.sceneName);
     }
 }

@@ -7,9 +7,9 @@ public class ElevatorDoors : MonoBehaviour
 {
     public DOTweenAnimation animL;
     public DOTweenAnimation animR;
-   private bool doorOpen = false;
+    public bool doorOpen = false;
 
-    public UnityEvent onDoorClose;
+    public UnityAction onDoorClose;
 
     public AudioSource doorsOpen;
     public AudioSource doorsClosed;

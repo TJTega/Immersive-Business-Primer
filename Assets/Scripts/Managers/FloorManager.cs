@@ -108,7 +108,7 @@ public class FloorManager : MonoBehaviour
         }
 
         //Holds unimplemented code for loading room scenes and signs on floor
-        SceneSetup();
+        //SceneSetup();
 
         //foreach (var signLoader in signs)
         //{

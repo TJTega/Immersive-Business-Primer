@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager _instance;
 
     public ElevatorButtons elevator;
+
+    public ElevatorDoors elevatorDoors;
 
     public List<Floor> floors;
 
@@ -44,12 +47,26 @@ public class GameManager : MonoBehaviour
 
     private void StartLoadFloor(Floor floor)
     {
-        StartCoroutine(LoadFloor(floor));
+        //Code to make doors shut every time the button is pressed
+        if (elevatorDoors.doorOpen)
+        {
+            elevatorDoors.CloseDoor();
+            elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor));
+
+            Debug.Log("Been Called Open");
+        }
+        else
+        {
+            StartCoroutine(LoadFloor(floor));
+            Debug.Log("Been Called Closed");
+        }
+        Debug.Log(elevatorDoors.onDoorClose);
     }
 
     private IEnumerator LoadFloor(Floor floor)
     {
-        yield return null;
+        //Temporary commenting for testing with play elevator animation
+        //DOTween.Play("Elevator");
 
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
@@ -103,5 +120,10 @@ public class GameManager : MonoBehaviour
         floorManager.doorsObject = floor.doors;
         //Initialise floor
         floorManager.Setup();
+
+        //Trying to get elevator animations working
+
+        //elevatorDoors.onDoorClose = null;
+        elevatorDoors.OpenDoor();
     }
 }

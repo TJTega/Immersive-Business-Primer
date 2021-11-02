@@ -27,7 +27,6 @@ public class ElevatorDoors : MonoBehaviour
     [ContextMenu("Open")]
     public void OpenDoor()
     {
-       
         animL.DOPlayForward();
         animR.DOPlayForward();
         doorOpen = true;

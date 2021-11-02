@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevator: {fileID: 1894980704}
+  elevatorDoors: {fileID: 0}
   floors:
   - {fileID: 11400000, guid: 2fed7d1833dd7ac4797a8ec11b2e0dd3, type: 2}
   - {fileID: 11400000, guid: 2cb5ff6b70e4e2a449f3c9884a137d96, type: 2}
@@ -2083,9 +2084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animL: {fileID: 0}
   animR: {fileID: 0}
-  onDoorClose:
-    m_PersistentCalls:
-      m_Calls: []
+  doorOpen: 0
+  doorsOpen: {fileID: 0}
+  doorsClosed: {fileID: 0}
 --- !u!65 &1707970756
 BoxCollider:
   m_ObjectHideFlags: 0

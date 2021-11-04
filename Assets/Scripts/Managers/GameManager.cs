@@ -47,26 +47,32 @@ public class GameManager : MonoBehaviour
 
     private void StartLoadFloor(Floor floor)
     {
+        //Debug.Log(floor.name);
         //Code to make doors shut every time the button is pressed
         if (elevatorDoors.doorOpen)
         {
-            elevatorDoors.CloseDoor();
-            elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor));
-
             Debug.Log("Been Called Open");
+            elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 4f));
+            elevatorDoors.CloseDoor();
         }
         else
         {
-            StartCoroutine(LoadFloor(floor));
             Debug.Log("Been Called Closed");
+            StartCoroutine(LoadFloor(floor));
         }
-        Debug.Log(elevatorDoors.onDoorClose);
     }
 
-    private IEnumerator LoadFloor(Floor floor)
+    private IEnumerator LoadFloor(Floor floor, float waitForSeconds = 0f)
     {
         //Temporary commenting for testing with play elevator animation
-        //DOTween.Play("Elevator");
+        Debug.Log("Loading Floor");
+        ////DOTween.Play("Elevator");
+
+
+        //Temporary fix for doors closing and instantly opening
+        //TODO: Wait for elevator animation to stop playing, then open doors.
+        yield return new WaitForSeconds(waitForSeconds);
+
 
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
@@ -97,10 +103,12 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("MakingItPretty");
         }
+
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
         FloorManager floorManager = floorManagerObject.GetComponent<FloorManager>();
 
+        #region Floor manager settings
         //Pass data into floor manager script
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
@@ -120,10 +128,10 @@ public class GameManager : MonoBehaviour
         floorManager.doorsObject = floor.doors;
         //Initialise floor
         floorManager.Setup();
+        #endregion
 
         //Trying to get elevator animations working
-
-        //elevatorDoors.onDoorClose = null;
         elevatorDoors.OpenDoor();
+        elevatorDoors.onDoorClose = null;
     }
 }

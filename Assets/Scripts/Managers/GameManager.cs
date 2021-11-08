@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("Been Called Closed");
+            elevatorDoors.ElevatorMove();
             StartCoroutine(LoadFloor(floor));
         }
     }
@@ -131,7 +132,7 @@ public class GameManager : MonoBehaviour
         #endregion
 
         //Trying to get elevator animations working
-        elevatorDoors.OpenDoor();
+        elevatorDoors.ElevatorMove();
         elevatorDoors.onDoorClose = null;
     }
 }

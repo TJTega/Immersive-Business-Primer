@@ -7,12 +7,14 @@ public class ElevatorDoors : MonoBehaviour
 {
     public DOTweenAnimation animL;
     public DOTweenAnimation animR;
+    public DOTweenAnimation elevatorMovingAnim;
     public bool doorOpen = false;
 
     public UnityAction onDoorClose;
 
     public AudioSource doorsOpen;
     public AudioSource doorsClosed;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
@@ -22,13 +24,15 @@ public class ElevatorDoors : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         CloseDoor();
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 
     [ContextMenu("Open")]
     public void OpenDoor()
     {
         Debug.Log("Opening Doors");
-
+        animL.DORewind();
+        animR.DORewind();
         animL.DOPlayForward();
         animR.DOPlayForward();
         doorOpen = true;
@@ -43,6 +47,21 @@ public class ElevatorDoors : MonoBehaviour
         animR.DOPlayBackwards();
         doorOpen = false;
         doorsClosed.Play();
+
+        if (onDoorClose != null)
+        {
+            Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+            s.Complete();
+        }
+    }
+    [ContextMenu("ElevatorMove")]
+    public void ElevatorMove()
+    {
+        Debug.Log("Elevator is Moving");
+        elevatorMovingAnim.DOPlayForward();
+        elevatorMovingAnim.DOPlayForward();
+        doorOpen = true;
+       
 
         if (onDoorClose != null)
         {

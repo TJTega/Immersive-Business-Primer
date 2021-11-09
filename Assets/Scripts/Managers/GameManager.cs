@@ -100,9 +100,9 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Lobby");
         }
-        if (SceneManager.GetSceneByName("MakingItPretty").isLoaded)
+        if (SceneManager.GetSceneByName("Sound").isLoaded)
         {
-            SceneManager.UnloadSceneAsync("MakingItPretty");
+            SceneManager.UnloadSceneAsync("Sound");
         }
 
         //Find the floorManager Script

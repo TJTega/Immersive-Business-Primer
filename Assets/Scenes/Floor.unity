@@ -305,7 +305,7 @@ MonoBehaviour:
   overheadsObject: {fileID: 0}
   subsceneAssets: {fileID: 0}
   rooms:
-    leftRoom: {fileID: 0}
+    leftRoom: {fileID: 11400000, guid: d3225a45bf2767f4983625ee37c39eda, type: 2}
     backRoom: {fileID: 0}
     rightRoom: {fileID: 0}
   doorsObject: {fileID: 0}

@@ -68,43 +68,43 @@ public class FloorManager : MonoBehaviour
         //Overwrites skirting object, deletes if not set
         if (skirtingObject != null)
         {
-            DestroyImmediate(skirting);
+            Destroy(skirting);
             skirting = Instantiate(skirtingObject, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(skirting);
+            Destroy(skirting);
         }
 
         //Overwrites overhead object, deletes if not set
         if (overheadsObject != null)
         {
-            DestroyImmediate(overhead);
+            Destroy(overhead);
             overhead = Instantiate(overheadsObject, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(overhead);
+            Destroy(overhead);
         }
 
         //Overwrites subscene object, deletes if not set
         if (subsceneAssets != null)
         {
-            DestroyImmediate(subscene);
+            Destroy(subscene);
             subscene = Instantiate(subsceneAssets, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(subscene);
+            Destroy(subscene);
         }
         if (doorsObject != null)
         {
-            DestroyImmediate(doors);
+            Destroy(doors);
             doors = Instantiate(doorsObject, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(doors);
+            Destroy(doors);
         }
 
         //Holds unimplemented code for loading room scenes and signs on floor

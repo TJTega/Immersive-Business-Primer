@@ -27,7 +27,8 @@ public class ElevatorDoors : MonoBehaviour
     [ContextMenu("Open")]
     public void OpenDoor()
     {
-       
+        Debug.Log("Opening Doors");
+
         animL.DOPlayForward();
         animR.DOPlayForward();
         doorOpen = true;
@@ -37,12 +38,16 @@ public class ElevatorDoors : MonoBehaviour
     [ContextMenu("Close")]
     public void CloseDoor()
     {
+        Debug.Log("Closing Doors");
         animL.DOPlayBackwards();
         animR.DOPlayBackwards();
         doorOpen = false;
         doorsClosed.Play();
 
-        if (doorOpen == false && onDoorClose != null)
-            onDoorClose.Invoke();
+        if (onDoorClose != null)
+        {
+            Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+            s.Complete();
+        }
     }
 }

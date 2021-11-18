@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
+    public SceneAsset lobbyScene;
+
     public static GameManager _instance;
 
     public ElevatorButtons elevator;
@@ -32,6 +35,20 @@ public class GameManager : MonoBehaviour
 
     private void LoadButtons()
     {
+        EButton lobbyButton = new EButton();
+        lobbyButton.active = true;
+        lobbyButton.OnButtonPress = () => 
+        {
+            if (!SceneManager.GetSceneByName(lobbyScene.name).isLoaded)
+            {
+                SceneManager.LoadSceneAsync(lobbyScene.name);
+            }
+            if (!SceneManager.GetSceneByName("Lighting").isLoaded)
+            {
+                SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+            }
+        };
+        elevator.buttons.Add(lobbyButton);
         //Grabs the data from each element in the floors list
         foreach (var floor in floors)
         {

@@ -1,35 +1,30 @@
-﻿using System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [Serializable]
-public class SceneLoadManager
+public class SceneLoadManager2
 {
     public List<string> ScenesToLoad;
     public List<string> ScenesToUnload;
 }
-public class ScenePartLoader : MonoBehaviour
+public class TriggerRoom : MonoBehaviour
 {
-    public SceneLoadManager forwardManager;
-    public SceneLoadManager backwardManager;
+    SceneLoadManager2 manager;
+    public bool load = true;
+    public SceneLoadManager2 forwardManager;
+    public SceneLoadManager2 backwardManager;
 
-    private float dotProduct;
+    public bool loadNewScene = false;
 
     private bool shouldLoad = true;
 
     void LoadScene()
     {
-        SceneLoadManager manager;
-        if (dotProduct > 0)
-        {
-            manager = forwardManager;
-        }
-        else
-        {
-            manager = backwardManager;
-        }
 
+    
         //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
         foreach (var scene in manager.ScenesToLoad)
         {
@@ -39,21 +34,14 @@ public class ScenePartLoader : MonoBehaviour
             }
             Debug.Log("Should be loading");
         }
+
         //We set it to true to avoid loading the scene twice
     }
 
     void UnLoadScene()
     {
-        SceneLoadManager manager;
-        if (dotProduct < 0)
-        {
-            manager = forwardManager;
-        }
-        else
-        {
-            manager = backwardManager;
-        }
-
+       
+        
         foreach (var scene in manager.ScenesToUnload)
         {
             if (SceneManager.GetSceneByName(scene).isLoaded)
@@ -67,41 +55,35 @@ public class ScenePartLoader : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            shouldLoad = true;
-            
+           
+
             TriggerCheck();
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            shouldLoad = false;
-
-            Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
-            dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            Debug.Log(gameObject.name + ": " + dotProduct);
-
-           TriggerCheck();
-        }
-    }
-
+    
+    
+    [ContextMenu("use")]
     void TriggerCheck()
     {
-        //shouldLoad is set from the Trigger methods
-        if (shouldLoad)
+       
+        if (load == true)
         {
-            Debug.Log("LOADING");
+            manager = forwardManager;
             LoadScene();
+
+            UnLoadScene();
         }
         else
         {
-            Debug.Log("UNLOADING");
+            manager = backwardManager;
+            LoadScene();
+           
             UnLoadScene();
         }
+        //shouldLoad is set from the Trigger methods
+        
+        
     }
-
-
 
 }

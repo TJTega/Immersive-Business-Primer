@@ -19,7 +19,7 @@ public class FloorManager : MonoBehaviour
 {
     //Data for loading room signs and scenes in floor
     public ScenePartLoader[] portals = new ScenePartLoader[3];
-    //public AutoSignLoader[] signs = new AutoSignLoader[3];
+    public TriggerRoom[] portals2 = new TriggerRoom[3];
 
     [HideInInspector]
     public string floorName = "";
@@ -107,28 +107,42 @@ public class FloorManager : MonoBehaviour
             Destroy(doors);
         }
 
-        //Holds unimplemented code for loading room scenes and signs on floor
-        //SceneSetup();
+        //holds unimplemented code for loading room scenes and signs on floor
+        SceneSetup();
 
-        //foreach (var signLoader in signs)
+        //foreach (var signloader in signs)
         //{
-        //    signLoader.worlds = worlds;
-        //    signLoader.LoadSign();
+        //    signloader.worlds = worlds;
+        //    signloader.loadsign();
         //}
     }
 
     public void SceneSetup()
     {
-        foreach (var portal in portals)
+        foreach (var portal in portals2)
         {
             portal.forwardManager.ScenesToLoad.Clear();
             portal.backwardManager.ScenesToUnload.Clear();
         }
-        portals[0].forwardManager.ScenesToLoad.Add(rooms.leftRoom.sceneName);
-        portals[1].forwardManager.ScenesToLoad.Add(rooms.backRoom.sceneName);
-        portals[2].forwardManager.ScenesToLoad.Add(rooms.rightRoom.sceneName);
-        portals[0].backwardManager.ScenesToUnload.Add(rooms.leftRoom.sceneName);
-        portals[1].backwardManager.ScenesToUnload.Add(rooms.backRoom.sceneName);
-        portals[2].backwardManager.ScenesToUnload.Add(rooms.rightRoom.sceneName);
+        portals2[0].forwardManager.ScenesToLoad.Add(rooms.leftRoom.sceneName);
+        portals2[1].forwardManager.ScenesToLoad.Add(rooms.backRoom.sceneName);
+        portals2[2].forwardManager.ScenesToLoad.Add(rooms.rightRoom.sceneName);
+        portals2[0].backwardManager.ScenesToUnload.Add(rooms.leftRoom.sceneName);
+        portals2[1].backwardManager.ScenesToUnload.Add(rooms.backRoom.sceneName);
+        portals2[2].backwardManager.ScenesToUnload.Add(rooms.rightRoom.sceneName);
     }
+    //public void SceneSetup()
+    //{
+    //    foreach (var portal in portals)
+    //    {
+    //        portal.forwardManager.ScenesToLoad.Clear();
+    //        portal.backwardManager.ScenesToUnload.Clear();
+    //    }
+    //    portals[0].forwardManager.ScenesToLoad.Add(rooms.leftRoom.sceneName);
+    //    portals[1].forwardManager.ScenesToLoad.Add(rooms.backRoom.sceneName);
+    //    portals[2].forwardManager.ScenesToLoad.Add(rooms.rightRoom.sceneName);
+    //    portals[0].backwardManager.ScenesToUnload.Add(rooms.leftRoom.sceneName);
+    //    portals[1].backwardManager.ScenesToUnload.Add(rooms.backRoom.sceneName);
+    //    portals[2].backwardManager.ScenesToUnload.Add(rooms.rightRoom.sceneName);
+    //}
 }

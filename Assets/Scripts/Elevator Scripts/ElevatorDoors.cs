@@ -18,13 +18,19 @@ public class ElevatorDoors : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
-        OpenDoor();
+        if (other.tag == "Player")
+        {
+            OpenDoor();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        CloseDoor();
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        if (other.tag == "Player")
+        {
+            CloseDoor();
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        }
     }
 
     [ContextMenu("Open")]

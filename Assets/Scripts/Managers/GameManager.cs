@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
 
         #region Floor manager settings
         //Pass data into floor manager script
+        floorManager.floorRef = floor.name;
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;

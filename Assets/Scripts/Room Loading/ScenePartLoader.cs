@@ -14,14 +14,14 @@ public class ScenePartLoader : MonoBehaviour
     public SceneLoadManager forwardManager;
     public SceneLoadManager backwardManager;
 
-    private float dotProduct;
+    protected float dotProduct;
 
     private bool shouldLoad = true;
 
     void LoadScene()
     {
         SceneLoadManager manager;
-        if (dotProduct > 0)
+        if (dotProduct < 0)
         {
             manager = forwardManager;
         }
@@ -42,10 +42,10 @@ public class ScenePartLoader : MonoBehaviour
         //We set it to true to avoid loading the scene twice
     }
 
-    void UnLoadScene()
+    protected virtual void UnLoadScene()
     {
         SceneLoadManager manager;
-        if (dotProduct < 0)
+        if (dotProduct > 0)
         {
             manager = forwardManager;
         }
@@ -68,7 +68,11 @@ public class ScenePartLoader : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             shouldLoad = true;
-            
+
+            Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
+            dotProduct = Vector3.Dot(transform.right, pointToPlayer);
+            Debug.Log(gameObject.name + ": " + dotProduct);
+
             TriggerCheck();
         }
     }

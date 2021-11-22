@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ElevatorButtons : MonoBehaviour
 {
-    public static ElevatorButtons _instance;
-
     public List<EButton> buttons = new List<EButton>();
     public GameObject buttonPrefab;
     public Transform root;
@@ -13,18 +11,6 @@ public class ElevatorButtons : MonoBehaviour
     public int columnCount = 2;
 
     private List<GameObject> spawnedButtons = new List<GameObject>();
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
 
     public void CreateButtons()
     {

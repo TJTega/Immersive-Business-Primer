@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
 {
     public SceneAsset lobbyScene;
 
-    public static GameManager _instance;
-
     public ElevatorButtons elevator;
 
     public ElevatorDoors elevatorDoors;
@@ -20,15 +18,6 @@ public class GameManager : MonoBehaviour
     //public Elevator doors;
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
         SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
         LoadButtons();
     }
@@ -39,13 +28,20 @@ public class GameManager : MonoBehaviour
         lobbyButton.active = true;
         lobbyButton.OnButtonPress = () => 
         {
-            if (!SceneManager.GetSceneByName(lobbyScene.name).isLoaded)
+            if (elevatorDoors.doorOpen)
             {
-                SceneManager.LoadSceneAsync(lobbyScene.name);
+                Debug.Log("Been Called Open");
+                elevatorDoors.onDoorClose = () => 
+                {
+                    StartCoroutine(LoadLobby(5f));
+                };
+                elevatorDoors.CloseDoor();
             }
-            if (!SceneManager.GetSceneByName("Lighting").isLoaded)
+            else
             {
-                SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+                Debug.Log("Been Called Closed");
+                elevatorDoors.ElevatorMove();
+                StartCoroutine(LoadLobby(5f));
             }
         };
         elevator.buttons.Add(lobbyButton);
@@ -66,18 +62,38 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log(floor.name);
         //Code to make doors shut every time the button is pressed
-        if (elevatorDoors.doorOpen)
+        if (floor != FloorManager.currentFloor)
         {
-            Debug.Log("Been Called Open");
-            elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 4f));
-            elevatorDoors.CloseDoor();
+            if (elevatorDoors.doorOpen)
+            {
+                Debug.Log("Been Called Open");
+                elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 5f));
+                elevatorDoors.CloseDoor();
+            }
+            else
+            {
+                Debug.Log("Been Called Closed");
+                elevatorDoors.ElevatorMove();
+                StartCoroutine(LoadFloor(floor));
+            }
         }
-        else
+    }
+
+    public IEnumerator LoadLobby(float waitForSeconds = 0f)
+    {
+        yield return new WaitForSeconds(waitForSeconds);
+
+        if (!SceneManager.GetSceneByName(lobbyScene.name).isLoaded)
         {
-            Debug.Log("Been Called Closed");
-            elevatorDoors.ElevatorMove();
-            StartCoroutine(LoadFloor(floor));
+            SceneManager.LoadSceneAsync(lobbyScene.name);
         }
+        if (!SceneManager.GetSceneByName("Lighting").isLoaded)
+        {
+            SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+        }
+
+        elevatorDoors.ElevatorMove();
+        elevatorDoors.onDoorClose = null;
     }
 
     public IEnumerator LoadFloor(Floor floor, float waitForSeconds = 0f)

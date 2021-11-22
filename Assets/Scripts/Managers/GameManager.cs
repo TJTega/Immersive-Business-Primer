@@ -24,14 +24,28 @@ public class GameManager : MonoBehaviour
 
     private void LoadButtons()
     {
+        #region Floor Buttons
+        //Grabs the data from each element in the floors list
+        foreach (var floor in floors)
+        {
+            EButton button = new EButton();
+            button.active = true;
+            Floor temp = floor;
+            button.OnButtonPress = (() => StartLoadFloor(temp));
+            elevator.buttons.Add(button);
+        }
+        #endregion
+
+        #region Lobby Button
+        //Adds the lobby button to elevator buttons
         EButton lobbyButton = new EButton();
         lobbyButton.active = true;
-        lobbyButton.OnButtonPress = () => 
+        lobbyButton.OnButtonPress = () =>
         {
             if (elevatorDoors.doorOpen)
             {
                 Debug.Log("Been Called Open");
-                elevatorDoors.onDoorClose = () => 
+                elevatorDoors.onDoorClose = () =>
                 {
                     StartCoroutine(LoadLobby(5f));
                 };
@@ -45,15 +59,8 @@ public class GameManager : MonoBehaviour
             }
         };
         elevator.buttons.Add(lobbyButton);
-        //Grabs the data from each element in the floors list
-        foreach (var floor in floors)
-        {
-            EButton button = new EButton();
-            button.active = true;
-            Floor temp = floor;
-            button.OnButtonPress = (() => StartLoadFloor(temp));
-            elevator.buttons.Add(button);
-        }
+        #endregion
+
         //initializes the buttons
         elevator.CreateButtons();
     }

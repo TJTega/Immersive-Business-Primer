@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723206092}
   - component: {fileID: 723206094}
-  - component: {fileID: 723206095}
+  - component: {fileID: 723206093}
   m_Layer: 0
   m_Name: Back Door
   m_TagString: RoomEnterB
@@ -155,20 +155,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &723206094
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723206091}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &723206095
+--- !u!114 &723206093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,8 +173,19 @@ MonoBehaviour:
     ScenesToUnload:
     - Floor
   backwardManager:
-    ScenesToLoad:
-    - Floor
+    ScenesToLoad: []
     ScenesToUnload:
     - RoomEnterBack
-  floorRef: 
+--- !u!65 &723206094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723206091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

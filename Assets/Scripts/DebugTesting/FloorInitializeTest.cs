@@ -13,7 +13,7 @@ public class FloorInitializeTest : MonoBehaviour
         //Find the floorManager Script
 
         //Pass data into floor manager script
-        floorManager.floorRef = floor.name;
+        FloorManager.currentFloor = floor;
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;

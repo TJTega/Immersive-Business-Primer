@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class RoomEnterLoader : ScenePartLoader
 {
-    public string floorRef;
     Floor floor;
 
     private void Awake()
     {
-        //floor = Resources.Load($"Floors/{floorRef}") as Floor;
-        //Debug.Log(floor.name);
+        floor = FloorManager.currentFloor;
+        Debug.Log(floor.name);
     }
-    protected override void UnLoadScene()
-    {
-        base.UnLoadScene();
-        if(base.dotProduct < 0)
-        {
 
+    protected override void LoadScene()
+    {
+        base.LoadScene();
+        if (base.dotProduct > 0)
+        {
+            Debug.Log("Going Back");
+
+            GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
+            GameManager manager = gameManagerObject.GetComponent<GameManager>();
+
+            StartCoroutine(manager.LoadFloor(floor));
         }
     }
 }

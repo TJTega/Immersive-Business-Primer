@@ -10,6 +10,6 @@ public class PlayerInfo : MonoBehaviour
     private void Update()
     {
         playerPos = transform.position;
-        Debug.Log(playerPos);
+        //Debug.Log(playerPos);
     }
 }

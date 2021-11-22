@@ -186,8 +186,6 @@ MonoBehaviour:
     ScenesToUnload:
     - Floor
   backwardManager:
-    ScenesToLoad:
-    - Floor
+    ScenesToLoad: []
     ScenesToUnload:
     - RoomEnterLeft
-  floorRef: 

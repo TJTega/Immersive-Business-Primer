@@ -20,8 +20,8 @@ public class FloorManager : MonoBehaviour
     //Data for loading room signs and scenes in floor
     public ScenePartLoader[] portals = new ScenePartLoader[3];
 
-    //[HideInInspector]
-    public string floorRef = "";
+    [HideInInspector]
+    public static Floor currentFloor;
     [HideInInspector]
     public string floorName = "";
     [HideInInspector]

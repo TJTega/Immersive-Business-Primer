@@ -9314,9 +9314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc35c3ba89b50234eb5298f66d0e94a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lobbyScene:
-    _asset: {fileID: 102900000, guid: c39f4bc4d7ecc5341b64002fe7f591af, type: 3}
-    _path: Assets/Scenes/Sound & Animation.unity
+  lobbyScene: Sound & Animation
   elevator: {fileID: 720062364}
   elevatorDoors: {fileID: 1707970755}
   floors:

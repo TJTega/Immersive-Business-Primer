@@ -7,7 +7,8 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public SceneReference lobbyScene;
+    //public SceneReference lobbyScene;
+    public string lobbyScene;
 
     public ElevatorButtons elevator;
 
@@ -90,9 +91,9 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(waitForSeconds);
 
-        if (!SceneManager.GetSceneByName(lobbyScene.GetSceneName()).isLoaded)
+        if (!SceneManager.GetSceneByName(lobbyScene).isLoaded)
         {
-            SceneManager.LoadSceneAsync(lobbyScene.GetSceneName());
+            SceneManager.LoadSceneAsync(lobbyScene);
         }
         if (!SceneManager.GetSceneByName("Lighting").isLoaded)
         {

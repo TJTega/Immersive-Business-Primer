@@ -112,6 +112,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 3539171053413107666}
   activeMat: {fileID: 2100000, guid: 35a195477c51b954bbb01f9145a18e2e, type: 2}
   inactiveMat: {fileID: 2100000, guid: 1bf368de09d7a5a4fa60add79debd787, type: 2}
+  interactable: {fileID: 0}
   pressed:
     m_PersistentCalls:
       m_Calls:

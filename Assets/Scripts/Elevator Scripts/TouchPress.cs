@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TouchPress : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class TouchPress : MonoBehaviour
     [ContextMenu("Press")]
     void ButtonPress()
     {
-        pressed.Invoke();
         ButtonActive();
+        pressed.Invoke();
     }
 
     protected void OnTriggerEnter(Collider other)
@@ -35,12 +36,15 @@ public class TouchPress : MonoBehaviour
 
     public void ButtonActive()
     {
-        meshRenderer.materials[1] = activeMat;
+        var mats = meshRenderer.materials;
+        mats[1] = activeMat;
+        meshRenderer.materials = mats;
     }
 
     public void ButtonInactive()
     {
-        meshRenderer.materials[1] = inactiveMat;
+        var mats = meshRenderer.materials;
+        mats[1] = inactiveMat;
+        meshRenderer.materials = mats;
     }
-
 }

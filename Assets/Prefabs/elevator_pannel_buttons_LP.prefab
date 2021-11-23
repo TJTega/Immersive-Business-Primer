@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135a6de7f09abd24daa8ec6690101f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 3539171053413107666}
+  activeMat: {fileID: 2100000, guid: 35a195477c51b954bbb01f9145a18e2e, type: 2}
+  inactiveMat: {fileID: 2100000, guid: 1bf368de09d7a5a4fa60add79debd787, type: 2}
   pressed:
     m_PersistentCalls:
       m_Calls:

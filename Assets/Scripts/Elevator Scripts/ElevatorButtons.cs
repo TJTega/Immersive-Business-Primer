@@ -14,19 +14,6 @@ public class ElevatorButtons : MonoBehaviour
 
     private List<GameObject> spawnedButtons = new List<GameObject>();
 
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
-
     public void CreateButtons()
     {
         int buttonCount = 0;

@@ -89,8 +89,10 @@ public class Tutorial : MonoBehaviour
     {
         foreach (AudioSource audioS in allAudioSources)
         {
+            if (audioS.tag == "TutorialAudio")
+            { 
             audioS.Stop();
             Debug.Log("Stopping Music....");
-        }
+        } }
     }
 }

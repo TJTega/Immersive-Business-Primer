@@ -7000,6 +7000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc35c3ba89b50234eb5298f66d0e94a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lobbyScene: {fileID: 102900000, guid: a47e8425a60bc9c42aab795285199306, type: 3}
   elevator: {fileID: 720062364}
   elevatorDoors: {fileID: 1707970755}
   floors:

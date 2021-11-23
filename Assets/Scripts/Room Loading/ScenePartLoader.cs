@@ -14,11 +14,11 @@ public class ScenePartLoader : MonoBehaviour
     public SceneLoadManager forwardManager;
     public SceneLoadManager backwardManager;
 
-    private float dotProduct;
+    protected float dotProduct;
 
     private bool shouldLoad = true;
 
-    void LoadScene()
+    protected virtual void LoadScene()
     {
         SceneLoadManager manager;
         if (dotProduct < 0)
@@ -35,14 +35,15 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (!SceneManager.GetSceneByName(scene).isLoaded)
             {
+                Debug.Log("FUCK YOU");
                 SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
             }
-            Debug.Log("Should be loading");
+            //Debug.Log("Should be loading");
         }
         //We set it to true to avoid loading the scene twice
     }
 
-    void UnLoadScene()
+    protected virtual void UnLoadScene()
     {
         SceneLoadManager manager;
         if (dotProduct > 0)
@@ -68,6 +69,11 @@ public class ScenePartLoader : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             shouldLoad = true;
+
+            Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
+            dotProduct = Vector3.Dot(transform.right, pointToPlayer);
+            //Debug.Log(gameObject.name + ": " + dotProduct);
+
             TriggerCheck();
         }
     }
@@ -80,9 +86,9 @@ public class ScenePartLoader : MonoBehaviour
 
             Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            Debug.Log(gameObject.name + ": " + dotProduct);
+            //Debug.Log(gameObject.name + ": " + dotProduct);
 
-            TriggerCheck();
+           TriggerCheck();
         }
     }
 
@@ -91,12 +97,12 @@ public class ScenePartLoader : MonoBehaviour
         //shouldLoad is set from the Trigger methods
         if (shouldLoad)
         {
-            Debug.Log("LOADING");
+            //Debug.Log("LOADING");
             LoadScene();
         }
         else
         {
-            Debug.Log("UNLOADING");
+            //Debug.Log("UNLOADING");
             UnLoadScene();
         }
     }

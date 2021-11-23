@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager _instance;
+    //public SceneReference lobbyScene;
+    public string lobbyScene;
 
     public ElevatorButtons elevator;
 
@@ -17,21 +19,13 @@ public class GameManager : MonoBehaviour
     //public Elevator doors;
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
         SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
         LoadButtons();
     }
 
     private void LoadButtons()
     {
+        #region Floor Buttons
         //Grabs the data from each element in the floors list
         foreach (var floor in floors)
         {
@@ -41,6 +35,33 @@ public class GameManager : MonoBehaviour
             button.OnButtonPress = (() => StartLoadFloor(temp));
             elevator.buttons.Add(button);
         }
+        #endregion
+
+        #region Lobby Button
+        //Adds the lobby button to elevator buttons
+        EButton lobbyButton = new EButton();
+        lobbyButton.active = true;
+        lobbyButton.OnButtonPress = () =>
+        {
+            if (elevatorDoors.doorOpen)
+            {
+                Debug.Log("Been Called Open");
+                elevatorDoors.onDoorClose = () =>
+                {
+                    StartCoroutine(LoadLobby(5f));
+                };
+                elevatorDoors.CloseDoor();
+            }
+            else
+            {
+                Debug.Log("Been Called Closed");
+                elevatorDoors.ElevatorMove();
+                StartCoroutine(LoadLobby(5f));
+            }
+        };
+        elevator.buttons.Add(lobbyButton);
+        #endregion
+
         //initializes the buttons
         elevator.CreateButtons();
     }
@@ -49,20 +70,41 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log(floor.name);
         //Code to make doors shut every time the button is pressed
-        if (elevatorDoors.doorOpen)
+        if (floor != FloorManager.currentFloor)
         {
-            Debug.Log("Been Called Open");
-            elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 4f));
-            elevatorDoors.CloseDoor();
-        }
-        else
-        {
-            Debug.Log("Been Called Closed");
-            StartCoroutine(LoadFloor(floor));
+            if (elevatorDoors.doorOpen)
+            {
+                Debug.Log("Been Called Open");
+                elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 5f));
+                elevatorDoors.CloseDoor();
+            }
+            else
+            {
+                Debug.Log("Been Called Closed");
+                elevatorDoors.ElevatorMove();
+                StartCoroutine(LoadFloor(floor));
+            }
         }
     }
 
-    private IEnumerator LoadFloor(Floor floor, float waitForSeconds = 0f)
+    public IEnumerator LoadLobby(float waitForSeconds = 0f)
+    {
+        yield return new WaitForSeconds(waitForSeconds);
+
+        if (!SceneManager.GetSceneByName(lobbyScene).isLoaded)
+        {
+            SceneManager.LoadSceneAsync(lobbyScene);
+        }
+        if (!SceneManager.GetSceneByName("Lighting").isLoaded)
+        {
+            SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
+        }
+
+        elevatorDoors.ElevatorMove();
+        elevatorDoors.onDoorClose = null;
+    }
+
+    public IEnumerator LoadFloor(Floor floor, float waitForSeconds = 0f)
     {
         //Temporary commenting for testing with play elevator animation
         Debug.Log("Loading Floor");
@@ -77,6 +119,7 @@ public class GameManager : MonoBehaviour
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
         {
+            Debug.Log("I'LL LOAD IF I FUCKING WANT TO");
             //Load the scene
             AsyncOperation async = SceneManager.LoadSceneAsync("Floor", LoadSceneMode.Additive);
             //Don't continue until scene is loaded
@@ -99,9 +142,9 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("Lobby");
         }
-        if (SceneManager.GetSceneByName("MakingItPretty").isLoaded)
+        if (SceneManager.GetSceneByName("Sound & Animation").isLoaded)
         {
-            SceneManager.UnloadSceneAsync("MakingItPretty");
+            SceneManager.UnloadSceneAsync("Sound & Animation");
         }
 
         //Find the floorManager Script
@@ -110,6 +153,7 @@ public class GameManager : MonoBehaviour
 
         #region Floor manager settings
         //Pass data into floor manager script
+        FloorManager.currentFloor = floor;
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;
@@ -131,7 +175,7 @@ public class GameManager : MonoBehaviour
         #endregion
 
         //Trying to get elevator animations working
-        elevatorDoors.OpenDoor();
+        elevatorDoors.ElevatorMove();
         elevatorDoors.onDoorClose = null;
     }
 }

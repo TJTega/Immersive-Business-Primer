@@ -13,6 +13,7 @@ public class ElevatorButtons : MonoBehaviour
     public int columnCount = 2;
 
     private List<GameObject> spawnedButtons = new List<GameObject>();
+
     private void Awake()
     {
         if (_instance == null)

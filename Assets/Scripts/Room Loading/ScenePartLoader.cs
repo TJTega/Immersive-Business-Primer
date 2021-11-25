@@ -30,6 +30,7 @@ public class ScenePartLoader : MonoBehaviour
             manager = backwardManager;
         }
 
+
         //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
         foreach (var scene in manager.ScenesToLoad)
         {
@@ -55,11 +56,14 @@ public class ScenePartLoader : MonoBehaviour
             manager = backwardManager;
         }
 
-        foreach (var scene in manager.ScenesToUnload)
+        if (forwardManager.ScenesToLoad != null && forwardManager.ScenesToLoad.Count > 0)
         {
-            if (SceneManager.GetSceneByName(scene).isLoaded)
+            foreach (var scene in manager.ScenesToUnload)
             {
-                SceneManager.UnloadSceneAsync(scene);
+                if (SceneManager.GetSceneByName(scene).isLoaded)
+                {
+                    SceneManager.UnloadSceneAsync(scene);
+                }
             }
         }
     }
@@ -88,7 +92,7 @@ public class ScenePartLoader : MonoBehaviour
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
             //Debug.Log(gameObject.name + ": " + dotProduct);
 
-           TriggerCheck();
+            TriggerCheck();
         }
     }
 

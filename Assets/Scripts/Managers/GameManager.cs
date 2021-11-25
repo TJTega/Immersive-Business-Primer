@@ -119,7 +119,6 @@ public class GameManager : MonoBehaviour
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
         {
-            Debug.Log("I'LL LOAD IF I FUCKING WANT TO");
             //Load the scene
             AsyncOperation async = SceneManager.LoadSceneAsync("Floor", LoadSceneMode.Additive);
             //Don't continue until scene is loaded

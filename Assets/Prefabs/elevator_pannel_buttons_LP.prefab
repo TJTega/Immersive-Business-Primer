@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3539171053413107667}
   - component: {fileID: 3539171053413107666}
   - component: {fileID: 3539171053413107662}
-  - component: {fileID: 3539171053413107665}
+  - component: {fileID: 2909030846988016477}
   - component: {fileID: 3539171053413107664}
   m_Layer: 0
   m_Name: elevator_pannel_buttons_LP
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e89c9fd5296c0540b353802757fd5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3539171053413107665
+--- !u!114 &2909030846988016477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,13 +106,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3539171053413107668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135a6de7f09abd24daa8ec6690101f4d, type: 3}
+  m_Script: {fileID: 11500000, guid: b4aedef29be37f145a33b9321c113b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 3539171053413107666}
-  activeMat: {fileID: 2100000, guid: 35a195477c51b954bbb01f9145a18e2e, type: 2}
-  inactiveMat: {fileID: 2100000, guid: 1bf368de09d7a5a4fa60add79debd787, type: 2}
-  interactable: {fileID: 0}
   pressed:
     m_PersistentCalls:
       m_Calls:
@@ -129,6 +125,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   targetTag: RightPointerCollider
+  meshRenderer: {fileID: 3539171053413107666}
+  activeMat: {fileID: 2100000, guid: 35a195477c51b954bbb01f9145a18e2e, type: 2}
+  inactiveMat: {fileID: 2100000, guid: 1bf368de09d7a5a4fa60add79debd787, type: 2}
 --- !u!64 &3539171053413107664
 MeshCollider:
   m_ObjectHideFlags: 0

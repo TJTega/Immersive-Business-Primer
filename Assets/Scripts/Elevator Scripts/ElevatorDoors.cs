@@ -15,23 +15,10 @@ public class ElevatorDoors : MonoBehaviour
     public AudioSource doorsOpen;
     public AudioSource doorsClosed;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.name);
-        if (other.tag == "Player")
-        {
-            OpenDoor();
-        }
-    }
+   
+    
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            CloseDoor();
-            this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        }
-    }
+    
 
     [ContextMenu("Open")]
     public void OpenDoor()
@@ -54,11 +41,11 @@ public class ElevatorDoors : MonoBehaviour
         doorOpen = false;
         doorsClosed.Play();
 
-        if (onDoorClose != null)
-        {
-            Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
-            s.Complete();
-        }
+        //if (onDoorClose != null)
+        //{
+        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+        //    s.Complete();
+        //}
     }
     [ContextMenu("ElevatorMove")]
     public void ElevatorMove()
@@ -69,10 +56,10 @@ public class ElevatorDoors : MonoBehaviour
         doorOpen = true;
        
 
-        if (onDoorClose != null)
-        {
-            Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
-            s.Complete();
-        }
+        //if (onDoorClose != null)
+        //{
+        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+        //    s.Complete();
+        //}
     }
 }

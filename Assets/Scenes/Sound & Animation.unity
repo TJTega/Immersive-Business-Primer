@@ -9249,7 +9249,7 @@ GameObject:
   - component: {fileID: 919132149588819223}
   m_Layer: 0
   m_Name: elevator_for_unity
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9310,6 +9310,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 335b21343279b4d42a2b6989a487482d, type: 2}
   - {fileID: 11400000, guid: 4ad61455b0db4e546bb0d883c620b6fd, type: 2}
   - {fileID: 11400000, guid: 4418a402dd5413d4ba1c45edf7912247, type: 2}
+  elevatorHolder: {fileID: 1817135271}
 --- !u!1001 &1850942690
 PrefabInstance:
   m_ObjectHideFlags: 0

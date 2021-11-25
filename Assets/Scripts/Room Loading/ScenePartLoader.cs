@@ -17,7 +17,12 @@ public class ScenePartLoader : MonoBehaviour
     protected float dotProduct;
 
     private bool shouldLoad = true;
+    GameObject elevator;
 
+    private void Awake()
+    {
+        elevator = GameObject.FindGameObjectWithTag("Elevator");
+    }
     protected virtual void LoadScene()
     {
         SceneLoadManager manager;
@@ -36,12 +41,22 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (!SceneManager.GetSceneByName(scene).isLoaded)
             {
-                Debug.Log("FUCK YOU");
+                //Debug.Log("FUCK YOU");
                 SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
             }
             //Debug.Log("Should be loading");
         }
         //We set it to true to avoid loading the scene twice
+
+        //Hiding the elevator on room enter
+        if (elevator != null)
+        {
+            Debug.Log("hiding elevator");
+            if (elevator.activeSelf)
+            {
+                elevator.SetActive(false);
+            }
+        }
     }
 
     protected virtual void UnLoadScene()
@@ -65,6 +80,13 @@ public class ScenePartLoader : MonoBehaviour
                     SceneManager.UnloadSceneAsync(scene);
                 }
             }
+        }
+
+        //Showing the elevator on room exit
+        if (elevator != null)
+        {
+            Debug.Log("showing elevator");
+            elevator.SetActive(true);
         }
     }
 
@@ -110,7 +132,4 @@ public class ScenePartLoader : MonoBehaviour
             UnLoadScene();
         }
     }
-
-
-
 }

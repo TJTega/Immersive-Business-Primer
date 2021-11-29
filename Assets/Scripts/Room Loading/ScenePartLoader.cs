@@ -17,12 +17,6 @@ public class ScenePartLoader : MonoBehaviour
     protected float dotProduct;
 
     private bool shouldLoad = true;
-    GameObject elevator;
-
-    private void Awake()
-    {
-        elevator = GameObject.FindGameObjectWithTag("Elevator");
-    }
     protected virtual void LoadScene()
     {
         SceneLoadManager manager;
@@ -41,21 +35,9 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (!SceneManager.GetSceneByName(scene).isLoaded)
             {
-                //Debug.Log("FUCK YOU");
                 SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
             }
             //Debug.Log("Should be loading");
-        }
-        //We set it to true to avoid loading the scene twice
-
-        //Hiding the elevator on room enter
-        if (elevator != null)
-        {
-            Debug.Log("hiding elevator");
-            if (elevator.activeSelf)
-            {
-                elevator.SetActive(false);
-            }
         }
     }
 
@@ -73,20 +55,17 @@ public class ScenePartLoader : MonoBehaviour
 
         if (forwardManager.ScenesToLoad != null && forwardManager.ScenesToLoad.Count > 0)
         {
-            foreach (var scene in manager.ScenesToUnload)
+            if (SceneManager.GetSceneByName(forwardManager.ScenesToLoad[0]).isLoaded)
             {
-                if (SceneManager.GetSceneByName(scene).isLoaded)
+                foreach (var scene in manager.ScenesToUnload)
                 {
-                    SceneManager.UnloadSceneAsync(scene);
+                    if (SceneManager.GetSceneByName(scene).isLoaded)
+                    {
+                        //Debug.Log($"Unloading: {scene}");
+                        SceneManager.UnloadSceneAsync(scene);
+                    }
                 }
             }
-        }
-
-        //Showing the elevator on room exit
-        if (elevator != null)
-        {
-            Debug.Log("showing elevator");
-            elevator.SetActive(true);
         }
     }
 

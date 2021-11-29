@@ -187,8 +187,7 @@ MonoBehaviour:
     - Floor
   backwardManager:
     ScenesToLoad: []
-    ScenesToUnload:
-    - RoomEnterRight
+    ScenesToUnload: []
 --- !u!1 &843237891
 GameObject:
   m_ObjectHideFlags: 0

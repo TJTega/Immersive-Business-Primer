@@ -174,8 +174,7 @@ MonoBehaviour:
     - Floor
   backwardManager:
     ScenesToLoad: []
-    ScenesToUnload:
-    - RoomEnterBack
+    ScenesToUnload: []
 --- !u!65 &723206094
 BoxCollider:
   m_ObjectHideFlags: 0

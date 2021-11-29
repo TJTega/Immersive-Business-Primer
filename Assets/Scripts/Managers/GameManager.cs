@@ -25,24 +25,14 @@ public class GameManager : MonoBehaviour
 
     private void LoadButtons()
     {
-        #region Floor Buttons
-        //Grabs the data from each element in the floors list
-        foreach (var floor in floors)
-        {
-            EButton button = new EButton();
-            button.active = true;
-            Floor temp = floor;
-            button.OnButtonPress = (() => StartLoadFloor(temp));
-            elevator.buttons.Add(button);
-        }
-        #endregion
-
         #region Lobby Button
         //Adds the lobby button to elevator buttons
         EButton lobbyButton = new EButton();
         lobbyButton.active = true;
+        //Sets lobby button action
         lobbyButton.OnButtonPress = () =>
         {
+            //Sets elevator action
             if (elevatorDoors.doorOpen)
             {
                 Debug.Log("Been Called Open");
@@ -62,6 +52,18 @@ public class GameManager : MonoBehaviour
         elevator.buttons.Add(lobbyButton);
         #endregion
 
+        #region Floor Buttons
+        //Grabs the data from each element in the floors list
+        foreach (var floor in floors)
+        {
+            EButton button = new EButton();
+            button.active = true;
+            Floor temp = floor;
+            button.OnButtonPress = (() => StartLoadFloor(temp));
+            elevator.buttons.Add(button);
+        }
+        #endregion
+
         //initializes the buttons
         elevator.CreateButtons();
     }
@@ -72,18 +74,18 @@ public class GameManager : MonoBehaviour
         //Code to make doors shut every time the button is pressed
         if (floor != FloorManager.currentFloor)
         {
+            elevatorDoors.ElevatorMove();
             if (elevatorDoors.doorOpen)
             {
                 Debug.Log("Been Called Open");
-                elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor, 5f));
-                elevatorDoors.CloseDoor();
+                elevatorDoors.onDoorClose = () => StartCoroutine(LoadFloor(floor));
             }
             else
             {
                 Debug.Log("Been Called Closed");
-                elevatorDoors.ElevatorMove();
                 StartCoroutine(LoadFloor(floor));
             }
+
         }
     }
 
@@ -104,17 +106,10 @@ public class GameManager : MonoBehaviour
         elevatorDoors.onDoorClose = null;
     }
 
-    public IEnumerator LoadFloor(Floor floor, float waitForSeconds = 0f)
+    public IEnumerator LoadFloor(Floor floor)
     {
         //Temporary commenting for testing with play elevator animation
         Debug.Log("Loading Floor");
-        ////DOTween.Play("Elevator");
-
-
-        //Temporary fix for doors closing and instantly opening
-        //TODO: Wait for elevator animation to stop playing, then open doors.
-        yield return new WaitForSeconds(waitForSeconds);
-
 
         //If the scene isn't loaded
         if (!SceneManager.GetSceneByName("Floor").isLoaded)
@@ -174,7 +169,7 @@ public class GameManager : MonoBehaviour
         #endregion
 
         //Trying to get elevator animations working
-        elevatorDoors.ElevatorMove();
+        //elevatorDoors.ElevatorMove();
         elevatorDoors.onDoorClose = null;
     }
 }

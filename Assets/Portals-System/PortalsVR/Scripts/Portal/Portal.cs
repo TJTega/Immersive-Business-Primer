@@ -134,7 +134,7 @@ namespace PortalsVR
                 portalInfo[eye].camera.transform.SetPositionAndRotation(renderPositions[i], renderRotations[i]);
 
                 SetNearClipPlane(eye);
-                portalInfo[eye].camera.Render();
+                //portalInfo[eye].camera.Render();
 
                 if (i == startIndex)
                 {

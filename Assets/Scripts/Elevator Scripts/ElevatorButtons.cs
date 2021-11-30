@@ -25,6 +25,9 @@ public class ElevatorButtons : MonoBehaviour
         {
             Destroy(this);
         }
+
+        MeshRenderer mRender = gameObject.GetComponent<MeshRenderer>();
+        mRender.enabled = false;
     }
 
     public void CreateButtons()
@@ -68,7 +71,7 @@ public class ElevatorButtons : MonoBehaviour
             }
 
             //Controls X axis
-            clone.transform.position += (transform.right * (buttonCount % columnCount)) * buttonSpacing.x;
+            clone.transform.position += (-transform.forward * (buttonCount % columnCount)) * buttonSpacing.x;
 
             spawnedButtons.Add(clone);
 

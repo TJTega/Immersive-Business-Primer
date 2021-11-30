@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElevatorButtonPress : TouchPress
+public class TouchPressLightup : TouchPress
 {
     public MeshRenderer meshRenderer;
     public Material activeMat;
@@ -24,6 +24,7 @@ public class ElevatorButtonPress : TouchPress
         }
     }
 
+    [ContextMenu("Set Active Material")]
     public void ButtonActive()
     {
         var mats = meshRenderer.materials;
@@ -31,6 +32,7 @@ public class ElevatorButtonPress : TouchPress
         meshRenderer.materials = mats;
     }
 
+    [ContextMenu("Set Inactive Material")]
     public void ButtonInactive()
     {
         var mats = meshRenderer.materials;

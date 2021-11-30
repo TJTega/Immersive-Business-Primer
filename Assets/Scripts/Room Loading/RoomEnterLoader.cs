@@ -9,7 +9,7 @@ public class RoomEnterLoader : ScenePartLoader
     private void Awake()
     {
         floor = FloorManager.currentFloor;
-        Debug.Log(floor.name);
+        //Debug.Log(floor.name);
     }
 
     protected override void LoadScene()
@@ -17,7 +17,7 @@ public class RoomEnterLoader : ScenePartLoader
         base.LoadScene();
         if (base.dotProduct > 0)
         {
-            Debug.Log("Going Back");
+            //Debug.Log("Going Back");
 
             GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
             GameManager manager = gameManagerObject.GetComponent<GameManager>();

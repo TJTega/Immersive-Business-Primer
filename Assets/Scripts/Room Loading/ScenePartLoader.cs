@@ -17,7 +17,6 @@ public class ScenePartLoader : MonoBehaviour
     protected float dotProduct;
 
     private bool shouldLoad = true;
-
     protected virtual void LoadScene()
     {
         SceneLoadManager manager;
@@ -36,12 +35,10 @@ public class ScenePartLoader : MonoBehaviour
         {
             if (!SceneManager.GetSceneByName(scene).isLoaded)
             {
-                Debug.Log("FUCK YOU");
                 SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
             }
             //Debug.Log("Should be loading");
         }
-        //We set it to true to avoid loading the scene twice
     }
 
     protected virtual void UnLoadScene()
@@ -58,11 +55,15 @@ public class ScenePartLoader : MonoBehaviour
 
         if (forwardManager.ScenesToLoad != null && forwardManager.ScenesToLoad.Count > 0)
         {
-            foreach (var scene in manager.ScenesToUnload)
+            if (SceneManager.GetSceneByName(forwardManager.ScenesToLoad[0]).isLoaded)
             {
-                if (SceneManager.GetSceneByName(scene).isLoaded)
+                foreach (var scene in manager.ScenesToUnload)
                 {
-                    SceneManager.UnloadSceneAsync(scene);
+                    if (SceneManager.GetSceneByName(scene).isLoaded)
+                    {
+                        //Debug.Log($"Unloading: {scene}");
+                        SceneManager.UnloadSceneAsync(scene);
+                    }
                 }
             }
         }
@@ -110,7 +111,4 @@ public class ScenePartLoader : MonoBehaviour
             UnLoadScene();
         }
     }
-
-
-
 }

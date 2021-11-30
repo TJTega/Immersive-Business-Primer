@@ -62,4 +62,10 @@ public class ElevatorDoors : MonoBehaviour
         //    s.Complete();
         //}
     }
+
+    public void OnDoorClose()
+    {
+        Debug.Log("Elevator complete");
+        onDoorClose.Invoke();
+    }
 }

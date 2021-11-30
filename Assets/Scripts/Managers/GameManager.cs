@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         //Adds the lobby button to elevator buttons
         EButton lobbyButton = new EButton();
         lobbyButton.active = true;
+        lobbyButton.floorName = "Reception";
         //Sets lobby button action
         lobbyButton.OnButtonPress = () =>
         {
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviour
             EButton button = new EButton();
             button.active = true;
             Floor temp = floor;
+            button.floorName = floor.floorName;
             button.OnButtonPress = (() => StartLoadFloor(temp));
             elevator.buttons.Add(button);
         }

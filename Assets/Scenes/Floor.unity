@@ -259,13 +259,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardManager:
-    ScenesToLoad: []
+    ScenesToLoad:
+    - RoomEnterBack
+    - 
     ScenesToUnload:
     - Floor
   backwardManager:
     ScenesToLoad:
     - Floor
-    ScenesToUnload: []
+    ScenesToUnload:
+    - RoomEnterBack
+    - 
 --- !u!1 &540940004
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,8 +327,8 @@ MonoBehaviour:
   subsceneAssets: {fileID: 0}
   rooms:
     leftRoom: {fileID: 11400000, guid: d3225a45bf2767f4983625ee37c39eda, type: 2}
-    backRoom: {fileID: 0}
-    rightRoom: {fileID: 0}
+    backRoom: {fileID: 11400000, guid: 6e3a706564825754eb2004fef4e05a47, type: 2}
+    rightRoom: {fileID: 11400000, guid: ba31ab7837e9804419c4bfe23418c46b, type: 2}
   doorsObject: {fileID: 0}
   renderers:
     ceilingRenderer: {fileID: 2777858662546844130}
@@ -347,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd5bf41b7daad543a8fac3f69a7b6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 11400000, guid: 335b21343279b4d42a2b6989a487482d, type: 2}
+  floor: {fileID: 11400000, guid: 4418a402dd5413d4ba1c45edf7912247, type: 2}
   floorManager: {fileID: 540940006}
 --- !u!1001 &783046238
 PrefabInstance:
@@ -586,13 +590,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardManager:
-    ScenesToLoad: []
+    ScenesToLoad:
+    - RoomEnterRight
+    - 
     ScenesToUnload:
     - Floor
   backwardManager:
     ScenesToLoad:
     - Floor
-    ScenesToUnload: []
+    ScenesToUnload:
+    - RoomEnterRight
+    - 
 --- !u!1 &1746543076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 180408928098261640, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
@@ -718,6 +726,7 @@ MonoBehaviour:
   forwardManager:
     ScenesToLoad:
     - RoomEnterLeft
+    - roomscene1
     ScenesToUnload:
     - Floor
   backwardManager:
@@ -725,6 +734,7 @@ MonoBehaviour:
     - Floor
     ScenesToUnload:
     - RoomEnterLeft
+    - roomscene1
 --- !u!4 &543450652331875947
 Transform:
   m_ObjectHideFlags: 0

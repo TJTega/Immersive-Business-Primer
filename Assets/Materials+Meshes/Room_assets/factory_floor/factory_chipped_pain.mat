@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: desk+hanging_light_mat
+  m_Name: factory_chipped_pain
   m_Shader: {fileID: -6465566751694194690, guid: db721b75da0f47f4283e8c34127dc3cb, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
@@ -26,15 +26,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_339e183d96694100b09a980891278096:
-        m_Texture: {fileID: 2800000, guid: 008f6f8214db30c4dbf21996451b07bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 75b1795529f9ee44687cfc726123762c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3c6eec32fe534b05aad449b5e18b340c:
-        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
+        m_Texture: {fileID: 2800000, guid: d28e53d929f8bb443a74000af1245890, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69367b49b0ba468f9353ece2edb65f56:
-        m_Texture: {fileID: 2800000, guid: e676dce0f6224bc4dae9ee5fe876c732, type: 3}
+        m_Texture: {fileID: 2800000, guid: 32c60f63c6694484096f57be8482b407, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6dfcd983caec48219723c3bf3a20a0a1:
@@ -46,11 +46,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_f551fd31300a4fcbb53725d14719939f:
-        m_Texture: {fileID: 2800000, guid: 8ee5e763d3365a442a0e2afa70b6fd48, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ff18b768031a44dbbbde4cb703504e74:
-        m_Texture: {fileID: 2800000, guid: bffb77468dfd02049bc706172330505b, type: 3}
+        m_Texture: {fileID: 2800000, guid: a3f74a76e1a9e984b931cfd3f623e023, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -94,11 +94,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e01877ec7f8bde44495e8d4bbdb75b21, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: e676dce0f6224bc4dae9ee5fe876c732, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -148,7 +148,7 @@ Material:
     m_Floats:
     - Vector1_4183bab0ee454532a120ad199188fa4b: 0
     - Vector1_41a6a4d0fc714f1a8e3e1b62a5dc9869: 1
-    - Vector1_6bd0308cb9c943a4b99bad45205a69fc: 1
+    - Vector1_6bd0308cb9c943a4b99bad45205a69fc: 6.22
     - Vector1_b89d9ebcca8e48f3a838d2c579d788b6: 1
     - Vector1_c0cabb88b2044c9db95e5beb3458dcc4: 0
     - _AORemapMax: 1
@@ -282,7 +282,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8473410351425575793
+--- !u!114 &2759508194459719037
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

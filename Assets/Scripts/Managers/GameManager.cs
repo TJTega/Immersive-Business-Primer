@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEditor;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class GameManager : MonoBehaviour
     public ElevatorDoors elevatorDoors;
 
     public List<Floor> floors;
+
+    public TMP_Text currentFloorText;
 
     //public Elevator doors;
     private void Awake()
@@ -33,21 +37,20 @@ public class GameManager : MonoBehaviour
         //Sets lobby button action
         lobbyButton.OnButtonPress = () =>
         {
+                elevatorDoors.ElevatorMove();
             //Sets elevator action
             if (elevatorDoors.doorOpen)
             {
                 Debug.Log("Been Called Open");
                 elevatorDoors.onDoorClose = () =>
                 {
-                    StartCoroutine(LoadLobby(5f));
+                    StartCoroutine(LoadLobby());
                 };
-                elevatorDoors.CloseDoor();
             }
             else
             {
                 Debug.Log("Been Called Closed");
-                elevatorDoors.ElevatorMove();
-                StartCoroutine(LoadLobby(5f));
+                StartCoroutine(LoadLobby());
             }
         };
         elevator.buttons.Add(lobbyButton);
@@ -104,7 +107,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadSceneAsync("Lighting", LoadSceneMode.Additive);
         }
 
-        elevatorDoors.ElevatorMove();
+        currentFloorText.text = "Reception";
+
+        //elevatorDoors.ElevatorMove();
         elevatorDoors.onDoorClose = null;
     }
 
@@ -146,6 +151,8 @@ public class GameManager : MonoBehaviour
         //Find the floorManager Script
         GameObject floorManagerObject = GameObject.FindGameObjectWithTag("FloorManager");
         FloorManager floorManager = floorManagerObject.GetComponent<FloorManager>();
+
+        currentFloorText.text = floor.floorName;
 
         #region Floor manager settings
         //Pass data into floor manager script

@@ -20,6 +20,7 @@ public class ElevatorButtons : MonoBehaviour
     public GameObject textPrefab;
     public Transform txtRoot;
     public float labelSpacing = -0.15f;
+    public GameObject txtPlaceholder;
 
     private List<GameObject> spawnedButtons = new List<GameObject>();
 
@@ -37,6 +38,7 @@ public class ElevatorButtons : MonoBehaviour
 
         MeshRenderer mRender = gameObject.GetComponent<MeshRenderer>();
         mRender.enabled = false;
+        txtPlaceholder.SetActive(false);
     }
 
     public void CreateButtons()

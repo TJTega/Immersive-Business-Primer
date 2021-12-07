@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd5bf41b7daad543a8fac3f69a7b6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 11400000, guid: 4418a402dd5413d4ba1c45edf7912247, type: 2}
+  floor: {fileID: 11400000, guid: 614509fa4695d1d47962a392bebdf0f9, type: 2}
   floorManager: {fileID: 540940006}
 --- !u!1001 &783046238
 PrefabInstance:

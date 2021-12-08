@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class FadeParameters
 {
     private bool fade;
@@ -26,7 +26,7 @@ public class FadeParameters
 public class Tutorial : MonoBehaviour
 {
     public AudioSource tutorialAudio;
-    public Text subtitleText;
+    public TMP_Text subtitleText;
     public string subtitleLine;
     private AudioSource[] allAudioSources;
     private bool playAvailable= false;
@@ -60,17 +60,24 @@ public class Tutorial : MonoBehaviour
     {
         if (other.tag == "Player" )
         {
-            Invoke("StopAllAudio", 0);
-            fade.SetParameters(true, -1);
-            StartCoroutine("StartAudio");
+            if (playAvailable == false)
+            {
+                Invoke("StopAllAudio", 0);
+                fade.SetParameters(true, -1);
+                StartCoroutine("StartAudio");
+            }
         }
     }
     IEnumerator StartAudio()
     {
-        yield return new WaitForSeconds(.2f);
-        subtitleText.text = subtitleLine;
-        fade.SetParameters(true, 1);
-        tutorialAudio.Play();
+        
+        
+            yield return new WaitForSeconds(.2f);
+            subtitleText.text = subtitleLine;
+            fade.SetParameters(true, 1);
+            tutorialAudio.Play();
+            playAvailable = true;
+        
     }
 
     void Awake()
@@ -82,8 +89,10 @@ public class Tutorial : MonoBehaviour
     {
         foreach (AudioSource audioS in allAudioSources)
         {
+            if (audioS.tag == "TutorialAudio")
+            { 
             audioS.Stop();
             Debug.Log("Stopping Music....");
-        }
+        } }
     }
 }

@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: blinn34
+    second: {fileID: 2100000, guid: 127d069ead7873e4b8b5c992568b46ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: plants
     second: {fileID: 2100000, guid: 127d069ead7873e4b8b5c992568b46ef, type: 2}
   - first:

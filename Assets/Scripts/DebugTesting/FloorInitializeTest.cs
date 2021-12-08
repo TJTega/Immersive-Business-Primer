@@ -13,6 +13,7 @@ public class FloorInitializeTest : MonoBehaviour
         //Find the floorManager Script
 
         //Pass data into floor manager script
+        FloorManager.currentFloor = floor;
         floorManager.floorName = floor.floorName;
         floorManager.ceilingMat = floor.ceilingMat;
         floorManager.wallMat = floor.wallMat;
@@ -28,6 +29,7 @@ public class FloorInitializeTest : MonoBehaviour
         floorManager.overheadsObject = floor.overheads;
         floorManager.subsceneAssets = floor.subsceneAssets;
         floorManager.rooms = floor.rooms;
+        floorManager.doorsObject = floor.doors;
 
         //Initialise floor
         floorManager.Setup();

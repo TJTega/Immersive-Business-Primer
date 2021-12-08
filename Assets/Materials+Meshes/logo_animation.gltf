@@ -1,0 +1,982 @@
+{
+    "asset": {
+        "copyright": "(C)2021 EL230718",
+        "generator": "maya2glTF v1.4.0 3d7ba8eaf03e",
+        "version": "2.0"
+    },
+    "scenes": [
+        {
+            "nodes": [
+                1,
+                0
+            ]
+        }
+    ],
+    "scene": 0,
+    "nodes": [
+        {
+            "name": "logo_joint"
+        },
+        {
+            "name": "hologram_logo",
+            "children": [
+                2
+            ],
+            "translation": [
+                0.0,
+                0.00001525900006527081,
+                0.0
+            ]
+        },
+        {
+            "name": "hologram_logo:PIV",
+            "mesh": 0,
+            "translation": [
+                0.0,
+                -0.00001525900006527081,
+                0.0
+            ],
+            "skin": 0
+        }
+    ],
+    "meshes": [
+        {
+            "name": "hologram_logoShape",
+            "extras": {
+                "targetNames": []
+            },
+            "primitives": [
+                {
+                    "attributes": {
+                        "JOINTS_0": 1,
+                        "NORMAL": 2,
+                        "POSITION": 3,
+                        "TANGENT": 4,
+                        "TEXCOORD_0": 5,
+                        "WEIGHTS_0": 6
+                    },
+                    "indices": 0,
+                    "mode": 4,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "JOINTS_0": 8,
+                        "NORMAL": 9,
+                        "POSITION": 10,
+                        "TANGENT": 11,
+                        "TEXCOORD_0": 12,
+                        "WEIGHTS_0": 13
+                    },
+                    "indices": 7,
+                    "mode": 4,
+                    "material": 1
+                },
+                {
+                    "attributes": {
+                        "JOINTS_0": 15,
+                        "NORMAL": 16,
+                        "POSITION": 17,
+                        "TANGENT": 18,
+                        "TEXCOORD_0": 19,
+                        "WEIGHTS_0": 20
+                    },
+                    "indices": 14,
+                    "mode": 4,
+                    "material": 2
+                },
+                {
+                    "attributes": {
+                        "JOINTS_0": 22,
+                        "NORMAL": 23,
+                        "POSITION": 24,
+                        "TANGENT": 25,
+                        "TEXCOORD_0": 26,
+                        "WEIGHTS_0": 27
+                    },
+                    "indices": 21,
+                    "mode": 4,
+                    "material": 3
+                },
+                {
+                    "attributes": {
+                        "JOINTS_0": 29,
+                        "NORMAL": 30,
+                        "POSITION": 31,
+                        "TANGENT": 32,
+                        "TEXCOORD_0": 33,
+                        "WEIGHTS_0": 34
+                    },
+                    "indices": 28,
+                    "mode": 4,
+                    "material": 4
+                }
+            ]
+        }
+    ],
+    "skins": [
+        {
+            "name": "hologram_logoShape",
+            "inverseBindMatrices": 35,
+            "joints": [
+                0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "pasted__blinn19",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "name": "pasted__blinn17",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "name": "pasted__blinn15",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "name": "pasted__blinn14",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "name": "pasted__blinn18",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "animations": [
+        {
+            "name": "clip",
+            "channels": [
+                {
+                    "sampler": 0,
+                    "target": {
+                        "node": 0,
+                        "path": "rotation"
+                    }
+                }
+            ],
+            "samplers": [
+                {
+                    "input": 36,
+                    "interpolation": "LINEAR",
+                    "output": 37
+                }
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "name": "hologram_logoShape#0/indices",
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1152,
+            "max": [
+                261
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/JOINTS_0",
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 262,
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 3144,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                4.282608032226563,
+                63.35365295410156,
+                63.3536491394043
+            ],
+            "min": [
+                0.0,
+                -63.35365295410156,
+                -63.353607177734378
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/TANGENT",
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                0.7126665115356445,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.7106685638427734,
+                -1.0,
+                -1.0,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/TEXCOORD_0",
+            "bufferView": 1,
+            "byteOffset": 2096,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                0.65625,
+                0.9999998807907105
+            ],
+            "min": [
+                0.34375011920928957,
+                5.99999978589949e-8
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "hologram_logoShape#0/vertices/WEIGHTS_0",
+            "bufferView": 3,
+            "byteOffset": 4192,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#1/indices",
+            "bufferView": 0,
+            "byteOffset": 2304,
+            "componentType": 5123,
+            "count": 162,
+            "max": [
+                65
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/JOINTS_0",
+            "bufferView": 1,
+            "byteOffset": 4192,
+            "componentType": 5123,
+            "count": 66,
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 6288,
+            "componentType": 5126,
+            "count": 66,
+            "max": [
+                1.0,
+                0.8679207563400269,
+                1.0
+            ],
+            "min": [
+                0.0,
+                -1.0,
+                -0.8365901708602905
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 7080,
+            "componentType": 5126,
+            "count": 66,
+            "max": [
+                7.54974365234375,
+                38.664154052734378,
+                -0.7038537263870239
+            ],
+            "min": [
+                4.282608032226563,
+                -34.27413940429688,
+                -21.725906372070314
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/TANGENT",
+            "bufferView": 3,
+            "byteOffset": 8384,
+            "componentType": 5126,
+            "count": 66,
+            "max": [
+                0.7827476263046265,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.7014235258102417,
+                -0.999911367893219,
+                -0.869318425655365,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/TEXCOORD_0",
+            "bufferView": 1,
+            "byteOffset": 4720,
+            "componentType": 5126,
+            "count": 66,
+            "max": [
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "hologram_logoShape#1/vertices/WEIGHTS_0",
+            "bufferView": 3,
+            "byteOffset": 9440,
+            "componentType": 5126,
+            "count": 66,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#2/indices",
+            "bufferView": 0,
+            "byteOffset": 2628,
+            "componentType": 5123,
+            "count": 66,
+            "max": [
+                27
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/JOINTS_0",
+            "bufferView": 1,
+            "byteOffset": 5248,
+            "componentType": 5123,
+            "count": 28,
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 7872,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                0.9999995827674866,
+                0.5537338256835938,
+                0.8365902900695801
+            ],
+            "min": [
+                0.0,
+                -1.0,
+                -0.15684719383716584
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 8208,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                7.54974365234375,
+                38.664154052734378,
+                16.688108444213868
+            ],
+            "min": [
+                4.282608032226563,
+                -7.122207641601563,
+                -0.7038537859916687
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/TANGENT",
+            "bufferView": 3,
+            "byteOffset": 10496,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                0.5349574685096741,
+                0.8365901708602905,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.7014235258102417,
+                -0.999911367893219,
+                -0.5561882257461548,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/TEXCOORD_0",
+            "bufferView": 1,
+            "byteOffset": 5472,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "hologram_logoShape#2/vertices/WEIGHTS_0",
+            "bufferView": 3,
+            "byteOffset": 10944,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#3/indices",
+            "bufferView": 0,
+            "byteOffset": 2760,
+            "componentType": 5123,
+            "count": 96,
+            "max": [
+                37
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/JOINTS_0",
+            "bufferView": 1,
+            "byteOffset": 5696,
+            "componentType": 5123,
+            "count": 38,
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 8544,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                0.9999995827674866,
+                0.547829270362854,
+                0.8389607667922974
+            ],
+            "min": [
+                0.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 9000,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                7.54974365234375,
+                14.48785400390625,
+                41.11855697631836
+            ],
+            "min": [
+                4.282608032226563,
+                -25.20286560058594,
+                15.373165130615237
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/TANGENT",
+            "bufferView": 3,
+            "byteOffset": 11392,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                0.700232207775116,
+                0.999987006187439,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.5033125877380371,
+                -1.0,
+                -0.5479000806808472,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/TEXCOORD_0",
+            "bufferView": 1,
+            "byteOffset": 6000,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "hologram_logoShape#3/vertices/WEIGHTS_0",
+            "bufferView": 3,
+            "byteOffset": 12000,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#4/indices",
+            "bufferView": 0,
+            "byteOffset": 2952,
+            "componentType": 5123,
+            "count": 66,
+            "max": [
+                26
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/JOINTS_0",
+            "bufferView": 1,
+            "byteOffset": 6304,
+            "componentType": 5123,
+            "count": 27,
+            "max": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/NORMAL",
+            "bufferView": 2,
+            "byteOffset": 9456,
+            "componentType": 5126,
+            "count": 27,
+            "max": [
+                1.0,
+                0.547829270362854,
+                0.00019480999617371708
+            ],
+            "min": [
+                0.0,
+                -1.0,
+                -0.8389607667922974
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/POSITION",
+            "bufferView": 2,
+            "byteOffset": 9780,
+            "componentType": 5126,
+            "count": 27,
+            "max": [
+                7.54974365234375,
+                14.48785400390625,
+                -16.43121337890625
+            ],
+            "min": [
+                4.282608032226563,
+                -25.20286560058594,
+                -42.526268005371097
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/TANGENT",
+            "bufferView": 3,
+            "byteOffset": 12608,
+            "componentType": 5126,
+            "count": 27,
+            "max": [
+                0.5029228329658508,
+                0.0007864399813115597,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.0016719249542802573,
+                -0.9999780654907228,
+                -0.5478913187980652,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/TEXCOORD_0",
+            "bufferView": 1,
+            "byteOffset": 6520,
+            "componentType": 5126,
+            "count": 27,
+            "max": [
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0
+            ],
+            "type": "VEC2"
+        },
+        {
+            "name": "hologram_logoShape#4/vertices/WEIGHTS_0",
+            "bufferView": 3,
+            "byteOffset": 13040,
+            "componentType": 5126,
+            "count": 27,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "hologram_logoShape/skin/IBM",
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1,
+            "max": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "min": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "type": "MAT4"
+        },
+        {
+            "name": "clip/anim/frames",
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1200,
+            "max": [
+                49.95833206176758
+            ],
+            "min": [
+                0.0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "logo_joint/anim/clip/R",
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1200,
+            "max": [
+                -0.0,
+                1.0,
+                -0.0,
+                1.0
+            ],
+            "min": [
+                -0.0,
+                -0.0,
+                -0.0,
+                -1.0
+            ],
+            "type": "VEC4"
+        }
+    ],
+    "bufferViews": [
+        {
+            "name": "logo_animation/data/indices-2",
+            "buffer": 0,
+            "byteOffset": 54376,
+            "byteLength": 3084,
+            "target": 34963
+        },
+        {
+            "name": "logo_animation/data/vertices-8",
+            "buffer": 0,
+            "byteOffset": 42840,
+            "byteLength": 6736,
+            "byteStride": 8,
+            "target": 34962
+        },
+        {
+            "name": "logo_animation/data/vertices-12",
+            "buffer": 0,
+            "byteOffset": 32736,
+            "byteLength": 10104,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "name": "logo_animation/data/vertices-16",
+            "buffer": 0,
+            "byteOffset": 19264,
+            "byteLength": 13472,
+            "byteStride": 16,
+            "target": 34962
+        },
+        {
+            "name": "logo_animation/data/generic-64",
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 64
+        },
+        {
+            "name": "logo_animation/data/generic-4",
+            "buffer": 0,
+            "byteOffset": 49576,
+            "byteLength": 4800
+        },
+        {
+            "name": "logo_animation/data/generic-16",
+            "buffer": 0,
+            "byteOffset": 64,
+            "byteLength": 19200
+        }
+    ],
+    "buffers": [
+        {
+            "name": "logo_animation/data",
+            "byteLength": 57460,
+            "uri": "logo_animation0.bin"
+        }
+    ]
+}

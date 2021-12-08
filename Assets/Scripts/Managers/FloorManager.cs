@@ -18,9 +18,10 @@ public class FloorMeshRenderers
 public class FloorManager : MonoBehaviour
 {
     //Data for loading room signs and scenes in floor
-    //public AutoSceneLoader[] sceneLoaders = new AutoSceneLoader[3];
-    //public AutoSignLoader[] signs = new AutoSignLoader[3];
+    public ScenePartLoader[] portals = new ScenePartLoader[3];
 
+    [HideInInspector]
+    public static Floor currentFloor;
     [HideInInspector]
     public string floorName = "";
     [HideInInspector]
@@ -37,6 +38,9 @@ public class FloorManager : MonoBehaviour
     public GameObject subsceneAssets;
     [HideInInspector]
     public Rooms rooms;
+    [HideInInspector]
+    public GameObject doorsObject;
+    
 
     ///<summary>This struct holds the data for all relevant floor mesh renderers</summary>
     public FloorMeshRenderers renderers;
@@ -47,6 +51,7 @@ public class FloorManager : MonoBehaviour
     private GameObject skirting;
     private GameObject overhead;
     private GameObject subscene;
+    private GameObject doors;
 
     // Start is called before the first frame update
     public void Setup()
@@ -64,46 +69,113 @@ public class FloorManager : MonoBehaviour
         //Overwrites skirting object, deletes if not set
         if (skirtingObject != null)
         {
-            DestroyImmediate(skirting);
+            Destroy(skirting);
             skirting = Instantiate(skirtingObject, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(skirting);
+            Destroy(skirting);
         }
 
         //Overwrites overhead object, deletes if not set
         if (overheadsObject != null)
         {
-            DestroyImmediate(overhead);
+            Destroy(overhead);
             overhead = Instantiate(overheadsObject, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(overhead);
+            Destroy(overhead);
         }
 
         //Overwrites subscene object, deletes if not set
         if (subsceneAssets != null)
         {
-            DestroyImmediate(subscene);
+            Destroy(subscene);
             subscene = Instantiate(subsceneAssets, centerAnchor, false);
         }
         else
         {
-            DestroyImmediate(subscene);
+            Destroy(subscene);
+        }
+        if (doorsObject != null)
+        {
+            Destroy(doors);
+            doors = Instantiate(doorsObject, centerAnchor, false);
+        }
+        else
+        {
+            Destroy(doors);
         }
 
-        //Holds unimplemented code for loading room scenes and signs on floor
-        //foreach (var sceneLoader in sceneLoaders)
+        //holds unimplemented code for loading room scenes and signs on floor
+        SceneSetup();
+
+        //foreach (var signloader in signs)
         //{
-        //    sceneLoader.worlds = worlds;
-        //    sceneLoader.Setup();
+        //    signloader.worlds = worlds;
+        //    signloader.loadsign();
         //}
-        //foreach (var signLoader in signs)
+    }
+
+    public void SceneSetup()
+    {
+        //RoomEnterLoader[] roomEnters = new RoomEnterLoader[3];
+        //GameObject roomEnterLObject = GameObject.FindGameObjectWithTag("RoomEnterL");
+        //GameObject roomEnterBObject = GameObject.FindGameObjectWithTag("RoomEnterB");
+        //GameObject roomEnterRObject = GameObject.FindGameObjectWithTag("RoomEnterR");
+        //roomEnters[0] = roomEnterLObject.GetComponent<RoomEnterLoader>();
+        //roomEnters[1] = roomEnterBObject.GetComponent<RoomEnterLoader>();
+        //roomEnters[2] = roomEnterRObject.GetComponent<RoomEnterLoader>();
+        //Debug.Log($"{roomEnterLObject.name}");
+
+        //if (floorRef != "")
         //{
-        //    signLoader.worlds = worlds;
-        //    signLoader.LoadSign();
+        //    foreach (var room in roomEnters)
+        //    {
+        //        room.floorRef = floorRef;
+        //    }
+
         //}
+        //else
+        //{
+        //    floorRef = roomEnters[0].floorRef;
+        //}
+
+        foreach (var portal in portals)
+        {
+            portal.forwardManager.ScenesToLoad.Clear();
+            portal.backwardManager.ScenesToUnload.Clear();
+        }
+        if (rooms.leftRoom != null)
+        {
+            //Adds default enter scene
+            portals[0].forwardManager.ScenesToLoad.Add("RoomEnterLeft");
+            portals[0].backwardManager.ScenesToUnload.Add("RoomEnterLeft");
+
+            //Adds scene based on floor scriptable object
+            portals[0].forwardManager.ScenesToLoad.Add(rooms.leftRoom.sceneName);
+            portals[0].backwardManager.ScenesToUnload.Add(rooms.leftRoom.sceneName);
+        }
+        if (rooms.backRoom != null)
+        {
+            //Adds default enter scene
+            portals[1].forwardManager.ScenesToLoad.Add("RoomEnterBack");
+            portals[1].backwardManager.ScenesToUnload.Add("RoomEnterBack");
+
+            //Adds scene based on floor scriptable object
+            portals[1].forwardManager.ScenesToLoad.Add(rooms.backRoom.sceneName);
+            portals[1].backwardManager.ScenesToUnload.Add(rooms.backRoom.sceneName);
+        }
+        if (rooms.rightRoom != null)
+        {
+            //Adds default enter scene
+            portals[2].forwardManager.ScenesToLoad.Add("RoomEnterRight");
+            portals[2].backwardManager.ScenesToUnload.Add("RoomEnterRight");
+
+            //Adds scene based on floor scriptable object
+            portals[2].forwardManager.ScenesToLoad.Add(rooms.rightRoom.sceneName);
+            portals[2].backwardManager.ScenesToUnload.Add(rooms.rightRoom.sceneName);
+        }
     }
 }

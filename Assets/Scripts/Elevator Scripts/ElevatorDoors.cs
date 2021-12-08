@@ -2,42 +2,70 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using DG.Tweening;
 public class ElevatorDoors : MonoBehaviour
 {
-    public Animator animL;
-    public Animator animR;
+    public DOTweenAnimation animL;
+    public DOTweenAnimation animR;
+    public DOTweenAnimation elevatorMovingAnim;
     public bool doorOpen = false;
 
-    public UnityAction OnDoorClose;
+    public UnityAction onDoorClose;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("inininiinin");
-        OpenDoor();
-    }
+    public AudioSource doorsOpen;
+    public AudioSource doorsClosed;
 
-    private void OnTriggerExit(Collider other)
-    {
-        CloseDoor();
-    }
+   
+    
+
+    
 
     [ContextMenu("Open")]
     public void OpenDoor()
     {
-        animL.SetBool("IsDoorOpen", true);
-        animR.SetBool("IsDoorOpen", true);
+        Debug.Log("Opening Doors");
+        animL.DORewind();
+        animR.DORewind();
+        animL.DOPlayForward();
+        animR.DOPlayForward();
         doorOpen = true;
+        doorsOpen.Play();
     }
 
     [ContextMenu("Close")]
     public void CloseDoor()
     {
-        animL.SetBool("IsDoorOpen", false);
-        animR.SetBool("IsDoorOpen", false);
+        Debug.Log("Closing Doors");
+        animL.DOPlayBackwards();
+        animR.DOPlayBackwards();
         doorOpen = false;
+        doorsClosed.Play();
 
-        if (doorOpen == false && OnDoorClose != null)
-            OnDoorClose.Invoke();
+        //if (onDoorClose != null)
+        //{
+        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+        //    s.Complete();
+        //}
+    }
+    [ContextMenu("ElevatorMove")]
+    public void ElevatorMove()
+    {
+        Debug.Log("Elevator is Moving");
+        elevatorMovingAnim.DOPlayForward();
+        elevatorMovingAnim.DOPlayForward();
+        doorOpen = true;
+       
+
+        //if (onDoorClose != null)
+        //{
+        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
+        //    s.Complete();
+        //}
+    }
+
+    public void OnDoorClose()
+    {
+        Debug.Log("Elevator complete");
+        onDoorClose.Invoke();
     }
 }

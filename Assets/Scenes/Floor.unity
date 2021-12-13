@@ -343,7 +343,7 @@ MonoBehaviour:
     - {fileID: 7180378216540432947}
     - {fileID: 1901115254396039302}
     floorRenderer: {fileID: 5416971846556324008}
-  ambientSource: {fileID: 1971312749}
+  ambientSource: {fileID: 0}
   centerAnchor: {fileID: 80722826}
   offset: {x: 10, y: 0, z: 10}
 --- !u!114 &540940007
@@ -674,73 +674,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1971312748
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 543450652331875947}
-    m_Modifications:
-    - target: {fileID: 1014925575995516272, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_Name
-      value: Ambisonic Sound
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -41.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -16.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
---- !u!82 &1971312749 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1014925575995516273, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-  m_PrefabInstance: {fileID: 1971312748}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1971312750 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1014925575995516274, guid: 4ef65a7e48267f049b714a98cdde48eb, type: 3}
-  m_PrefabInstance: {fileID: 1971312748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2043238593
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +915,6 @@ Transform:
   - {fileID: 6297052377563372228}
   - {fileID: 5299154532963496006}
   - {fileID: 2898681948643934869}
-  - {fileID: 1971312750}
   m_Father: {fileID: 1971003528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1124,7 +1056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07822782, y: -0.08999993}
+  m_AnchoredPosition: {x: 0.07822782, y: -0.055}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1393573024768882449
@@ -1198,7 +1130,7 @@ GameObject:
   - component: {fileID: 2394939673922129414}
   - component: {fileID: 9187945368680829552}
   m_Layer: 0
-  m_Name: Descirption
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,7 +1347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07822782, y: -0.08999993}
+  m_AnchoredPosition: {x: 0.07822782, y: -0.055}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2862887748501740578
@@ -1517,7 +1449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Descirption
+  m_text: 'Description
 
 '
   m_isRightToLeft: 0
@@ -1554,7 +1486,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1582,7 +1514,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.8192768}
+  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.9750648}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1757,7 +1689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Descirption
+  m_text: 'Description
 
 '
   m_isRightToLeft: 0
@@ -1794,7 +1726,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1822,7 +1754,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.8192768}
+  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.9478035}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2004,7 +1936,7 @@ GameObject:
   - component: {fileID: 684309789254561859}
   - component: {fileID: 3682438480423176394}
   m_Layer: 0
-  m_Name: Descirption
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2567,7 +2499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07822782, y: -0.09}
+  m_AnchoredPosition: {x: 0.07822782, y: -0.054999918}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &8747166755813216783
@@ -2631,7 +2563,7 @@ GameObject:
   - component: {fileID: 3737441349161774161}
   - component: {fileID: 4553873327835087878}
   m_Layer: 0
-  m_Name: Descirption
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2657,7 +2589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Descirption
+  m_text: 'Description
 
 '
   m_isRightToLeft: 0
@@ -2694,7 +2626,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2722,7 +2654,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.8192768}
+  m_margin: {x: 4.0264854, y: -0.620219, z: 5.9175396, w: 2.9588199}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

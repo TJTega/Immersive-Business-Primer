@@ -26,5 +26,18 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                 active = true;
             }
         }
+
+        public void Update()
+        {
+            InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+
+            if (device.isValid)
+            {
+                if(PrefabToSpawn != null && !active)
+                {
+                   // PrefabToSpawn.transform.rotation = Quaternion.Euler();
+                }
+            }
+        }
     }
 }

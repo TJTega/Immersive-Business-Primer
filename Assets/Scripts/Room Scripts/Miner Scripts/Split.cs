@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Input;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR;
 public class Split : MonoBehaviour
 {
     //This contains the objects that are to do an animation upon toggle for Mine Model 1
@@ -48,6 +49,8 @@ public class Split : MonoBehaviour
     private bool splitToggle = true;
 
     private bool isTriggered = false;
+
+    private bool triggerValue;
 
     void Start()
     {
@@ -98,7 +101,15 @@ public class Split : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
 
+        if (device.isValid)
+        {
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out triggerValue) && triggerValue)
+            {
+                SplitToggle();
+            }
+        }
     }
 
     /// <summary>

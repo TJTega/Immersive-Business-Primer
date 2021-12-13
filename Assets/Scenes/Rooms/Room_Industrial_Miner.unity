@@ -1012,9 +1012,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450949583300793130, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
+      propertyPath: m_Looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450949583300793130, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: 9c494bd056fad3f4eb1a6554a7f9c330, type: 3}
+    - target: {fileID: 4450949583300793130, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
+      propertyPath: m_SkipOnDrop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450949583300793130, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
+      propertyPath: m_AspectRatio
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
 --- !u!4 &1983371630 stripped

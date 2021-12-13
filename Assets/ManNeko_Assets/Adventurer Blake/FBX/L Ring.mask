@@ -6,8 +6,8 @@ AvatarMask:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Index
-  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Name: L Ring
+  m_Mask: 00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
@@ -32,11 +32,11 @@ AvatarMask:
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L
     m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/index.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/index.L/index1.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/index.L/index1.L/index2.L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/middle.L
     m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/middle.L/middle1.L
@@ -50,11 +50,11 @@ AvatarMask:
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/pinky.L/pinky1.L/pinky2.L
     m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/ring.L
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/ring.L/ring1.L
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/ring.L/ring1.L/ring2.L
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/thumb.L
     m_Weight: 0
   - m_Path: armature/Bone/hips/Spine/Spine1/chest/clavicle_L/upper_arm_L/lower_arm_L/hand_L/thumb.L/thumb1.L

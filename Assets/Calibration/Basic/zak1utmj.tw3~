@@ -6,18 +6,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class HandAnimator : MonoBehaviour
 {
     public float speed = 5.0f;
-    public XRController controllerL = null;
-    public XRController controllerR = null;
-    private Animator animator = null;
-    
+    public XRController controller = null;
 
+    private Animator animator = null;
+    public bool lHand;
+    public bool rHand;
     private readonly List<Finger> gripFingersL = new List<Finger>()
     {
         new Finger(FingerType.MiddleL),
         new Finger(FingerType.RingL),
         new Finger(FingerType.PinkyL)
     };
-
     private readonly List<Finger> gripFingersR = new List<Finger>()
     {
         
@@ -25,16 +24,15 @@ public class HandAnimator : MonoBehaviour
         new Finger(FingerType.RingR),
         new Finger(FingerType.PinkyR)
     };
-
     private readonly List<Finger> pointFingersL = new List<Finger>()
+    {
+        new Finger(FingerType.IndexR),
+        new Finger(FingerType.ThumbR)
+    };
+    private readonly List<Finger> pointFingersR = new List<Finger>()
     {
         new Finger(FingerType.IndexL),
         new Finger(FingerType.ThumbL),
-    };
-
-    private readonly List<Finger> pointFingersR = new List<Finger>()
-    {
-        
         new Finger(FingerType.IndexR),
         new Finger(FingerType.ThumbR)
     };
@@ -64,27 +62,27 @@ public class HandAnimator : MonoBehaviour
 
     private void CheckGrip()
     {
-        if (controllerL.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueL) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueL) && lHand == true)
         {
             SetFingerTargets(gripFingersL, gripValueL);
-         
+            Debug.Log("Left:" + gripValueL);
         }
-        if (controllerR.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueR) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueR) && rHand == true)
         {
             SetFingerTargets(gripFingersR, gripValueR);
-         
+            Debug.Log("Right:" + gripValueR);
         }
     }
 
     private void CheckPointer()
     {
-        if (controllerL.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueL) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueL) && lHand == true)
         {
             SetFingerTargets(pointFingersL, pointerValueL);
             
             
         }
-        if (controllerR.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueR ) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueR ) && rHand == true)
         {
             SetFingerTargets(pointFingersR, pointerValueR);
 
@@ -97,7 +95,6 @@ public class HandAnimator : MonoBehaviour
         foreach(Finger finger in fingers)
         {
             finger.target = value;
-            
         }
     }
 

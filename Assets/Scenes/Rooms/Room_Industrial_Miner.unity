@@ -1623,6 +1623,10 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4450949583300793130, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8600000, guid: 08e8739832cf84c4699cb6d43b2799bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c393ba3a191c468458cd3697c91d2773, type: 3}
 --- !u!4 &1652308823 stripped

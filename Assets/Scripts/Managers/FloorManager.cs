@@ -17,8 +17,11 @@ public class FloorMeshRenderers
 
 public class FloorManager : MonoBehaviour
 {
-    //Data for loading room signs and scenes in floor
+    [Header("Room Loading")]
+    ///<summary>Data for loading rooms in the floor</summary>
     public ScenePartLoader[] portals = new ScenePartLoader[3];
+    ///<summary>Data for loading room signs in the floor</summary>
+    public AutoSignLoader[] signs = new AutoSignLoader[3];
 
     [HideInInspector]
     public static Floor currentFloor;
@@ -41,9 +44,11 @@ public class FloorManager : MonoBehaviour
     [HideInInspector]
     public GameObject doorsObject;
     
-
+    [Header("Floor Loading")]
     ///<summary>This struct holds the data for all relevant floor mesh renderers</summary>
     public FloorMeshRenderers renderers;
+
+    public AudioSource ambientSource;
     /// <summary>This holds the transform for the center of the room</summary>
     public Transform centerAnchor;
 
@@ -56,6 +61,11 @@ public class FloorManager : MonoBehaviour
     // Start is called before the first frame update
     public void Setup()
     {
+        if (ambientSource != null)
+        {
+            ambientSource.clip = currentFloor.ambience;
+        }
+
         //Sets ceiling material
         renderers.ceilingRenderer.material = ceilingMat;
         //Sets material for each wall
@@ -110,15 +120,10 @@ public class FloorManager : MonoBehaviour
 
         //holds unimplemented code for loading room scenes and signs on floor
         SceneSetup();
-
-        //foreach (var signloader in signs)
-        //{
-        //    signloader.worlds = worlds;
-        //    signloader.loadsign();
-        //}
+        
     }
 
-    public void SceneSetup()
+    private void SceneSetup()
     {
         //RoomEnterLoader[] roomEnters = new RoomEnterLoader[3];
         //GameObject roomEnterLObject = GameObject.FindGameObjectWithTag("RoomEnterL");
@@ -141,6 +146,16 @@ public class FloorManager : MonoBehaviour
         //{
         //    floorRef = roomEnters[0].floorRef;
         //}
+
+        //Updates signs to match rooms
+        signs[0].room = rooms.leftRoom;
+        signs[1].room = rooms.backRoom;
+        signs[2].room = rooms.rightRoom;
+        
+        //Loads each sign
+        signs[0].LoadSign();
+        signs[1].LoadSign();
+        signs[2].LoadSign();
 
         foreach (var portal in portals)
         {

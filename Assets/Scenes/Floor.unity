@@ -318,6 +318,10 @@ MonoBehaviour:
   - {fileID: 2043238596}
   - {fileID: 520542416}
   - {fileID: 1668593430}
+  signs:
+  - {fileID: 6205517767797239257}
+  - {fileID: 5731466780279160362}
+  - {fileID: 2009129961336817534}
   floorName: Default Floor
   ceilingMat: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
   wallMat: {fileID: 2100000, guid: c2757d8f7587586438b1c2fa86766460, type: 2}
@@ -1138,6 +1142,7 @@ GameObject:
   - component: {fileID: 1200787242493353415}
   - component: {fileID: 2811889077457785442}
   - component: {fileID: 63368695409075880}
+  - component: {fileID: 2009129961336817534}
   m_Layer: 0
   m_Name: information_plaque (2)
   m_TagString: Untagged
@@ -1145,6 +1150,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2009129961336817534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009129961336817533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0a3f5f305cdbf4d9c4d0eed59bb0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomName: {fileID: 220669024420304566}
+  roomDescription: {fileID: 9187945368680829552}
+  room: {fileID: 0}
 --- !u!23 &2394939673922129414
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2010,6 +2030,7 @@ GameObject:
   - component: {fileID: 4954401624162165907}
   - component: {fileID: 8317666454635998006}
   - component: {fileID: 6091891296980574204}
+  - component: {fileID: 5731466780279160362}
   m_Layer: 0
   m_Name: information_plaque (1)
   m_TagString: Untagged
@@ -2017,6 +2038,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5731466780279160362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731466780279160361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0a3f5f305cdbf4d9c4d0eed59bb0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomName: {fileID: 5031639113494334166}
+  roomDescription: {fileID: 3682438480423176394}
+  room: {fileID: 0}
 --- !u!33 &5986590349138951728
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2077,6 +2113,7 @@ GameObject:
   - component: {fileID: 6725489583252682594}
   - component: {fileID: 7708586625954134215}
   - component: {fileID: 5557039485134457869}
+  - component: {fileID: 6205517767797239257}
   m_Layer: 0
   m_Name: information_plaque
   m_TagString: Untagged
@@ -2084,6 +2121,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6205517767797239257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205517767797239256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0a3f5f305cdbf4d9c4d0eed59bb0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomName: {fileID: 7417044271676526885}
+  roomDescription: {fileID: 4553873327835087878}
+  room: {fileID: 0}
 --- !u!4 &6297052377563372228
 Transform:
   m_ObjectHideFlags: 0

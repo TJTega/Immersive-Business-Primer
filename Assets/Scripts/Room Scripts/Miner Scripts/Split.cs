@@ -105,7 +105,7 @@ public class Split : MonoBehaviour
 
         if (device.isValid)
         {
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out triggerValue) && triggerValue)
+            if (device.TryGetFeatureValue(CommonUsages.primaryButton, out triggerValue) && triggerValue)
             {
                 SplitToggle();
             }

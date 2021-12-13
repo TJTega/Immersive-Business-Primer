@@ -44,9 +44,11 @@ public class FloorManager : MonoBehaviour
     [HideInInspector]
     public GameObject doorsObject;
     
-
+    [Header("Floor Loading")]
     ///<summary>This struct holds the data for all relevant floor mesh renderers</summary>
     public FloorMeshRenderers renderers;
+
+    public AudioSource ambientSource;
     /// <summary>This holds the transform for the center of the room</summary>
     public Transform centerAnchor;
 
@@ -59,6 +61,11 @@ public class FloorManager : MonoBehaviour
     // Start is called before the first frame update
     public void Setup()
     {
+        if (ambientSource != null)
+        {
+            ambientSource.clip = currentFloor.ambience;
+        }
+
         //Sets ceiling material
         renderers.ceilingRenderer.material = ceilingMat;
         //Sets material for each wall

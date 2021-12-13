@@ -270,6 +270,7 @@ MonoBehaviour:
     ScenesToUnload:
     - RoomEnterBack
     - 
+  setOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &540940004
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +345,7 @@ MonoBehaviour:
     floorRenderer: {fileID: 5416971846556324008}
   ambientSource: {fileID: 1971312749}
   centerAnchor: {fileID: 80722826}
+  offset: {x: 10, y: 0, z: 10}
 --- !u!114 &540940007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,6 +608,7 @@ MonoBehaviour:
     ScenesToUnload:
     - RoomEnterRight
     - 
+  setOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1746543076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 180408928098261640, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
@@ -807,6 +810,7 @@ MonoBehaviour:
     ScenesToUnload:
     - RoomEnterLeft
     - roomscene1
+  setOffset: {x: 0, y: 0, z: 0}
 --- !u!23 &63368695409075880
 MeshRenderer:
   m_ObjectHideFlags: 0

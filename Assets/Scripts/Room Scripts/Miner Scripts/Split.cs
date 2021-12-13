@@ -125,7 +125,6 @@ public class Split : MonoBehaviour
 
 
             //These will play the animation forwards upon toggle for Mine 1
-            Debug.Log("Toggle False");
             mine1.DOPlayForward();
             mine2.DOPlayForward();
             mine3.DOPlayForward();
@@ -133,7 +132,6 @@ public class Split : MonoBehaviour
 
 
             //These will play the animation forwards upon toggle for Mine 2
-            Debug.Log("Toggles False 2");
             Decline.DOPlayForward();
             Shell.DOPlayForward();
             LevelAccess.DOPlayForward();
@@ -198,7 +196,6 @@ public class Split : MonoBehaviour
             isTriggered = false;
 
             //These will play the animation backwards upon toggle again for Mine 1
-            Debug.Log("Toggle True");
             mine1.DOPlayBackwards();
             mine2.DOPlayBackwards();
             mine3.DOPlayBackwards();
@@ -206,7 +203,6 @@ public class Split : MonoBehaviour
 
 
             //These will play the animation backwards upon toggle again for Mine 2
-            Debug.Log("Toggle True 2");
             Decline.DOPlayBackwards();
             Shell.DOPlayBackwards();
             LevelAccess.DOPlayBackwards();

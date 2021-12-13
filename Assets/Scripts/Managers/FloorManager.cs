@@ -61,7 +61,7 @@ public class FloorManager : MonoBehaviour
     // Start is called before the first frame update
     public void Setup()
     {
-        if (ambientSource != null)
+        if (currentFloor.ambience != null)
         {
             ambientSource.clip = currentFloor.ambience;
         }

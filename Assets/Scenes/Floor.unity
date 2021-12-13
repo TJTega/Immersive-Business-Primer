@@ -342,6 +342,7 @@ MonoBehaviour:
     - {fileID: 7180378216540432947}
     - {fileID: 1901115254396039302}
     floorRenderer: {fileID: 5416971846556324008}
+  ambientSource: {fileID: 1971312749}
   centerAnchor: {fileID: 80722826}
 --- !u!114 &540940007
 MonoBehaviour:
@@ -910,6 +911,7 @@ Transform:
   - {fileID: 6297052377563372228}
   - {fileID: 5299154532963496006}
   - {fileID: 2898681948643934869}
+  - {fileID: 1971312750}
   m_Father: {fileID: 1971003528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

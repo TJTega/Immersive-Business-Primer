@@ -22,10 +22,10 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: industrial_doors_mat
   m_Shader: {fileID: -6465566751694194690, guid: db721b75da0f47f4283e8c34127dc3cb, type: 3}
-  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT
+  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _DOUBLESIDED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 2225
   stringTagMap:
     MotionVector: User
@@ -162,6 +162,7 @@ Material:
     - Vector1_4183bab0ee454532a120ad199188fa4b: 0
     - Vector1_41a6a4d0fc714f1a8e3e1b62a5dc9869: 1
     - Vector1_6bd0308cb9c943a4b99bad45205a69fc: 1
+    - Vector1_b89d9ebcca8e48f3a838d2c579d788b6: 1
     - Vector1_c0cabb88b2044c9db95e5beb3458dcc4: 0
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -180,8 +181,8 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
-    - _CullMode: 2
-    - _CullModeForward: 2
+    - _CullMode: 0
+    - _CullModeForward: 0
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
@@ -192,7 +193,7 @@ Material:
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DoubleSidedEnable: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1

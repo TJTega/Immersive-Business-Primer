@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 05ba0ec971b0d5648a404e6ac3ae4cab
+<<<<<<< HEAD:Assets/MRTK/Core/MRTK.Core.sentinel.meta
+guid: f25742a2db4e2c34ebb08820351c6d99
+=======
+guid: 690eff5d3e873b043be25cf9174fdb74
+>>>>>>> main:Assets/Scenes/Library.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 25b197377a429464ab3a364e5edd4d13
+<<<<<<< HEAD:Assets/MRTK/Core/MixedReality.Toolkit.targets.meta
+guid: db7a5d0c9605cc340bf7a788b0b764bd
+=======
+guid: 3534574bed65e734cb5fe0bdb70a1fd3
+>>>>>>> main:Assets/Scenes/SampleScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

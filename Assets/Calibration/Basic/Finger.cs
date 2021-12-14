@@ -1,11 +1,16 @@
 ﻿public enum FingerType
 {
     None,
-    Thumb,
-    Index,
-    Middle,
-    Ring,
-    Pinky
+    ThumbL,
+    IndexL,
+    MiddleL,
+    RingL,
+    PinkyL,
+    ThumbR,
+    IndexR,
+    MiddleR,
+    RingR,
+    PinkyR
 }
 
 public class Finger

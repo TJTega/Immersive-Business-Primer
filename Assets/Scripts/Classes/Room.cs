@@ -18,5 +18,5 @@ public class Room : ScriptableObject
     //public Cubemap roomPreview; [TBD]
 
     ///<summary>This is ambient sound for each room</summary>
-    public AudioClip ambience;
+    //public AudioClip ambience;
 }

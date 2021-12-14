@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 [Serializable]
 public class SceneLoadManager
 {
@@ -14,6 +15,8 @@ public class ScenePartLoader : MonoBehaviour
 {
     public SceneLoadManager forwardManager;
     public SceneLoadManager backwardManager;
+
+    public GameObject GayMobject;
 
     protected float dotProduct;
 
@@ -46,6 +49,7 @@ public class ScenePartLoader : MonoBehaviour
         //Debug.Log("LoadScene()");
     }
 
+    
     public IEnumerator WaitLoad(string scene, SceneLoadManager manager)
     {
         if (!SceneManager.GetSceneByName(scene).isLoaded)
@@ -74,6 +78,7 @@ public class ScenePartLoader : MonoBehaviour
                 if (offset != null)
                     offset.transform.position += setOffset;
             }
+
         }
     }
 
@@ -139,11 +144,15 @@ public class ScenePartLoader : MonoBehaviour
         if (shouldLoad)
         {
             Debug.Log("LOADING");
+            if (GayMobject != null)
+                GayMobject.SetActive(true);
             LoadScene();
         }
         else
         {
             Debug.Log("UNLOADING");
+            if (GayMobject != null)
+                GayMobject.SetActive(false);
             UnLoadScene();
         }
     }

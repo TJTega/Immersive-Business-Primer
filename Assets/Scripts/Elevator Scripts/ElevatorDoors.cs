@@ -15,10 +15,10 @@ public class ElevatorDoors : MonoBehaviour
     public AudioSource doorsOpen;
     public AudioSource doorsClosed;
 
-   
-    
 
-    
+
+
+
 
     [ContextMenu("Open")]
     public void OpenDoor()
@@ -41,26 +41,22 @@ public class ElevatorDoors : MonoBehaviour
         doorOpen = false;
         doorsClosed.Play();
 
-        //if (onDoorClose != null)
-        //{
-        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
-        //    s.Complete();
-        //}
+
     }
     [ContextMenu("ElevatorMove")]
     public void ElevatorMove()
     {
-        Debug.Log("Elevator is Moving");
-        elevatorMovingAnim.DOPlayForward();
-        elevatorMovingAnim.DOPlayForward();
-        doorOpen = true;
-       
+        CloseDoor();
+        if (!doorOpen)
+        {
+            Debug.Log("Elevator is Moving");
+            elevatorMovingAnim.DOPlayForward();
+            elevatorMovingAnim.DOPlayForward();
+            doorOpen = true;
+        }
 
-        //if (onDoorClose != null)
-        //{
-        //    Sequence s = DOTween.Sequence().OnComplete(() => onDoorClose.Invoke());
-        //    s.Complete();
-        //}
+
+
     }
 
     public void OnDoorClose()

@@ -52,8 +52,6 @@ public class FloorManager : MonoBehaviour
     /// <summary>This holds the transform for the center of the room</summary>
     public Transform centerAnchor;
 
-    public Vector3 offset;
-
     //These hold information for currently spawned assets in the scene
     private GameObject skirting;
     private GameObject overhead;
@@ -63,7 +61,7 @@ public class FloorManager : MonoBehaviour
     // Start is called before the first frame update
     public void Setup()
     {
-        if (currentFloor.ambience != null)
+        if (ambientSource != null)
         {
             ambientSource.clip = currentFloor.ambience;
         }
@@ -159,12 +157,10 @@ public class FloorManager : MonoBehaviour
         signs[1].LoadSign();
         signs[2].LoadSign();
 
-
         foreach (var portal in portals)
         {
             portal.forwardManager.ScenesToLoad.Clear();
             portal.backwardManager.ScenesToUnload.Clear();
-            portal.setOffset = offset;
         }
         if (rooms.leftRoom != null)
         {

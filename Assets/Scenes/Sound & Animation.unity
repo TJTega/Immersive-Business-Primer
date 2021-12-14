@@ -10181,9 +10181,9 @@ MonoBehaviour:
   elevator: {fileID: 720062364}
   elevatorDoors: {fileID: 1707970755}
   floors:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 614509fa4695d1d47962a392bebdf0f9, type: 2}
   - {fileID: 11400000, guid: 335b21343279b4d42a2b6989a487482d, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4ad61455b0db4e546bb0d883c620b6fd, type: 2}
   - {fileID: 11400000, guid: 4418a402dd5413d4ba1c45edf7912247, type: 2}
   currentFloorText: {fileID: 1681463337}
 --- !u!1001 &1850942690
@@ -12549,8 +12549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  controllerL: {fileID: 0}
-  controllerR: {fileID: 0}
+  controller: {fileID: 2013042129}
 --- !u!65 &573763191952722998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15152,7 +15151,7 @@ Animator:
   m_GameObject: {fileID: 8296172668781078456}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 027f00c86c565a44f865fc7c749b99e5, type: 3}
-  m_Controller: {fileID: 9100000, guid: ba352efb979919240826cdd1656f037e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -19054,7 +19053,6 @@ GameObject:
   - component: {fileID: 5006512735745660331}
   - component: {fileID: 3166231813488277713}
   - component: {fileID: 940539593}
-  - component: {fileID: 8296172668781078458}
   m_Layer: 0
   m_Name: The Adventurer Blake
   m_TagString: Untagged
@@ -19062,21 +19060,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8296172668781078458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172668781078456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdba9caf664b1b47a57882aea8f9a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  controllerL: {fileID: 1368322047}
-  controllerR: {fileID: 2013042129}
 --- !u!1 &8302882713786093272
 GameObject:
   m_ObjectHideFlags: 0

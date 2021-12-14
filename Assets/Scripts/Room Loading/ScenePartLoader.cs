@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 [Serializable]
 public class SceneLoadManager
@@ -14,9 +16,16 @@ public class ScenePartLoader : MonoBehaviour
     public SceneLoadManager forwardManager;
     public SceneLoadManager backwardManager;
 
+    public GameObject GayMobject;
+
     protected float dotProduct;
 
     private bool shouldLoad = true;
+    private int count = 0;
+
+    [HideInInspector]
+    public Vector3 setOffset;
+
     protected virtual void LoadScene()
     {
         SceneLoadManager manager;
@@ -30,14 +39,46 @@ public class ScenePartLoader : MonoBehaviour
         }
 
 
+        count = 0;
+
         //Loading the scene, using the gameobject name as it's the same as the name of the scene to load
         foreach (var scene in manager.ScenesToLoad)
         {
-            if (!SceneManager.GetSceneByName(scene).isLoaded)
+            StartCoroutine(WaitLoad(scene, manager));
+        }
+        //Debug.Log("LoadScene()");
+    }
+
+    
+    public IEnumerator WaitLoad(string scene, SceneLoadManager manager)
+    {
+        if (!SceneManager.GetSceneByName(scene).isLoaded)
+        {
+            AsyncOperation async = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+            while (!async.isDone)
             {
-                SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+                yield return null;
             }
-            //Debug.Log("Should be loading");
+            count += 1;
+            SetOffsets(manager);
+            Debug.Log($"Loading: {scene} (WaitLoad)");
+
+        }
+    }
+
+    private void SetOffsets(SceneLoadManager manager)
+    {
+        if (count == manager.ScenesToLoad.Count)
+        {
+            GameObject[] offsets = GameObject.FindGameObjectsWithTag("Offset");
+
+            foreach (var offset in offsets)
+            {
+                Debug.Log(offset);
+                if (offset != null)
+                    offset.transform.position += setOffset;
+            }
+
         }
     }
 
@@ -77,7 +118,7 @@ public class ScenePartLoader : MonoBehaviour
 
             Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            //Debug.Log(gameObject.name + ": " + dotProduct);
+            //Debug.Log(gameObject.name + "entering at: " + dotProduct);
 
             TriggerCheck();
         }
@@ -91,7 +132,7 @@ public class ScenePartLoader : MonoBehaviour
 
             Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            //Debug.Log(gameObject.name + ": " + dotProduct);
+            //Debug.Log(gameObject.name + " exiting at: " + dotProduct);
 
             TriggerCheck();
         }
@@ -102,12 +143,16 @@ public class ScenePartLoader : MonoBehaviour
         //shouldLoad is set from the Trigger methods
         if (shouldLoad)
         {
-            //Debug.Log("LOADING");
+            Debug.Log("LOADING");
+            if (GayMobject != null)
+                GayMobject.SetActive(true);
             LoadScene();
         }
         else
         {
-            //Debug.Log("UNLOADING");
+            Debug.Log("UNLOADING");
+            if (GayMobject != null)
+                GayMobject.SetActive(false);
             UnLoadScene();
         }
     }

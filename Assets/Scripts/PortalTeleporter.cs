@@ -6,31 +6,29 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PortalTeleporter : MonoBehaviour
 {
     public Transform reciever;
-
+    public Transform thisTP;
+    private Transform player;
     private bool playerIsOverlapping = false;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (playerIsOverlapping)
         {
-            Vector3 portalToPlayer = this.transform.position - reciever.position;
-            float dotProduct = Vector3.Dot(transform.up, portalToPlayer);
-
-            Debug.Log("overlap");
+            Vector3 portalToPlayer = thisTP.position - player.position;
+            float dotProduct = Vector3.Dot(transform.forward, portalToPlayer);
             Debug.Log(dotProduct);
 
             // If this is true: The player has moved across the portal
-            if (dotProduct > 0f)
+            if (dotProduct < 0f)
             {
                 // Teleport him!
-                Invoke("TeleportPlayer", 0);
-                //float rotationDiff = -Quaternion.Angle(transform.rotation, reciever.rotation);
-                //rotationDiff += 180;
-                //player.Rotate(Vector3.up, rotationDiff);
-                //Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
-                //player.position = reciever.position + positionOffset;
-
+                Invoke("TeleportPlayer", 0.5f);
                 playerIsOverlapping = false;
             }
         }
@@ -38,8 +36,7 @@ public class PortalTeleporter : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
-        if (other.tag == "Portal")
+        if (other.tag == "Player")
         {
             playerIsOverlapping = true;
         }
@@ -47,7 +44,7 @@ public class PortalTeleporter : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Portal")
+        if (other.tag == "Player")
         {
             playerIsOverlapping = false;
         }
@@ -58,14 +55,9 @@ public class PortalTeleporter : MonoBehaviour
         XRRig xrRig = GameObject.FindGameObjectWithTag("XRRig").GetComponent(typeof(XRRig)) as XRRig;
         if (xrRig != null)
         {
-            Debug.Log("tptp");
-
             xrRig.MatchRigUpCameraForward(reciever.rotation * Vector3.up, reciever.rotation * Vector3.forward);
-
             var heightAdjustment = xrRig.rig.transform.up * xrRig.cameraInRigSpaceHeight;
-
             var cameraDestination = reciever.transform.position + heightAdjustment;
-
             xrRig.MoveCameraToWorldLocation(cameraDestination);
         }
     }

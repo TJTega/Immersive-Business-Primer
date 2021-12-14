@@ -43,7 +43,7 @@ public class ScenePartLoader : MonoBehaviour
         {
             StartCoroutine(WaitLoad(scene, manager));
         }
-        //Debug.Log("Should be loading");
+        //Debug.Log("LoadScene()");
     }
 
     public IEnumerator WaitLoad(string scene, SceneLoadManager manager)
@@ -57,6 +57,8 @@ public class ScenePartLoader : MonoBehaviour
             }
             count += 1;
             SetOffsets(manager);
+            Debug.Log($"Loading: {scene} (WaitLoad)");
+
         }
     }
 
@@ -111,7 +113,7 @@ public class ScenePartLoader : MonoBehaviour
 
             Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            //Debug.Log(gameObject.name + ": " + dotProduct);
+            //Debug.Log(gameObject.name + "entering at: " + dotProduct);
 
             TriggerCheck();
         }
@@ -125,7 +127,7 @@ public class ScenePartLoader : MonoBehaviour
 
             Vector3 pointToPlayer = PlayerInfo.playerPos - transform.position;
             dotProduct = Vector3.Dot(transform.right, pointToPlayer);
-            //Debug.Log(gameObject.name + ": " + dotProduct);
+            //Debug.Log(gameObject.name + " exiting at: " + dotProduct);
 
             TriggerCheck();
         }
@@ -136,12 +138,12 @@ public class ScenePartLoader : MonoBehaviour
         //shouldLoad is set from the Trigger methods
         if (shouldLoad)
         {
-            //Debug.Log("LOADING");
+            Debug.Log("LOADING");
             LoadScene();
         }
         else
         {
-            //Debug.Log("UNLOADING");
+            Debug.Log("UNLOADING");
             UnLoadScene();
         }
     }

@@ -29,7 +29,6 @@ public class PortalTeleporter : MonoBehaviour
             {
                 // Teleport him!
                 Invoke("TeleportPlayer", 0.5f);
-                playerIsOverlapping = false;
             }
         }
     }
@@ -53,12 +52,13 @@ public class PortalTeleporter : MonoBehaviour
     public void TeleportPlayer()
     {
         XRRig xrRig = GameObject.FindGameObjectWithTag("XRRig").GetComponent(typeof(XRRig)) as XRRig;
-        if (xrRig != null)
+        if (xrRig != null && playerIsOverlapping)
         {
             xrRig.MatchRigUpCameraForward(reciever.rotation * Vector3.up, reciever.rotation * Vector3.forward);
             var heightAdjustment = xrRig.rig.transform.up * xrRig.cameraInRigSpaceHeight;
             var cameraDestination = reciever.transform.position + heightAdjustment;
             xrRig.MoveCameraToWorldLocation(cameraDestination);
+            playerIsOverlapping = false;
         }
     }
 }

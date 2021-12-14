@@ -76,7 +76,7 @@ public class ScenePartLoader : MonoBehaviour
             {
                 Debug.Log(offset);
                 if (offset != null)
-                    offset.transform.position += setOffset;
+                    offset.transform.localPosition += setOffset;
             }
 
         }

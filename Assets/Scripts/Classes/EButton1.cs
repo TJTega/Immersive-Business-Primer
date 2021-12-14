@@ -8,6 +8,5 @@ using UnityEngine.Events;
 public class EButton
 {
     public bool active = true;
-    public string floorName;
     public UnityAction OnButtonPress;
 }

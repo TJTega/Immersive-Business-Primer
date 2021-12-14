@@ -6,37 +6,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class HandAnimator : MonoBehaviour
 {
     public float speed = 5.0f;
-    public XRController controllerL = null;
-    public XRController controllerR = null;
+    public XRController controller = null;
+
     private Animator animator = null;
-    
 
-    private readonly List<Finger> gripFingersL = new List<Finger>()
+    private readonly List<Finger> gripFingers = new List<Finger>()
     {
-        new Finger(FingerType.MiddleL),
-        new Finger(FingerType.RingL),
-        new Finger(FingerType.PinkyL)
+        new Finger(FingerType.Middle),
+        new Finger(FingerType.Ring),
+        new Finger(FingerType.Pinky)
     };
-
-    private readonly List<Finger> gripFingersR = new List<Finger>()
+    private readonly List<Finger> pointFingers = new List<Finger>()
     {
-        
-        new Finger(FingerType.MiddleR),
-        new Finger(FingerType.RingR),
-        new Finger(FingerType.PinkyR)
-    };
-
-    private readonly List<Finger> pointFingersL = new List<Finger>()
-    {
-        new Finger(FingerType.IndexL),
-        new Finger(FingerType.ThumbL),
-    };
-
-    private readonly List<Finger> pointFingersR = new List<Finger>()
-    {
-        
-        new Finger(FingerType.IndexR),
-        new Finger(FingerType.ThumbR)
+        new Finger(FingerType.Index),
+        new Finger(FingerType.Thumb)
     };
     private void Awake()
     {
@@ -50,44 +33,27 @@ public class HandAnimator : MonoBehaviour
         CheckGrip();
 
         //Smooth input
-        SmoothFinger(pointFingersL);
-        SmoothFinger(gripFingersL);
-        SmoothFinger(pointFingersR);
-        SmoothFinger(gripFingersR);
+        SmoothFinger(pointFingers);
+        SmoothFinger(gripFingers);
 
         //Apply smoothed values
-        AnimateFinger(pointFingersL);
-        AnimateFinger(gripFingersL);
-        AnimateFinger(pointFingersR);
-        AnimateFinger(gripFingersR);
+        AnimateFinger(pointFingers);
+        AnimateFinger(gripFingers);
     }
 
     private void CheckGrip()
     {
-        if (controllerL.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueL) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
         {
-            SetFingerTargets(gripFingersL, gripValueL);
-         
-        }
-        if (controllerR.inputDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValueR) )
-        {
-            SetFingerTargets(gripFingersR, gripValueR);
-         
+            SetFingerTargets(gripFingers, gripValue);
         }
     }
 
     private void CheckPointer()
     {
-        if (controllerL.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueL) )
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValue))
         {
-            SetFingerTargets(pointFingersL, pointerValueL);
-            
-            
-        }
-        if (controllerR.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out float pointerValueR ) )
-        {
-            SetFingerTargets(pointFingersR, pointerValueR);
-
+            SetFingerTargets(pointFingers, pointerValue);
         }
 
     }
@@ -97,7 +63,6 @@ public class HandAnimator : MonoBehaviour
         foreach(Finger finger in fingers)
         {
             finger.target = value;
-            
         }
     }
 

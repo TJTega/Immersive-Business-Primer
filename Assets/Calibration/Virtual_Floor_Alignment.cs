@@ -13,7 +13,7 @@ public class Virtual_Floor_Alignment : MonoBehaviour
     public PointAdjustment pointAdjustment;
     Quaternion handRotation;
     public TextMeshProUGUI debugText;
-    public GameObject marker;
+    private GameObject marker;
     bool TryGetRightHandFeature(out Quaternion rotation)
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);

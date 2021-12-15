@@ -130,9 +130,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -195,6 +207,42 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
       propertyPath: m_Name
       value: Forklift_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5ecaa6ad055094f45b44dacd74f87102, type: 3}
       propertyPath: m_RootOrder
@@ -334,6 +382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerGravelHopper01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1641760470948414, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4704121954988206, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -384,6 +436,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1523966239736856, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759580540919770, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980049132677366, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4478481329171778, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -446,6 +510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01a (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1881882300773054, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4253939984694924, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -495,6 +563,10 @@ PrefabInstance:
     - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_Name
       value: PalletWood01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
@@ -546,6 +618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1989863150336834, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443853184237448, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
       propertyPath: m_RootOrder
       value: 112
@@ -1129,6 +1205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodModel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1351235886883706, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4999482366970844, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1284,6 +1364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodWallFence (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1334,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerGravelHopper01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1641760470948414, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4704121954988206, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
       propertyPath: m_RootOrder
       value: 144
@@ -1380,6 +1468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1375080499120498, guid: f2c059543c49cb44aab44e212696c9a4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4699808988769114, guid: f2c059543c49cb44aab44e212696c9a4, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -1482,7 +1574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108614064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.85, y: 0, z: 0.0000069737434}
+  m_LocalPosition: {x: 39.850006, y: 0, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -1870,6 +1962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConcBroken01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1178582710574042, guid: 1e5a264fd2149a545ad803e9a23382dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4041723877937048, guid: 1e5a264fd2149a545ad803e9a23382dd, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1924,6 +2020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalletWood01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1973,6 +2073,18 @@ PrefabInstance:
     - target: {fileID: 1417962875357832, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
       propertyPath: m_Name
       value: MetallFence02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417962875357832, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624091278944448, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806774781052770, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4820941569401130, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
       propertyPath: m_RootOrder
@@ -2032,6 +2144,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1015920687207462, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411153454214724, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4595040683314516, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2078,6 +2202,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1543635525966200, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793620635961894, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958886530360164, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4727215503562942, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2127,6 +2263,10 @@ PrefabInstance:
     - target: {fileID: 1285581180157558, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
       propertyPath: m_Name
       value: Wooden_boards01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285581180157558, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4500253786818690, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
       propertyPath: m_RootOrder
@@ -2271,6 +2411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2317,6 +2461,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1047744912915018, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056926735267654, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164176975988564, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184642205793416, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208498196716470, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273328704724820, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382700444029222, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444431038426256, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475164107269428, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610262200564494, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638987975683608, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718649356829708, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753712526236792, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782546908209810, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801962504931968, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910981289610454, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975576114260612, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4908688464131266, guid: b9f888f8fd50e31448fa919feeb3da27, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -2366,6 +2578,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -2432,6 +2648,10 @@ PrefabInstance:
     - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_Name
       value: DebrisConcrete01c (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
@@ -2762,6 +2982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashBox01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1380046272654204, guid: cf7b9651f6816bb419746ad79f7062d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4628599417664162, guid: cf7b9651f6816bb419746ad79f7062d5, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -2808,9 +3032,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -2870,6 +3106,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -2920,6 +3160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1006104467588030, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4998402373052228, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -2966,6 +3210,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1377674782644028, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807145945107846, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988201068898008, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4531188203356136, guid: d348603411e7ab641a02559918d9e868, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3012,6 +3268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -3061,6 +3321,10 @@ PrefabInstance:
     - target: {fileID: 1989863150336834, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
       propertyPath: m_Name
       value: Crane01c (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989863150336834, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4443853184237448, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
       propertyPath: m_RootOrder
@@ -3112,6 +3376,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
       value: 107
@@ -3255,6 +3531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1546383635202084, guid: f653ed43da54ecf489cd2783a4521a2c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4244246369456176, guid: f653ed43da54ecf489cd2783a4521a2c, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -3309,6 +3589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -3355,6 +3639,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1346576217299420, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652275492307152, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762640529836928, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786122847131844, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4718370290403236, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -3502,6 +3802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelves_big03_broken (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1186722158888534, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4306421477441234, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3560,9 +3864,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1015920687207462, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411153454214724, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_Name
       value: MetallFence07 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4595040683314516, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_RootOrder
@@ -3613,6 +3929,18 @@ PrefabInstance:
     - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_Name
       value: MetallFence02a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846260144599038, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865905883239602, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4692088727467744, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_RootOrder
@@ -3672,6 +4000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1881882300773054, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4253939984694924, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -3814,6 +4146,10 @@ PrefabInstance:
     - target: {fileID: 1975784990750236, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
       propertyPath: m_Name
       value: TubeGroup01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975784990750236, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472885393592562, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
       propertyPath: m_RootOrder
@@ -4010,7 +4346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334086016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000069737434}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -4394,6 +4730,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1285581180157558, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4500253786818690, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -4447,6 +4787,10 @@ PrefabInstance:
     - target: {fileID: 1351235886883706, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
       propertyPath: m_Name
       value: WoodModel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351235886883706, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4999482366970844, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
       propertyPath: m_RootOrder
@@ -4942,6 +5286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1976915239910574, guid: 5a3927ce263a09d40b009f47e3009387, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4681471940539908, guid: 5a3927ce263a09d40b009f47e3009387, type: 3}
       propertyPath: m_RootOrder
       value: 105
@@ -4992,6 +5340,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -5055,11 +5415,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369419856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 461599684}
   - {fileID: 1006995315}
+  - {fileID: 461599684}
   m_Father: {fileID: 471163507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5070,9 +5430,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -5225,6 +5597,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1302911127516084, guid: c8fbba4668ec76147b08677d4295ba55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507526027096164, guid: c8fbba4668ec76147b08677d4295ba55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513501161239174, guid: c8fbba4668ec76147b08677d4295ba55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4550911628846180, guid: c8fbba4668ec76147b08677d4295ba55, type: 3}
       propertyPath: m_RootOrder
       value: 115
@@ -5461,6 +5845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -5510,6 +5898,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -5561,6 +5953,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431906069069602, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -5607,9 +6003,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -5661,9 +6069,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1074560506507330, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329056778352740, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_Name
       value: MetallFence06 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4072959521027748, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_RootOrder
@@ -5727,6 +6147,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -5773,6 +6205,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1007793802274144, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116779046150078, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220589689641122, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284350661435400, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551507227801182, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564573638897402, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620472065563938, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760771840826816, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796471731206146, guid: bcb826264abd52e40a623762655d43fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4906777840910934, guid: bcb826264abd52e40a623762655d43fb, type: 3}
       propertyPath: m_RootOrder
       value: 122
@@ -5822,6 +6290,42 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
       propertyPath: m_Name
       value: Forklift_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f0bd49ef6ade59408ea0946d079f126, type: 3}
       propertyPath: m_RootOrder
@@ -5953,6 +6457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TubeConcrete (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
       value: 176
@@ -6006,6 +6514,10 @@ PrefabInstance:
     - target: {fileID: 1006104467588030, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
       propertyPath: m_Name
       value: DebrisConcrete01b (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006104467588030, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4998402373052228, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
       propertyPath: m_RootOrder
@@ -6150,6 +6662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ContainerHouse28mtl (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1518915318405152, guid: ee11c2d5459110342a25930e428770d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4808960829122422, guid: ee11c2d5459110342a25930e428770d7, type: 3}
       propertyPath: m_RootOrder
       value: 150
@@ -6220,6 +6736,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -6286,6 +6814,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -6349,7 +6881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461599683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.04, y: 0, z: -16.44}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.38058, y: 0.38058, z: 0.38058}
   m_Children:
   - {fileID: 1809408186}
@@ -6533,7 +7065,7 @@ Transform:
   - {fileID: 721365986}
   - {fileID: 838540335}
   m_Father: {fileID: 369419857}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &464472001
 GameObject:
@@ -6639,6 +7171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01a (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1881882300773054, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4253939984694924, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -6720,6 +7256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dumpster03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1133101401763132, guid: 7ed7c37ba9a536846ab199c15d766cdb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4160004090615836, guid: 7ed7c37ba9a536846ab199c15d766cdb, type: 3}
       propertyPath: m_RootOrder
       value: 149
@@ -6786,6 +7326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodWallFence (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -6835,6 +7379,10 @@ PrefabInstance:
     - target: {fileID: 1975784990750236, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
       propertyPath: m_Name
       value: TubeGroup01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975784990750236, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472885393592562, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
       propertyPath: m_RootOrder
@@ -6890,6 +7438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShelvesS01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1714254197728552, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4580791352619482, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -6940,9 +7492,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -7054,7 +7618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515949742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.129997, y: 0, z: 0.0000069737434}
+  m_LocalPosition: {x: -39.129997, y: 0, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -7438,9 +8002,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -7504,6 +8080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01c (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -7553,6 +8133,18 @@ PrefabInstance:
     - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_Name
       value: MetallFence02a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846260144599038, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865905883239602, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4692088727467744, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_RootOrder
@@ -7616,6 +8208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crane01c (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1989863150336834, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443853184237448, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -7670,6 +8266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crane01c (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1989863150336834, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443853184237448, guid: 0488eb7915a196b4f98d5a53604f2d63, type: 3}
       propertyPath: m_RootOrder
       value: 148
@@ -7720,6 +8320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1017419686365628, guid: 741162dc8df99ad4ab3184f6ba3161a9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4624371278345248, guid: 741162dc8df99ad4ab3184f6ba3161a9, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -7769,6 +8373,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -7836,6 +8444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01a (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1881882300773054, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4253939984694924, guid: 537276e747b44ef47995d51f50e2e7ac, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -7890,6 +8502,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -7939,6 +8563,10 @@ PrefabInstance:
     - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_Name
       value: TubeConcrete (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
@@ -8001,6 +8629,18 @@ PrefabInstance:
     - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_Name
       value: MetallFence03a (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643154748253952, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709883874611270, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4599422165536778, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_RootOrder
@@ -8153,9 +8793,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1168689375941080, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_Name
       value: MetallFence06a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814239239105886, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336815839319334, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_RootOrder
@@ -8203,6 +8855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1844494855234194, guid: f3251ea5d7b704948af0335c7e756968, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4675756442796356, guid: f3251ea5d7b704948af0335c7e756968, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -8689,6 +9345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1147386363214298, guid: 803f795714bceb74dbb4a5ec5051eed7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000568076991922, guid: 803f795714bceb74dbb4a5ec5051eed7, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -8832,9 +9492,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1449548027253756, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1535932806038242, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
       propertyPath: m_Name
       value: MetallFence01a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535932806038242, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577378243344668, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322253127050258, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
       propertyPath: m_RootOrder
@@ -8886,6 +9558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431906069069602, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -8936,6 +9612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431906069069602, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -8982,6 +9662,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1087163090856574, guid: b222ae3d348047c47895b9c640a6004c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4044560084443796, guid: b222ae3d348047c47895b9c640a6004c, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -9032,9 +9716,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1015920687207462, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411153454214724, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_Name
       value: MetallFence07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4595040683314516, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_RootOrder
@@ -9098,6 +9794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -9147,6 +9847,10 @@ PrefabInstance:
     - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_Name
       value: TubeConcrete (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
@@ -9735,6 +10439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1884871643284728, guid: e883a0a5d5a7bce489de52da964874a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4335174354626924, guid: e883a0a5d5a7bce489de52da964874a6, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -9921,6 +10629,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -9970,6 +10690,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -10033,6 +10757,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1518915318405152, guid: ee11c2d5459110342a25930e428770d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4808960829122422, guid: ee11c2d5459110342a25930e428770d7, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -10086,6 +10814,18 @@ PrefabInstance:
     - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_Name
       value: Conctereblock01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557991211581064, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709382896726710, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969663290450936, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4639059073473708, guid: e3371ea8d023b2041b42f3b8848f7e60, type: 3}
       propertyPath: m_RootOrder
@@ -10785,6 +11525,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1074560506507330, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329056778352740, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4072959521027748, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10831,6 +11583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1186722158888534, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4306421477441234, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -10880,6 +11636,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -10943,9 +11703,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1168689375941080, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_Name
       value: MetallFence06a (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814239239105886, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336815839319334, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_RootOrder
@@ -10997,6 +11769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodModel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1351235886883706, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4999482366970844, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -11047,6 +11823,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1672443733221602, guid: 26a69ae9484a5234cb86e32eef2f1a39, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4531191861206394, guid: 26a69ae9484a5234cb86e32eef2f1a39, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -11097,6 +11877,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1067190408977474, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181107940720474, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209660249825258, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290478449756874, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364973091221522, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626143700830250, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933830008117860, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974032342978686, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4960012272810338, guid: 9b3d0d1f5a3983a4094e0ffa9512647a, type: 3}
       propertyPath: m_RootOrder
       value: 118
@@ -11240,6 +12052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TubeConcrete (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
       value: 179
@@ -11294,6 +12110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelves_big03_broken (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1186722158888534, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4306421477441234, guid: 449e8eee42337f943b6af4e5160ed408, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -11343,6 +12163,10 @@ PrefabInstance:
     - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_Name
       value: PalletWood01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
@@ -11394,6 +12218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodWallFence (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -11440,6 +12268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1688108502112870, guid: a93d386a78f2eac48b1f0b5b30ce2cd6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4360437165126734, guid: a93d386a78f2eac48b1f0b5b30ce2cd6, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -11490,9 +12322,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -11556,6 +12400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -11602,9 +12450,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1543635525966200, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1793620635961894, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
       propertyPath: m_Name
       value: MixerConcrete (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793620635961894, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958886530360164, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4727215503562942, guid: 694e97bb0bd939a4e94a28e16c56e36a, type: 3}
       propertyPath: m_RootOrder
@@ -11672,6 +12532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelves_big02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1952881249128044, guid: dc4e00ba2dc8b0548a1e48a6e85857b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4828563973274944, guid: dc4e00ba2dc8b0548a1e48a6e85857b4, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -11722,6 +12586,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1547495034758474, guid: b69f9731e17787c4984268fae92159b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4383479816015976, guid: b69f9731e17787c4984268fae92159b0, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -11950,7 +12818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977873610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5900011, y: 17.32, z: 0.0000069737434}
+  m_LocalPosition: {x: 0.5900011, y: 17.32, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -12338,6 +13206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -12418,12 +13290,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006995313}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9824908, y: 3.4460452, z: -1.4270165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 369419857}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1016447497
 PrefabInstance:
@@ -12432,9 +13304,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -12486,6 +13370,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1142600210102494, guid: 408defcc0a9d5f4429fc47c4d87a4673, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281815246190034, guid: 408defcc0a9d5f4429fc47c4d87a4673, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320030295204730, guid: 408defcc0a9d5f4429fc47c4d87a4673, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842922546354528, guid: 408defcc0a9d5f4429fc47c4d87a4673, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4487396945464320, guid: 408defcc0a9d5f4429fc47c4d87a4673, type: 3}
       propertyPath: m_RootOrder
       value: 103
@@ -12535,6 +13435,10 @@ PrefabInstance:
     - target: {fileID: 1844494855234194, guid: f3251ea5d7b704948af0335c7e756968, type: 3}
       propertyPath: m_Name
       value: Wheebarrow01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844494855234194, guid: f3251ea5d7b704948af0335c7e756968, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4675756442796356, guid: f3251ea5d7b704948af0335c7e756968, type: 3}
       propertyPath: m_RootOrder
@@ -12598,6 +13502,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1107001099542024, guid: 5f5c7aa944246b949b1c8df81f923d06, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223609996498232, guid: 5f5c7aa944246b949b1c8df81f923d06, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384564486290078, guid: 5f5c7aa944246b949b1c8df81f923d06, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4913629633573458, guid: 5f5c7aa944246b949b1c8df81f923d06, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -12651,6 +13567,18 @@ PrefabInstance:
     - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_Name
       value: MetallFence03a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643154748253952, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709883874611270, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4599422165536778, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_RootOrder
@@ -12714,6 +13642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PipeGroupDebris (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1174306539654696, guid: 9e0c0f75f04480147b773315c78f3667, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4641961462778970, guid: 9e0c0f75f04480147b773315c78f3667, type: 3}
       propertyPath: m_RootOrder
       value: 131
@@ -12768,6 +13700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShelvesS01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1714254197728552, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4580791352619482, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -12814,6 +13750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1952881249128044, guid: dc4e00ba2dc8b0548a1e48a6e85857b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4828563973274944, guid: dc4e00ba2dc8b0548a1e48a6e85857b4, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -12863,6 +13803,10 @@ PrefabInstance:
     - target: {fileID: 1285581180157558, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
       propertyPath: m_Name
       value: Wooden_boards01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285581180157558, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4500253786818690, guid: 8c37e59a2e631ed41a0e87e5a94bbc09, type: 3}
       propertyPath: m_RootOrder
@@ -12914,6 +13858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1501521268067520, guid: 8aa4a86fe3e22bc4d97c66d25e63fec0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4931812569593412, guid: 8aa4a86fe3e22bc4d97c66d25e63fec0, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -12960,6 +13908,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1069979607755602, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166888483406016, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321968700925238, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327786749662570, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445680678400126, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946254653904116, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995212809249770, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4530815645304394, guid: 46411fa4c78af4e44bb92cc982d47388, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -13006,9 +13982,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1113397627655164, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346701155014942, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_Name
       value: MetallFence05a (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4673668951281796, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_RootOrder
@@ -13071,6 +14059,10 @@ PrefabInstance:
     - target: {fileID: 1262146691486428, guid: c18f2aa464856ea438dd72014625dabc, type: 3}
       propertyPath: m_Name
       value: Toilet_Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262146691486428, guid: c18f2aa464856ea438dd72014625dabc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4280207053373080, guid: c18f2aa464856ea438dd72014625dabc, type: 3}
       propertyPath: m_RootOrder
@@ -13215,6 +14207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1337775490805354, guid: c4d0133a216edd8489ab479590a1b913, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4254258641326204, guid: c4d0133a216edd8489ab479590a1b913, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -13265,6 +14261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1262146691486428, guid: c18f2aa464856ea438dd72014625dabc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280207053373080, guid: c18f2aa464856ea438dd72014625dabc, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -13315,6 +14315,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1015920687207462, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411153454214724, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4595040683314516, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -13376,6 +14388,10 @@ PrefabInstance:
     - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_Name
       value: DebrisConcrete02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
@@ -13516,9 +14532,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1346576217299420, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652275492307152, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762640529836928, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1786122847131844, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
       propertyPath: m_Name
       value: DumpsterDirty03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786122847131844, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4718370290403236, guid: 7b74496f80ee051489b48362b7e53a3f, type: 3}
       propertyPath: m_RootOrder
@@ -13865,6 +14897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01c (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -13911,6 +14947,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1005174767364644, guid: 13ffe5861eaf2d04cb78e8a53779c0d3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041357829994736, guid: 13ffe5861eaf2d04cb78e8a53779c0d3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590904589145180, guid: 13ffe5861eaf2d04cb78e8a53779c0d3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4480371344013446, guid: 13ffe5861eaf2d04cb78e8a53779c0d3, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -14058,6 +15106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShelvesS01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1714254197728552, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4580791352619482, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -14108,9 +15160,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -14170,6 +15234,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1131158978361450, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910534086702750, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4900683972487460, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -14315,55 +15391,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100024, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 22ed6b374a45d0245b4f3a0a3a3e5b42, type: 3}
       propertyPath: m_RootOrder
@@ -14411,9 +15487,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -14473,6 +15561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1133101401763132, guid: 7ed7c37ba9a536846ab199c15d766cdb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4160004090615836, guid: 7ed7c37ba9a536846ab199c15d766cdb, type: 3}
       propertyPath: m_RootOrder
       value: 106
@@ -14575,7 +15667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291860215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.199999, y: 0, z: -37.680004}
+  m_LocalPosition: {x: -7.199998, y: 0, z: -37.680004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -14963,6 +16055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodWallFence (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -15106,9 +16202,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1449548027253756, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1535932806038242, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
       propertyPath: m_Name
       value: MetallFence01a (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535932806038242, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577378243344668, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322253127050258, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
       propertyPath: m_RootOrder
@@ -15168,6 +16276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1641760470948414, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4704121954988206, guid: 40cc8f91b5e22534d90f664b4a29cc3d, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -15400,6 +16512,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -15449,6 +16565,10 @@ PrefabInstance:
     - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_Name
       value: DebrisConcrete03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4431906069069602, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_RootOrder
@@ -15775,6 +16895,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1547421218276908, guid: 87b0f47fc98788c49b9d41c01d8a15da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552110405734882, guid: 87b0f47fc98788c49b9d41c01d8a15da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690361646054578, guid: 87b0f47fc98788c49b9d41c01d8a15da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4501017316514622, guid: 87b0f47fc98788c49b9d41c01d8a15da, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -15877,7 +17009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389074816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.85, y: 10.27, z: 0.0000069737434}
+  m_LocalPosition: {x: 39.850006, y: 10.27, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -16302,9 +17434,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1113397627655164, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346701155014942, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_Name
       value: MetallFence05a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4673668951281796, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_RootOrder
@@ -16356,6 +17500,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1709635730534520, guid: 163620bcd33ff264893f799f3e64d2e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4519419858807624, guid: 163620bcd33ff264893f799f3e64d2e3, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -16458,7 +17606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429086332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.85, y: 0, z: -37.680004}
+  m_LocalPosition: {x: 39.850006, y: 0, z: -37.680004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -16842,6 +17990,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1312043796987686, guid: b8093231d116b30469ac3a1657074c60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475903856339752, guid: b8093231d116b30469ac3a1657074c60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736223378449988, guid: b8093231d116b30469ac3a1657074c60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884582344711840, guid: b8093231d116b30469ac3a1657074c60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962127009699502, guid: b8093231d116b30469ac3a1657074c60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4622992158676794, guid: b8093231d116b30469ac3a1657074c60, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -16888,9 +18056,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -16950,6 +18130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846260144599038, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865905883239602, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4692088727467744, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -17278,6 +18470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toilet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1688108502112870, guid: a93d386a78f2eac48b1f0b5b30ce2cd6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4360437165126734, guid: a93d386a78f2eac48b1f0b5b30ce2cd6, type: 3}
       propertyPath: m_RootOrder
       value: 127
@@ -17331,6 +18527,18 @@ PrefabInstance:
     - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_Name
       value: MetallFence03a (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643154748253952, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709883874611270, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4599422165536778, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_RootOrder
@@ -17394,6 +18602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblocks01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -17440,9 +18652,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1074560506507330, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329056778352740, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_Name
       value: MetallFence06 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4072959521027748, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_RootOrder
@@ -17490,6 +18714,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1207737890714086, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416195376321694, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924703689318886, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4047783249112266, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -17539,6 +18775,10 @@ PrefabInstance:
     - target: {fileID: 1017419686365628, guid: 741162dc8df99ad4ab3184f6ba3161a9, type: 3}
       propertyPath: m_Name
       value: Conctereblocks02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1017419686365628, guid: 741162dc8df99ad4ab3184f6ba3161a9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4624371278345248, guid: 741162dc8df99ad4ab3184f6ba3161a9, type: 3}
       propertyPath: m_RootOrder
@@ -17594,6 +18834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblocks01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 138
@@ -17644,9 +18888,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1046468763849272, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1143937371967236, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468015948381634, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
       propertyPath: m_Name
       value: MetallFence03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468015948381634, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964352404724604, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
       propertyPath: m_RootOrder
@@ -17706,6 +18962,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1211285075575898, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643154748253952, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709883874611270, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4599422165536778, guid: 7d3c8d503dae77f498977b5e32d1987f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -17752,9 +19020,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1131158978361450, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_Name
       value: MetallFence08 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910534086702750, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4900683972487460, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_RootOrder
@@ -17806,6 +19086,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -17855,6 +19139,18 @@ PrefabInstance:
     - target: {fileID: 1207737890714086, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
       propertyPath: m_Name
       value: MetallFence05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207737890714086, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416195376321694, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924703689318886, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4047783249112266, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
       propertyPath: m_RootOrder
@@ -17914,6 +19210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1286134459295170, guid: 84c669e0a0d480b4fa3acfe074077015, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4740630792749520, guid: 84c669e0a0d480b4fa3acfe074077015, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -17968,6 +19268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01d (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1672443733221602, guid: 26a69ae9484a5234cb86e32eef2f1a39, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4531191861206394, guid: 26a69ae9484a5234cb86e32eef2f1a39, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -18014,9 +19318,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -18071,6 +19387,10 @@ PrefabInstance:
     - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_Name
       value: PalletWood01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
@@ -18130,6 +19450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1380046272654204, guid: cf7b9651f6816bb419746ad79f7062d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4628599417664162, guid: cf7b9651f6816bb419746ad79f7062d5, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -18228,7 +19552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610991152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.27, z: 0.0000069737434}
+  m_LocalPosition: {x: 0, y: 10.27, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -18798,6 +20122,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1046468763849272, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1143937371967236, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468015948381634, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4964352404724604, guid: 4719f8b85afa7194caaca04848c52f10, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -18891,6 +20227,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetallFence02a (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846260144599038, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865905883239602, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4692088727467744, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18949,6 +20297,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1006104467588030, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4998402373052228, guid: 90b85f090d2541d41bba00bab1fd95f6, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -19003,6 +20355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalletWood01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -19049,6 +20405,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1113397627655164, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346701155014942, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4673668951281796, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -19095,9 +20463,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1168689375941080, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_Name
       value: MetallFence06a (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814239239105886, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336815839319334, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_RootOrder
@@ -19593,6 +20973,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1178582710574042, guid: 1e5a264fd2149a545ad803e9a23382dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4041723877937048, guid: 1e5a264fd2149a545ad803e9a23382dd, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -19643,6 +21027,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1000781322726226, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094152390372716, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163346708687492, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260303919748560, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1317689010693784, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332322613389858, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558626291465508, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590730992974368, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881362321811126, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4937651750853576, guid: 0601dbc1ae8a40d4ca48fded4d915405, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -19689,6 +21109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1456397841571368, guid: 8d5f0517d6c80014b834f2153a74643c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4061968274252506, guid: 8d5f0517d6c80014b834f2153a74643c, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -19747,6 +21171,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1126029324094608, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139509295072826, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171334182764632, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306253776989212, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428535239603606, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777169885287486, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974436644662456, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974619660460166, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4781208402385262, guid: 69fce60809fa6664b8650596b256ecbb, type: 3}
       propertyPath: m_RootOrder
       value: 114
@@ -19886,9 +21342,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -19940,9 +21408,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1015920687207462, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411153454214724, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_Name
       value: MetallFence07 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819920916656066, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4595040683314516, guid: 427b202f0bd8e83408384429ff32fbec, type: 3}
       propertyPath: m_RootOrder
@@ -19994,6 +21474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -20137,6 +21621,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1168689375941080, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351233631250502, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814239239105886, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4336815839319334, guid: 370d0c0e0696e20408f2c237c1295157, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -20186,6 +21682,10 @@ PrefabInstance:
     - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_Name
       value: PalletWood01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
@@ -20241,6 +21741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblock02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
       value: 146
@@ -20294,6 +21798,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -20361,6 +21869,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetallFence05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1207737890714086, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416195376321694, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924703689318886, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4047783249112266, guid: 5a62c2831e63e0047a8e700fdc08ecf9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -20410,6 +21930,18 @@ PrefabInstance:
     - target: {fileID: 1523966239736856, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
       propertyPath: m_Name
       value: MetallFence01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523966239736856, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759580540919770, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980049132677366, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4478481329171778, guid: 23d33d4db6d408b4687b35b39a5cb036, type: 3}
       propertyPath: m_RootOrder
@@ -20550,6 +22082,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -20596,9 +22132,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -20662,6 +22210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodWallFence (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597983904237366, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327849053571456, guid: 14a8ae79dd5d3dd4f85bfd1e4a48face, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20708,6 +22260,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1975784990750236, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4472885393592562, guid: 6d24a50ea488ba44da71e9fcdcb24264, type: 3}
       propertyPath: m_RootOrder
       value: 98
@@ -20762,6 +22318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01c (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -20812,9 +22372,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1131158978361450, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_Name
       value: MetallFence08 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910534086702750, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4900683972487460, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_RootOrder
@@ -20862,9 +22434,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1476103152096646, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501687461488072, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_Name
       value: ContainerHouse24 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547305115833800, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4004936378783898, guid: 84e9b5db8121e4048a683bd16ebf3ffb, type: 3}
       propertyPath: m_RootOrder
@@ -20919,6 +22503,10 @@ PrefabInstance:
     - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_Name
       value: TubeConcrete (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901420792420642, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4322983342658044, guid: 8b85ccec643fbde45a5879784ed71efc, type: 3}
       propertyPath: m_RootOrder
@@ -21935,6 +23523,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1297397518355688, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846260144599038, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865905883239602, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4692088727467744, guid: 8a239746961cde8468a6f3dc54d49bed, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -21981,6 +23581,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1497351990594276, guid: f6caa0fe9c202c248a7c8ff88348a650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527842693997058, guid: f6caa0fe9c202c248a7c8ff88348a650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713425471629852, guid: f6caa0fe9c202c248a7c8ff88348a650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978060339631946, guid: f6caa0fe9c202c248a7c8ff88348a650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4762313254857384, guid: f6caa0fe9c202c248a7c8ff88348a650, type: 3}
       propertyPath: m_RootOrder
       value: 116
@@ -22120,6 +23736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1278652258573110, guid: 606c0c9dff86e4545b3af37177ef6a37, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4212737383852156, guid: 606c0c9dff86e4545b3af37177ef6a37, type: 3}
       propertyPath: m_RootOrder
       value: 104
@@ -22220,9 +23840,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409649310}
     m_Modifications:
+    - target: {fileID: 1074560506507330, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329056778352740, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_Name
       value: MetallFence06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4072959521027748, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_RootOrder
@@ -22270,6 +23902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1846859948326556, guid: bd8868eba5956394bbc5dea530191269, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4173070192980952, guid: bd8868eba5956394bbc5dea530191269, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -22692,9 +24328,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1630193009}
     m_Modifications:
+    - target: {fileID: 1377674782644028, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807145945107846, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1988201068898008, guid: d348603411e7ab641a02559918d9e868, type: 3}
       propertyPath: m_Name
       value: MetallFence04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988201068898008, guid: d348603411e7ab641a02559918d9e868, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4531188203356136, guid: d348603411e7ab641a02559918d9e868, type: 3}
       propertyPath: m_RootOrder
@@ -22757,6 +24405,10 @@ PrefabInstance:
     - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_Name
       value: PalletWood01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495547012997880, guid: 776b8740ec882ae49a694355451185e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068156264376704, guid: 776b8740ec882ae49a694355451185e3, type: 3}
       propertyPath: m_RootOrder
@@ -23728,7 +25380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987123426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.129997, y: 17.32, z: 0.0000069737434}
+  m_LocalPosition: {x: -39.129997, y: 17.32, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -24116,6 +25768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblocks01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -24255,6 +25911,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1417962875357832, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624091278944448, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806774781052770, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4820941569401130, guid: 79855ac760519a54c85a616449eedc9b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -24301,9 +25969,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1074560506507330, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329056778352740, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_Name
       value: MetallFence06 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517847433548062, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4072959521027748, guid: 5fabd7364bd5bb44e87c5ed1889cabbf, type: 3}
       propertyPath: m_RootOrder
@@ -24508,7 +26188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029553717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.129997, y: 10.27, z: 0.0000069737434}
+  m_LocalPosition: {x: -39.129997, y: 10.27, z: 0.0000070929527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1927955722}
@@ -24892,9 +26572,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1113397627655164, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346701155014942, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_Name
       value: MetallFence05a (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4673668951281796, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_RootOrder
@@ -24958,6 +26650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete01c (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1395406779991462, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4129383804002594, guid: 75c0ad7ed8d533a4c94e3ebc3e45e5a3, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -25007,6 +26703,10 @@ PrefabInstance:
     - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_Name
       value: DebrisConcrete03 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212529911640094, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4431906069069602, guid: 7f8a469b97301f849b2695e310b9c634, type: 3}
       propertyPath: m_RootOrder
@@ -25062,6 +26762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblocks01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -25112,6 +26816,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1351235886883706, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4999482366970844, guid: 43b1973f0bea81545aed061527717cd1, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -25165,6 +26873,34 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
       propertyPath: m_Name
       value: Forklift_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0985bbd78a0189542a8f0d3dde639dec, type: 3}
       propertyPath: m_RootOrder
@@ -25280,6 +27016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1174306539654696, guid: 9e0c0f75f04480147b773315c78f3667, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4641961462778970, guid: 9e0c0f75f04480147b773315c78f3667, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -25330,9 +27070,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 950756317}
     m_Modifications:
+    - target: {fileID: 1131158978361450, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_Name
       value: MetallFence08 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135283507052642, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910534086702750, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4900683972487460, guid: 80bfd00b3a20f234bbb8b1d957c064e9, type: 3}
       propertyPath: m_RootOrder
@@ -25489,6 +27241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conctereblocks01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428769344472, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4116946332934286, guid: 4d2c2cbcc3967514b95df805c34fd3c4, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -25538,6 +27294,10 @@ PrefabInstance:
     - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_Name
       value: Conctereblock02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401957460333336, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4862924895925776, guid: 96dbd334ae651d149b9609452d04bebc, type: 3}
       propertyPath: m_RootOrder
@@ -25605,6 +27365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShelvesS01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1714254197728552, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4580791352619482, guid: aab43574f981bf2408d589813f2c5b25, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -25651,6 +27415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1144445062071334, guid: f1197733311762f4c983e155c73344c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4712083501759038, guid: f1197733311762f4c983e155c73344c5, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -25705,6 +27473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebrisConcrete02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556038375206228, guid: 265e4a2213319914ca49c972ca516828, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4611905985865850, guid: 265e4a2213319914ca49c972ca516828, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -25751,6 +27523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1202236587293142, guid: ec65ed20a8a43994098db85e47e2ad17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4374798434661128, guid: ec65ed20a8a43994098db85e47e2ad17, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -25801,6 +27577,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461599684}
     m_Modifications:
+    - target: {fileID: 1113397627655164, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346701155014942, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967231334024812, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4673668951281796, guid: f7aa375406a354f4fb504b0818c83a8d, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -25859,6 +27647,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745371253}
     m_Modifications:
+    - target: {fileID: 1449548027253756, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535932806038242, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577378243344668, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4322253127050258, guid: 96fdce65901caba4294e915d75fe47d2, type: 3}
       propertyPath: m_RootOrder
       value: 7

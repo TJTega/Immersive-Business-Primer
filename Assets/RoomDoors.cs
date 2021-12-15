@@ -6,7 +6,7 @@ public class RoomDoors : MonoBehaviour
 {
     public DOTweenAnimation door;
     // Start is called before the first frame update
-     void OnTriggerStay(Collider other)
+     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.tag);
         if (other.tag == "Player")

@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168032734906602159}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.9103744, y: 0, z: 2.7120001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4724235518812278068}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5330139704419639784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -242,9 +242,7 @@ GameObject:
   - component: {fileID: 4724235518812278068}
   - component: {fileID: 7393082739255931578}
   - component: {fileID: 2497391581697641740}
-  - component: {fileID: 5703854769476946477}
   - component: {fileID: 8146417635075780408}
-  - component: {fileID: 532100452401657945}
   m_Layer: 0
   m_Name: art_door_bod_1
   m_TagString: Untagged
@@ -316,19 +314,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5703854769476946477
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4707103144662541797}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9103746, y: 2.1853766, z: 0.12013519}
-  m_Center: {x: 0.4551873, y: 1.0926883, z: 0}
 --- !u!114 &8146417635075780408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,34 +421,6 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
---- !u!114 &532100452401657945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4707103144662541797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135a6de7f09abd24daa8ec6690101f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8146417635075780408}
-        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
-        m_MethodName: DOPlayForward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  targetTag: RightPointerCollider
 --- !u!1 &4740413405726683166
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,9 +432,7 @@ GameObject:
   - component: {fileID: 6321691400068456507}
   - component: {fileID: 511722297921092293}
   - component: {fileID: 7801589805428332290}
-  - component: {fileID: 5740932863295916543}
   - component: {fileID: 2856730605207309370}
-  - component: {fileID: 2923539230207959371}
   m_Layer: 0
   m_Name: art_door_bod_3
   m_TagString: Untagged
@@ -549,19 +504,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5740932863295916543
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740413405726683166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9103746, y: 2.1853766, z: 0.12013519}
-  m_Center: {x: -0.4551873, y: 1.0926883, z: 0}
 --- !u!114 &2856730605207309370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,34 +611,6 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
---- !u!114 &2923539230207959371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740413405726683166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135a6de7f09abd24daa8ec6690101f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2856730605207309370}
-        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
-        m_MethodName: DOPlayForward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  targetTag: RightPointerCollider
 --- !u!1 &5066961785410603669
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,9 +622,7 @@ GameObject:
   - component: {fileID: 6494161114562953787}
   - component: {fileID: 1726940810536006387}
   - component: {fileID: 8633223375515938809}
-  - component: {fileID: 1709813315410081853}
   - component: {fileID: 6445726585527707978}
-  - component: {fileID: 1058015959032268886}
   m_Layer: 0
   m_Name: art_door_bod_2
   m_TagString: Untagged
@@ -782,19 +694,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1709813315410081853
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5066961785410603669}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12013519, y: 2.1853766, z: 0.9103746}
-  m_Center: {x: 0, y: 1.0926883, z: -0.4551873}
 --- !u!114 &6445726585527707978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,34 +801,6 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
---- !u!114 &1058015959032268886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5066961785410603669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135a6de7f09abd24daa8ec6690101f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6445726585527707978}
-        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
-        m_MethodName: DOPlayForward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  targetTag: RightPointerCollider
 --- !u!1 &9065000333945996925
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,13 +826,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9065000333945996925}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.8880727, y: 0, z: 0.9008126}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6494161114562953787}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &5962734790059987575
 BoxCollider:
   m_ObjectHideFlags: 0

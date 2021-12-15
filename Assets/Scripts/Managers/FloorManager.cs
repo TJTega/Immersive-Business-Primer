@@ -66,6 +66,7 @@ public class FloorManager : MonoBehaviour
         if (currentFloor.ambience != null)
         {
             ambientSource.clip = currentFloor.ambience;
+            ambientSource.Play();
         }
 
         //Sets ceiling material

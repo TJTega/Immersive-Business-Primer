@@ -322,8 +322,7 @@ MonoBehaviour:
   forwardManager:
     ScenesToLoad:
     - RoomEnterBack
-    ScenesToUnload:
-    - Floor
+    ScenesToUnload: []
   backwardManager:
     ScenesToLoad:
     - Floor
@@ -418,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd5bf41b7daad543a8fac3f69a7b6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 0}
+  floor: {fileID: 11400000, guid: 4ad61455b0db4e546bb0d883c620b6fd, type: 2}
   floorManager: {fileID: 540940006}
 --- !u!1001 &783046238
 PrefabInstance:
@@ -477,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 180408927212335146, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 180408927212335146, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
       propertyPath: m_TagString
@@ -824,8 +823,7 @@ MonoBehaviour:
   forwardManager:
     ScenesToLoad:
     - RoomEnterRight
-    ScenesToUnload:
-    - Floor
+    ScenesToUnload: []
   backwardManager:
     ScenesToLoad:
     - Floor
@@ -885,7 +883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323531999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: -0.5, z: -11}
+  m_LocalPosition: {x: -10, y: -0.5, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1160854641}
@@ -1205,8 +1203,7 @@ MonoBehaviour:
   forwardManager:
     ScenesToLoad:
     - RoomEnterLeft
-    ScenesToUnload:
-    - Floor
+    ScenesToUnload: []
   backwardManager:
     ScenesToLoad:
     - Floor

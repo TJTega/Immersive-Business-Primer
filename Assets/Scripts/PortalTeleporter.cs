@@ -9,6 +9,7 @@ public class PortalTeleporter : MonoBehaviour
     public Transform thisTP;
     private Transform player;
     private bool playerIsOverlapping = false;
+    private bool hasTraveled = false;
 
     private void Start()
     {
@@ -22,7 +23,6 @@ public class PortalTeleporter : MonoBehaviour
         {
             Vector3 portalToPlayer = thisTP.position - player.position;
             float dotProduct = Vector3.Dot(transform.forward, portalToPlayer);
-            Debug.Log(dotProduct);
 
             // If this is true: The player has moved across the portal
             if (dotProduct < 0f)
@@ -52,13 +52,16 @@ public class PortalTeleporter : MonoBehaviour
     public void TeleportPlayer()
     {
         XRRig xrRig = GameObject.FindGameObjectWithTag("XRRig").GetComponent(typeof(XRRig)) as XRRig;
-        if (xrRig != null && playerIsOverlapping)
+
+        //Entering a room
+        if (xrRig != null && playerIsOverlapping && !hasTraveled)
         {
             xrRig.MatchRigUpCameraForward(reciever.rotation * Vector3.up, reciever.rotation * Vector3.forward);
             var heightAdjustment = xrRig.rig.transform.up * xrRig.cameraInRigSpaceHeight;
             var cameraDestination = reciever.transform.position + heightAdjustment;
             xrRig.MoveCameraToWorldLocation(cameraDestination);
             playerIsOverlapping = false;
+            hasTraveled = true;
         }
     }
 }

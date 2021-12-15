@@ -139,13 +139,9 @@ public class GameManager : MonoBehaviour
                 yield return null;
             }
         }
-        if (SceneManager.GetSceneByName("Lobby").isLoaded)
+        if (SceneManager.GetSceneByName(lobbyScene).isLoaded)
         {
-            SceneManager.UnloadSceneAsync("Lobby");
-        }
-        if (SceneManager.GetSceneByName("Sound & Animation").isLoaded)
-        {
-            SceneManager.UnloadSceneAsync("Sound & Animation");
+            SceneManager.UnloadSceneAsync(lobbyScene);
         }
 
         //Find the floorManager Script

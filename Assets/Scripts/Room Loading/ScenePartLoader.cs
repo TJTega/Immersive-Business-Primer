@@ -16,7 +16,7 @@ public class ScenePartLoader : MonoBehaviour
     public SceneLoadManager forwardManager;
     public SceneLoadManager backwardManager;
 
-    public GameObject GayMobject;
+    public GameObject portalGameObject;
 
     protected float dotProduct;
 
@@ -144,15 +144,15 @@ public class ScenePartLoader : MonoBehaviour
         if (shouldLoad)
         {
             Debug.Log("LOADING");
-            if (GayMobject != null)
-                GayMobject.SetActive(true);
+            if (portalGameObject != null)
+                portalGameObject.SetActive(true);
             LoadScene();
         }
         else
         {
             Debug.Log("UNLOADING");
-            if (GayMobject != null)
-                GayMobject.SetActive(false);
+            if (portalGameObject != null)
+                portalGameObject.SetActive(false);
             UnLoadScene();
         }
     }

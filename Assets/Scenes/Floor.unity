@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &33851890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33851891}
+  m_Layer: 0
+  m_Name: glTF Scene logo_animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &33851891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33851890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &80722825
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +231,36 @@ Transform:
   m_Father: {fileID: 1971003528}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &305830296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305830297}
+  m_Layer: 0
+  m_Name: glTF Scene logo_animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &305830297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305830296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &520542413
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +329,7 @@ MonoBehaviour:
     - Floor
     ScenesToUnload:
     - RoomEnterBack
-  GayMobject: {fileID: 5096427781204868736}
+  portalGameObject: {fileID: 5096427781204868736}
   setOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &540940004
 GameObject:
@@ -417,7 +477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 180408927212335146, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 180408927212335146, guid: f29132b3e0e6f3a49854250309b2b319, type: 3}
       propertyPath: m_TagString
@@ -495,6 +555,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3648543e4e233ef40b375e6ba5de20c7, type: 3}
   m_PrefabInstance: {fileID: 880376969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &952744667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952744668}
+  m_Layer: 0
+  m_Name: glTF Scene logo_animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &952744668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952744667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056801963
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +831,7 @@ MonoBehaviour:
     - Floor
     ScenesToUnload:
     - RoomEnterRight
-  GayMobject: {fileID: 1160854638}
+  portalGameObject: {fileID: 1160854638}
   setOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &1233662457
 Transform:
@@ -1122,7 +1212,7 @@ MonoBehaviour:
     - Floor
     ScenesToUnload:
     - RoomEnterLeft
-  GayMobject: {fileID: 5096427781859605852}
+  portalGameObject: {fileID: 5096427781859605852}
   setOffset: {x: 0, y: 0, z: 0}
 --- !u!23 &63368695409075880
 MeshRenderer:

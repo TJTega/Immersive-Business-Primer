@@ -307,7 +307,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  lineMaterial: {fileID: 2100000, guid: 876c7e981edab3a44918b5c51482a286, type: 2}
+  lineMaterial: {fileID: 2100000, guid: 7da45e1a6a459d24496324ea9c8003db, type: 2}
   roundedEdges: 1
   roundedCaps: 1
   fadeLineBrightnessOnEnable: 0
@@ -505,8 +505,8 @@ MonoBehaviour:
   lineBase: {fileID: 8090720277987393429}
   lineRenderers:
   - {fileID: 114903794112201558}
-  lineMaterialSelected: {fileID: 2100000, guid: 11727442de02c1d4b8d37a063c748aec, type: 2}
-  lineMaterialNoTarget: {fileID: 2100000, guid: 876c7e981edab3a44918b5c51482a286, type: 2}
+  lineMaterialSelected: {fileID: 2100000, guid: ac9eb0879632d3749a460633685103a4, type: 2}
+  lineMaterialNoTarget: {fileID: 2100000, guid: 7da45e1a6a459d24496324ea9c8003db, type: 2}
   inertia: {fileID: 3980487836371375048}
   startPointLerp: 0.267
   endPointLerp: 0.637
